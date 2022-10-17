@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEET PLAY SHARE, MEGABOX</title>
+    <!-- jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- plugin CDN -->
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <button class="topBtn">TOP</button>
+
+    <header>
+        <div>
+            <h1>
+                <a href="index_signIn.html"><img src="images/logo.png" alt="MEGABOX"></a>
+            </h1>
+            <nav>
+                <input type="button" class="material-icons mui" value="menu">
+                <ul>
+                    <li>
+                        <a href="movieMenu_boxoffice.html">
+                            Movie
+                        </a>
+                    </li>
+                    <li>
+                        <a href="reservation01.html">
+                            Reservation
+                        </a>
+                    </li>
+                    <li>
+                        <a href="theater.html">
+                            Theater
+                        </a>
+                    </li>
+                    <li>
+                        <a href="store.html">
+                            Store
+                        </a>
+                    </li>
+                    <li>
+                        <a href="benefit.html">
+                            Benefit
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                            Search
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sideBox">
+                <div>
+                    <span>Shin</span>
+                    <span class="material-icons">account_circle</span>
+                </div>
+                <ul>
+                    <li><a href="myPage_myPagePoint.html">Point of the membership</a></li>
+                    <li><a href="myPage_myPageCoupon.html">Coupon / Ticket</a></li>
+                    <li><a href="myPage_myPageReservation.html">Reservation / Purchase</a></li>
+                    <li><a href="myPage_myPageInterest.html">Content of interest</a></li>
+                    <li><a href="myPage_myPageMyInformation.html">My Megabox</a></li>
+                    <li><a href="index.html">Sign out</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <div class="termsPrivacy">
+        <div>
+            <h2>Personal information processing policy</h2>
+            <p>
+                Megabox Central (hereinafter referred to as "Company") protects users' personal information in accordance with the Personal Information Protection Act and In order to protect rights and interests and to smoothly handle user grievances related to personal information, the following personal information processing policies are in place. If the company revises its personal information processing policy, it will notify it through the website notice (or individual notice).
+                <strong>This policy will take effect on January 05, 2022.</strong>
+            </p>
+        
+            <div>
+                <ol>
+                    <li><a href="#pArticle1">Article 1. (Purpose of processing personal information)</a></li>
+                    <li><a href="#pArticle2">Article 2. (Duration of Processing and Retention of Personal Information)</a></li>
+                    <li><a href="#pArticle3">Article 3. (Provide personal information to a third party)</a></li>
+                    <li><a href="#pArticle4">Article 4. (Consignment of Personal Information Processing)</a></li>
+                    <li><a href="#pArticle5">Article 5 (The rights, obligations, and exercise method of the data subject)</a></li>
+                    <li><a href="#pArticle6">Article 6. (Procedures and Methods for Destruction of Personal Information)</a></li>
+                    <li><a href="#pArticle7">Article 7. (Measures to secure the stability of personal information)</a></li>
+                    <li><a href="#pArticle8">Article 8. (Matters concerning the installation, operation, and refusal of automatic personal information collection devices)</a></li>
+                </ol>
+                <ol>
+                    <li><a href="#pArticle9">Article 9. (Personal Information Protection Officer)</a></li>
+                    <li><a href="#pArticle10">Article 10. (Request for Access to Personal Information)</a></li>
+                    <li><a href="#pArticle11">Article 11. (Method of remedy for infringement of rights and interests)</a></li>
+                    <li><a href="#pArticle12">Article 12. (Installation of an image information processing device)</a></li>
+                    <li><a href="#pArticle13">Article 13. (Change of personal information processing policy)</a></li>
+                </ol>
+            </div>
+        
+            
+            <dl id="pArticle1">
+                <dt>Article 1. (Purpose of processing personal information)</dt>
+                <dd>
+                    The company processes personal information for the following purposes. Personal information being processed is not used for purposes other than the following purposes, and if the purpose of use is changed, necessary measures will be implemented, such as obtaining separate consent under Article 18 of the Personal Information Protection Act.
+                </dd>
+                <dd>
+                    <table>
+                        <caption>Article 1 Table01</caption>
+                        <thead>
+                            <tr>
+                                <th>Case-sensitive</th>
+                                <th>Collection items</th>
+                                <th>Collection and usage history</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="2">
+                                    Required collection items for providing and managing member services
+                                </td>
+                                <td>
+                                    Name, date of birth, gender, identification information (CI , DI), i-pin number (i-pin identification), ID, password, mobile phone number, e-mail
+                                </td>
+                                <td>
+                                    Check the payment and reservation for Megabox products
+                                    <br>
+                                    <br>
+                                    Identification of the identity, real name, and duplicate subscription according to the use of the member service
+                                    <br>
+                                    <br>                    
+                                    Membership service
+                                    <br>
+                                    <br>                    
+                                    Securing a smooth communication path for delivering notices, handling inquiries, or complaints
+                                    <br>
+                                    <br>
+                                    Operation of Dream Center
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Name of legal representative under the age of 14, mobile phone number, CI
+                                </td>
+                                <td>
+                                    Confirmation of legal representative consent for customer registration of children under the age of 14 years of age
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Essential collection items for mobile service use
+                                </td>
+                                <td>
+                                    Mobile device information (model name, OS type, OS version information)
+                                </td>
+                                <td>
+                                    Securing a smooth communication path for delivering notices, handling inquiries, or complaints, etc
+                                    <br>
+                                    <br>
+                                    Preservation of records for dispute settlement and preparation for personal information infringement accidents
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Information collected when booking non-membership
+                                </td>
+                                <td>
+                                    Name, date of birth, cell phone number, password
+                                </td>
+                                <td>
+                                    When you use the website, mobile app, or web reservation service
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </dd>
+                <dd>
+                    - Information provided for simple login use will be destroyed immediately if membership registration has not been made. In addition, nickname and profile photo information are sent according to SNS's usage policy, but they are destroyed immediately without saving them in our DB.
+                </dd>
+                <dd>
+                    <table>
+                        <caption>Article 1 Table02</caption>
+                        <thead>
+                            <tr>
+                                <th>Case-sensitive</th>
+                                <th>Category</th>
+                                <th>Purpose of us</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Marketing information such as customized product and service recommendations
+                                </td>
+                                <td>
+                                    Email, mobile phone number, address, date of birth, preferred movie theater, preferred genre, preferred time zone, consent to receiving text/email/app push information, service usage record, point accumulation and usage information, access log, profile photo, gallery photo information
+                                </td>
+                                <td>
+                                    Customer statistical analysis and research to develop benefits and services, customer statistical analysis and research to provide new services, personal profile setting, photo card service use, and information on various events such as free/discount events.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Research and research informationt
+                                </td>
+                                <td>
+                                    Customer's usage behavior, service satisfaction evaluation information, gender, age, residential area (province unit), occupation, hobbies, interests, marital status, number of children, age of children
+                                </td>
+                                <td>
+                                    Research and research analysis
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="4">Information collected when using simple login</td>
+                                <td>Name / Email</td>
+                                <td>
+                                    Naver's simple login<br>
+                                    Easy login for Payco
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Nickname and profile picture / Email</td>
+                                <td>Kakao simple login</td>
+                            </tr>
+                            <tr>
+                                <td>Username and profile picture / Email</td>
+                                <td>Simple login on Facebook</td>
+                            </tr>
+                            <tr>
+                                <td>Membership number, unique key, name, e-mail</td>
+                                <td>Apple's simple login</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="4">Information collected when using external reservation/ affiliated membership</td>
+                                <td>CI, name, phone number, date of birth</td>
+                                <td>YES24. Reservation for Interpark</td>
+                            </tr>
+                            <tr>
+                                <td>Name, phone number, date of birth</td>
+                                <td>KT membership</td>
+                            </tr>
+                            <tr>
+                                <td>CI, name, phone number, date of birth, gender, address</td>
+                                <td>KT / LGU+ / SYRUP membership (affiliated membership</td>
+                            </tr>
+                            <tr>
+                                <td>CI, name, phone number, date of birth, gender.</td>
+                                <td>Kakao / Payco / Naver Financial / KB Kookmin Card membership</td>
+                            </tr>
+                            <tr>
+                                <td>Using location information</td>
+                                <td>Mobile device information</td>
+                                <td>Utilizing location information service-based records and guiding service benefits</td>
+                            </tr>
+                            <tr>
+                                <td>Information collected when purchasing delivery products</td>
+                                <td>Order name, order ID, order mobile phone number, order email, recipient name, recipient mobile number, recipient address</td>
+                                <td>Processing of information and communication service provision contracts such as product delivery (transmission), product installation, return, refund, and customer counseling, and tasks necessary for the implementation of e-commerce (mail sales) contracts.</td>
+                            </tr>
+                            <tr>
+                                <td>Information collected when using affiliated services</td>
+                                <td>Electronic wallet address</td>
+                                <td>Affiliate service (milk)</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">Information collected when using a card management service that is frequently used</td>
+                                <td>Name of affiliated company and card number</td>
+                                <td>Affiliate service (milk)</td>
+                            </tr>
+                            <tr>
+                                <td>Card company name, card number</td>
+                                <td>The discount card service that I use often</td>
+                            </tr>
+                            <tr>
+                                <td>1:1 inquiry</td>
+                                <td>Name, mobile phone number, email address, and inquiries</td>
+                                <td>Secure a smooth communication path when processing or completing</td>
+                            </tr>
+                            <tr>
+                                <td>Group viewing and rental inquiry</td>
+                                <td>Name, contact information, email address, inquiry details</td>
+                                <td>Secure a smooth communication path when processing or completing requests</td>
+                            </tr>
+                            <tr>
+                                <td>Inquiries about lost items</td>
+                                <td>Inquiries about lost items</td>
+                                <td>Secure a smooth communication path when processing or completing a request for name, contact information, email address, inquiry content, password (for reading posts) </td>
+                            </tr>
+                            <tr>
+                                <td>Affiliate/Advertisement/Additional Business Inquiries</td>
+                                <td>Name, company name, mobile phone number, email address, and inquiries</td>
+                                <td>Secure a smooth communication path when processing or completing requests</td>
+                            </tr>
+                            <tr>
+                                <td>Online report center.</td>
+                                <td>Name, contact information, e-mail address (but collected anonymously when reported anonymously), and the contents of the report</td>
+                                <td>Information on corruption and collection for accurate confirmation of facts</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </dd>
+                <dd>- The information is separately agreed upon at the time of data collection, stored only until the agreed period, and destroyed in a safe manner.</dd>
+                <dd>
+                    <table>
+                        <caption>Article 1 Table03</caption>
+                        <thead>
+                            <tr>
+                                <th>Collected items</th>
+                                <th>The purpose of collection and use</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Service usage records (time of use, theater, point accumulation and usage records, product or service purchase history), app/web login records, access logs, access IP information</td>
+                                <td>Preservation of records for dispute settlement and preparation for personal information tinfringement accidents</td>
+                            </tr>
+                            <tr>
+                                <td>Cookie</td>
+                                <td>Identify the type of website visit and use, popular search terms, security access, etc (Article 8 of this policy)</td>
+                            </tr>
+                            <tr>
+                                <td>Payment record (birth date, credit card information)</td>
+                                <td>Payment for purchasing a product</td>
+                            </tr>
+                            <tr>
+                                <td>Information on prize, payment, coupon, etc.</td>
+                                <td>Collect records to provide mobile order services and integrated payment services</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </dd>
+            </dl>
+        
+            <dl id="pArticle2">
+                <dt>Article 2. (Duration of Processing and Retention of Personal Information)</dt>
+                <dd>
+                    The company processes and holds personal information within the period of possession and use of personal information in accordance with laws and regulations or the period of use of personal information agreed upon when collecting personal information from the information subject.<br>
+                    Each personal information processing and retention period is as follows.
+                </dd>
+                <dd>
+                    1. Essential collection items for service use: Retention until withdrawal.<br>
+                    If it falls under the following reasons, hold it until the end of the relevant reason.
+                    <p class="indentation">
+                        1) Non-member collection items.<br>
+                        ①Hold it for 7 days after viewing or cancellation.<br>
+                        ②Inquiries about customer centers, inquiries about partnerships/advertisements/subsidiary businesses, and holds them up to 6 months after processing is completed when using the online information center.<br>
+                        2) To minimize damage caused by indiscriminate withdrawal and re-registration, and to handle complaints caused by change of mind after customer withdrawal, hold minimum customer information for 30 days after withdrawal.<br>
+                        3) In the case where an investigation or investigation is in progress due to a violation of relevant laws and regulations, until the end of the investigation or investigation,<br>
+                        4) When the bond/debt relationship remains due to the use of the website, until the relevant bond/debt relationship is settled.<br>
+                    </p>
+                </dd>
+                <dd>2. Selective collection items: Retention and destruction until the specified period when obtaining consent for collection.</dd>
+                <dd>
+                    3. Dormant Member: Retard after holding for one year from the time of storage as a dormant customer.
+                    <p class="indentation">
+                        1) Dormant members: members who have not used the service for more than one year.<br>
+                        2) Conditions for dormant membership conversion.<br>
+                        - Customers who have not logged in to the website, mobile web, or app for more than a year.<br>
+                        - A customer who has no history of point trading for more than a year.<br>
+                        - Customers who have not issued or deleted membership cards for more than a year.<br>
+                        3) Dormant member in advance notice.<br>
+                        - Announcement date: 30 days before the change of sleep.<br>
+                        - Information items: facts separated separately, scheduled dormant date, and personal information items stored separately.<br>
+                        - Information method: Information in one way, such as e-mail, written, and copy transmission.<br>
+                    </p>
+                </dd>
+                <dd>
+                    4. Providing goods or services: Until goods, service supply and payment of charges, and settlement are completed.<br>
+                    However, in the case of the following reasons, until the end of the relevant period,
+                    <p class="indentation">
+                        1) Records of transactions, such as indication, advertisement, contract details, and performance, pursuant to the Consumer Protection in Electronic Commerce, etc. Act.<br>
+                        - Records of the user's identity verification posted: 6 months.<br>
+                        - Records of withdrawal of contract or subscription, payment, supply of goods, etc.: 5 years<br>
+                        - Records of consumer complaints or disputes: 3 years<br>
+                        2) Keeping data confirming communication facts pursuant to Article 41 of the Communications Secret Protection Act.<br>
+                        - Records of web page visits and log-in: 3 months
+                    </p>
+                </dd>
+            </dl>
+        
+            <dl id="pArticle3">
+                <dt>Article 3. (Provide personal information to a third party)</dt>
+                <dd>
+                    1. The company processes the personal information of the data subject only within the scope specified in the terms and conditions of use and Article 1 (purpose of processing personal information), and provides personal information to third parties only if it falls under Article 17 of the Personal Information Protection Act.
+                </dd>
+                <dd>
+                    <table>
+                        <caption>Article 3 Table01</caption>
+                            <thead>
+                                <tr>
+                                    <th>The one who receives the gift</th>
+                                    <th>Purpose of provision</th>
+                                    <th>What you're offering</th>
+                                    <th>Period of retention and use</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>JoongAng Ilbo and JoongAng Ilbo M&P Co., Ltd. M&P Co., Ltd.</td>
+                                    <td>Use the central membership service</td>
+                                    <td>Name, cell phone number</td>
+                                    <td>Until the purpose of using personal information is achieved</td>
+                                </tr>
+                                <tr>
+                                    <td>Milk Partners Co., Ltd.</td>
+                                    <td>Use and accumulate membership points for affiliated service milk, handle complaints, and prevent illegal use of services</td>
+                                    <td>Megabox membership number and membership points</td>
+                                    <td>Until 180 days after withdrawal from membership or termination of service</td>
+                                </tr>
+                            </tbody>
+                    </table>
+                </dd>
+                <dd>2. If a new affiliate service is opened and provided to a third party, a separate consent is obtained from the information subject, and in the event of a sale or merger, the information subject is informed in advance, and personal information consent is withdrawn.</dd>
+                <dd>
+                    3. However, in the following cases, it is possible to provide personal information without the consent of the members in accordance with the relevant laws and regulations.
+                    <p class="indentation">
+                        1) If necessary for the settlement of charges according to the provision of services,<br>
+                        2) Case where a specific individual is processed and provided in an unrecognizable form as necessary for statistics preparation, academic research, or market research.<br>
+                        3) In cases where there are special provisions in laws such as the Real Name Financial Transactions and Secrets Act, the Framework Act on the Use and Protection of Credit Information, the Telecommunications Business Act, the Local Tax Act, the Consumer Protection Act, the Bank of Korea Act, and the Criminal Procedure Act.<br>
+                        4) In a case where there is a request from an investigative agency according to the procedures and methods prescribed by statutes for investigative purposes,
+                    </p>
+                </dd>
+            </dl>
+        
+            <dl id="pArticle4">
+                <dt>Article 4. (Consignment of Personal Information Processing)</dt>
+                <dd>
+                    1. The company entrusts personal information processing as follows for smooth personal information processing.
+                </dd>
+                <dd>
+                    <table>
+                        <caption>Article 4 Table01</caption>
+                            <thead>
+                                <tr>
+                                    <th>Trustee</th>
+                                    <th>Contents of consignment work</th>
+                                    <th>Period of retention and use of personal information</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>BGF Networks Co., Ltd.</td>
+                                    <td>Reservation confirmation, cancellation details, mobile phone message (SMS) transmission agency</td>
+                                    <td rowspan="11">When the customer withdraws or until the consignment contract is terminated</td>
+                                </tr>
+                                <tr>
+                                    <td>J.Contentree Co., Ltd.</td>
+                                    <td>Consignment operation of IT services and systems</td>
+                                </tr>
+                                <tr>
+                                    <td>JK Global Co., Ltd. </td>
+                                    <td>IT service and system consignment development, e-mail sending agency</td>
+                                </tr>
+                                <tr>
+                                    <td>I W Networks Co., Ltd.</td>
+                                    <td>Mailing agent</td>
+                                </tr>
+                                <tr>
+                                    <td>Pysub Korea Limited</td>
+                                    <td>Payment service agent</td>
+                                </tr>
+                                <tr>
+                                    <td>EK Manpower Co., Ltd.</td>
+                                    <td>Service provision guidance TM Dream Center (1544-0070) Reply to customers</td>
+                                </tr>
+                                <tr>
+                                    <td>JOHNIS Co., Ltd.</td>
+                                    <td rowspan="2">Development and maintenance of the counselor system.</td>
+                                </tr>
+                                <tr>
+                                    <td>NTS Communication Co., Ltd.</td>
+                                </tr>
+                                <tr>
+                                    <td>NICE evaluation information</td>
+                                    <td>Real name verification. Identification</td>
+                                </tr>
+                                <tr>
+                                    <td>MBI Solution Co., Ltd.</td>
+                                    <td>Operational management of IT systems for real-time customer chat consultation</td>
+                                </tr>
+                                <tr>
+                                    <td>TDI Co., Ltd.</td>
+                                    <td>Location information service-based record utilization and advertising service</td>
+                                </tr>
+                                <tr>
+                                    <td>JoongAng Ilbo M&P Co., Ltd.</td>
+                                    <td>Online store Samsung Electronics' products delivered</td>
+                                    <td>Until 2 months after it's provided,</td>
+                                </tr>
+                            </tbody>
+                    </table>
+                </dd>
+                <dd>2. In accordance with Article 26 of the Personal Information Protection Act, the company stipulates documents such as prohibition of personal information processing, technical and administrative protection measures, restrictions on re-consignment, management, and compensation for damages, and supervises whether the trustee handles personal information safely.</dd>
+                <dd>3. If the contents of the consignment work or the trustee change, we will disclose it through this personal information processing policy without delay.</dd>
+            </dl>
+        
+            <dl id="pArticle5">
+                <dt>Article 5. (The rights, obligations, and exercise method of the data subject)</dt>
+                <dd>1. The data subject (including the legal representative for children under the age of 14) may exercise the following personal information protection rights against the company at any time.</dd>
+                <dd>
+                    <p class="indentation">
+                        1) Request to read personal information.<br>
+                        2) If there's an error, ask for correction.<br>
+                        3) Request deletion.<br>
+                        4) Request to stop processing.<br>
+                    </p>
+                </dd>
+                <dd>2. If you want to view and correct online subscription information, the data subject (including legal representative for children under the age of 14) can directly read and correct it by clicking "Member withdrawal" and "Modify Personal Information" on the website, or contact the Dream Center (1544-0070).</dd>
+                <dd>3. The exercise of rights under paragraph 1 can be made through written, telephone, e-mail, or mock-up remittance (FAX) to the company, and the company will take action without delay.</dd>
+                <dd>4. If the data subject (including the legal representative for children under the age of 14) requests correction or deletion of personal information errors, the company does not use or provide the personal information until correction or deletion is completed.</dd>
+                <dd>5. The exercise of rights under paragraph 1 may be made through an agent such as a legal representative of the data subject or a person who has been delegated. In this case, you must submit a power of attorney in accordance with attached Form 11 of the Enforcement Rule of the Personal Information Protection Act.</dd>
+                <dd>6. The data subject shall not infringe on the personal information and privacy of the data subject or other person handled by the company in violation of relevant laws such as the Personal Information Protection Act.</dd>
+            </dl>
+        
+            <dl id="pArticle6">
+                <dt>Article 6. (Procedures and Methods for Destruction of Personal Information)</dt>
+                <dd>1. If personal information becomes unnecessary, such as the lapse of the period of personal information retention or the achievement of the purpose of processing, the company will destroy the personal information without delay.</dd>
+                <dd>2. If personal information must be preserved in accordance with other laws and regulations even after the period of personal information retention agreed by the data subject has elapsed or the purpose of processing has been achieved, the personal information will be transferred to a separate database (DB).</dd>
+                <dd>3. The procedure and method of destroying personal information are as follows.</dd>
+                <dd>
+                    <p class="indentation">
+                        1) The process of destroying it.<br>
+                        ①The company destroys personal information without delay when personal information becomes unnecessary, such as the lapse of the period of personal information retention or the achievement of the purpose of processing.<br>
+                        ②In the event of a reason for requesting destruction, the company destroys personal information without delay and notifies the relevant result.<br>
+                        2) How to do it.<br>
+                        ①Electronic file type: Destroy using a method such as a low level format so that the record cannot be reproduced.<br>
+                        ②Paper document: Crushing or incinerating with a shredder.
+                    </p>
+                </dd>
+            </dl>
+        
+            <dl id="pArticle7">
+                <dt>Article 7. (Measures to secure the stability of personal information)</dt>
+                <dd>The company is taking the following measures to secure the stability of personal information.</dd>
+                <dd>1. Management measures: Establishment and implementation of internal management plans, regular employee training, etc.</dd>
+                <dd>2. Technical measures: Management of access rights to personal information processing systems, installation of access control systems, encryption of unique identification information, and installation of security programs.</dd>
+                <dd>3. Physical measures: Control of access to computer rooms, data storage rooms, etc.</dd>
+            </dl>
+        
+            <dl id="pArticle8">
+                <dt>Article 8. (Matters concerning the installation, operation, and refusal of automatic personal information collection devices)</dt>
+                <dd>1. To provide individual customized services to users, the company stores usage information and uses "cookie" that is frequently called.</dd>
+                <dd>2. Cookies are a small amount of information sent by the server (http) used to run the website to the user's computer browser and are also stored on the hard disk of the customer's terminal (PC/ smartphone/tablet PC, etc.).</dd>
+                <dd>
+                    <p class="indentation">
+                        1) Purpose of use of cookies: Use to provide optimized information to users by identifying the types of visits and uses of each service and website visited by users, popular search terms, and security access.<br>
+                        2) Installation, operation, and rejection of cookies: Tools at the top of the web browser>Internet Options>Setting options in the Personal Information menu allows you to refuse to save cookies.<br>
+                        3) Refusing to save cookies may make it difficult to use customized services.
+                    </p>
+                </dd>
+            </dl>
+        
+            <dl id="pArticle9">
+                <dt>Article 9. (Personal Information Protection Officer)</dt>
+                <dd>1. The company is in charge of personal information processing, and designates a person in charge of personal information protection as follows to handle complaints and remedy damages of information subjects related to personal information processing.</dd>
+                <dd>
+                    ▶ Person in charge of personal information protection.<br>
+                    - Department name: multiplex headquarters IT Solution Team<br>
+                    - Person in charge: Cho Sangyeon.<br>
+                    - Contact: privacy@megabox.co.kr
+                </dd>
+                <dd>
+                    ▶ Person in charge of personal information protection.<br>
+                    - Department name: multiplex headquarters IT Solution Team<br>
+                    - Staff: Oh Yunho.<br>
+                    - Contact: privacy@megabox.co.kr
+                </dd>
+                <dd>
+                    ▶ Customer Service Representative<br>
+                    - Department name: Megabox Operation Team of EK Man Power HR Business Headquarters<br>
+                    - Staff: Ahn Soyee.<br>
+                    - Contact: m.dreamcenter@partner.megabox.co.kr<br>
+                    ※ It connects to the department in charge of personal information protection.
+                </dd>
+                <dd>2. The data subject may contact the personal information protection manager and the department in charge of personal information protection for all inquiries, complaints, and damage relief issued while using the company's service (or business). The company will respond and process the information subject's inquiries without delay.</dd>
+            </dl>
+        
+            <dl id="pArticle10">
+                <dt>Article 10. (Request for Access to Personal Information)</dt>
+                <dd>The data subject may request the following department to view personal information pursuant to Article 35 of the Personal Information Protection Act. The company will try to expedite the data subject's request for personal information access.</dd>
+                <dd>
+                    ▶ Department of receiving and processing requests for access to personal information.<br>
+                    - Department name: Dream Center.<br>
+                    - Staff: Ahn Soyee.<br>
+                    - Contact: 1544-0070, m.dreamcenter@partner.megabox.co.kr
+                </dd>
+            </dl>
+        
+            <dl id="pArticle11">
+                <dt>Article 11. (Method of remedy for infringement of rights and interests)</dt>
+                <dd>The data subject may inquire about the institution below about damage relief and counseling for personal information infringement.</dd>
+                <dd>
+                    1. Department of collecting opinions and receiving and handling complaints.<br>
+                    - Department name: Dream Center.<br>
+                    - Contact: 1544-0070 (available time for phone consultation 10:30-18:30)<br>
+                    - Email: m.dreamcenter@partner.megabox.co.kr<br>
+                    - Address: 5th floor of KT Telecop Building, 291 Gamasan-ro, Guro-gu, Seoul.
+                </dd>
+                <dd>
+                    2. Personal Information Infringement Report Center (operated by the Korea Internet & Security Agency)<br>
+                    - Responsible affairs: Reporting personal information infringement and applying for counseling.<br>
+                    - Homepage: privacy.kisa.or.kr<br>
+                    - Phone: 118 (without a national number)<br>
+                    - Address: (58324) Jinheung-gil 9, Naju-si, Jeollanam-do (301-2 Bitgaram-dong) Personal Information Infringement Report Center
+                </dd>
+                <dd>
+                    3. Personal Information Dispute Mediation Committee<br>
+                    - Responsible affairs: Application for personal information dispute mediation, collective dispute mediation (civil resolution)<br>
+                    - Homepage: www.kopico.go.kr<br>
+                    - Phone: 1833-6972 (without a national number)<br>
+                    - Address: (03171) 12th floor of the Seoul Government Complex, 209, Sejong-daero, Jongno-gu, Seoul, Republic of Korea
+                </dd>
+                <dd>
+                    4. Supreme Prosecutors' Office Cybercrime Investigation Team: (without a national number) 1301 (www.spo.go.kr)
+                </dd>
+                <dd>
+                    5. National Police Agency Cyber Investigation Bureau: 182 (ecrm.cyber.go.kr/minwon/main) without a national number)
+                </dd>
+            </dl>
+        
+            <dl id="pArticle12">
+                <dt>Article 12. (Installation of an image information processing device)</dt>
+                <dd>1. Megabox Central Co., Ltd. installs and operates video information processing devices as follows.</dd>
+                <dd>
+                    <p class="indentation">
+                        1) Ground and purpose for installing video information processing equipment: facility safety and fire prevention of Megabox Central Co., Ltd.<br>
+                        2) The number of installations, location, and shooting range.
+                    </p>
+                </dd>
+                <dd>
+                    <table>
+                        <caption class="hideTitle">Article 12 Table01</caption>
+                        <thead>
+                            <tr>
+                                <th>The number of installations</th>
+                                <th>Installation location and shooting range</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Please refer to the notice board for each theater</td>
+                                <td>Lobby, theater, escalator, etc.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </dd>
+                <dd class="indentation">
+                    3) The person in charge of management, the department in charge, and the person who has access to video information.
+                </dd>
+                <dd>
+                    <table>
+                        <caption>Article 12 Table03</caption>
+                        <thead>
+                            <tr>
+                                <th>Sortation</th>
+                                <th>Status</th>
+                                <th>Contact number</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Person in charge of maintenance</td>
+                                <td>Theater manager and manager</td>
+                                <td>1544-0070</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </dd>
+                <dd>
+                    <p class="indentation">
+                        4) Video information shooting time, storage period, storage location, and processing method.<br>
+                        ①Filming time: 24 hours.<br>
+                        ②Storage period: 30 days from the shoot.<br>
+                        ※ Provided, That if there is a special reason to store video information or separately stipulated in other laws and regulations, the storage exceeds three months.<br>
+                        ③Storage place and processing method: Storage and processing of video information processing devices in business facilities in each theater.<br>
+                        5) Method and place of checking video information: Request from managers in each theater.<br>
+                        6) Measures for requests such as viewing video information by the data subject.<br>
+                        ①Application for personal video information viewing and confirmation of existence as an invoice.<br>
+                        ②Access is permitted only when the data subject himself/herself is photographed or clearly necessary for the benefit of the life, body, and property of the data subject.<br>
+                        ③In any of the following cases, the data subject may refuse to view, etc., and notification of the reason for rejection may be made.<br>
+                        - In the case where the storage period of personal video information has elapsed and has already been destroyed,<br>
+                        - In the case where there is a justifiable reason to reject the request, such as reading by the data subject, etc.<br>
+                        ④In the case of taking measures such as viewing video information, the following matters are recorded and managed.<br>
+                        - Name and contact information of the information subject who requested to view personal video information, etc.<br>
+                        - The name and content of the personal image information file requested by the information subject, etc.<br>
+                        - Purpose of viewing personal video information, etc.<br>
+                        - In the case of refusal to view personal video information, etc., specific reasons for refusal.<br>
+                        - In the case of providing a copy of personal image information to the data subject, the content of the video information and the reason for providing it<br>
+                        7) Technical, administrative, and physical measures to protect video information.<br>
+                        ①Establishing an internal management plan.<br>
+                        ②Access control and restriction of access rights.<br>
+                        ③Safe storage and transmission of video information.<br>
+                        ④Storage of processing records and measures to prevent forgery and alteration.<br>
+                        ⑤Installation of storage facilities and locks.
+                    </p>
+                </dd>
+            </dl>
+        
+            <dl id="pArticle13">
+                <dt>Article 13. (Change of personal information processing policy)</dt>
+                <dd>1. This personal information processing policy will take effect from December 22, 2021.</dd>
+                <dd>2. You can check the previous personal information processing policy below.</dd>
+            </dl>
+        </div>      
+    </div>
+
+    <footer>
+        <h2>
+            <img src="images/logo.png" alt="MEGABOX">
+        </h2>
+        <ul>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="https://jebo.joonganggroup.com/main.do">Ethical management</a></li>
+        </ul>
+        <div>
+            COPYRIGHT © MegaboxJoongAng, Inc. All rights reserved
+            <address>240 World Cup Road, Mapo-gu, Seoul, 2F above ground (Seongsan-dong, World Cup Main Stadium) ARS <a href="tel:+82215440070">1544-0070</a></address>    
+            Representative name Kim Jin-sun · Cho Sang-yeon, the person in charge of personal information protection  · Business registration number 211-86-59478
+            · Communications sales business report number 833
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MEET PLAY SHARE, MEGABOX</title>
+    <!-- jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- plugin CDN -->
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+
+<body>
+    <button class="topBtn">TOP</button>
+
+    <div id="myTheaterPopup">
+        <div>
+            <h2>
+                My movie theater setting
+            </h2>
+            
+            <div>
+                <p>
+                    ·The first registered movie theater will be set as the representative preferred movie theater.<br>
+                    ·If you register your favorite movie theater as My movie theater, you can receive a variety of customized information such as various benefits, events, previews, and stage greetings provided by the movie theater you registered.
+                </p>
+                <ul class="theaterChoice">
+                    <li>
+                        <i class="material-icons">add</i>
+                        <span>1st</span>
+                    </li>
+                    <li>
+                        <i class="material-icons">add</i>
+                        <span>2nd</span>
+                    </li>
+                    <li>
+                        <i class="material-icons">add</i>
+                        <span>3rd</span>
+                    </li>
+                </ul>
+        
+                <ul class="theaterList">
+                    <li class="active">
+                        Seoul
+                        <ol>
+                            <li>
+                                Gangnam
+                            </li>
+                            <li>
+                                Gangnam-daero(City)
+                            </li>
+                            <li>
+                                Gangdong
+                            </li>
+                            <li>
+                                Gunja
+                            </li>
+                            <li>
+                                Dongdaemun
+                            </li>
+                            <li>
+                                Magok
+                            </li>
+                            <li>
+                                Mokdong
+                            </li>
+                            <li>
+                                Sangbong
+                            </li>
+                            <li>
+                                Samam World Cup Stadium
+                            </li>
+                            <li>
+                                Seongsu
+                            </li>
+                            <li>
+                                Central
+                            </li>
+                            <li>
+                                Songpa Park Habio
+                            </li>
+                            <li>
+                                Sinchon
+                            </li>
+                            <li>
+                                Isu
+                            </li>
+                            <li>
+                                Changdong
+                            </li>
+                            <li>
+                                COEX
+                            </li>
+                            <li>
+                                Hongdae
+                            </li>
+                            <li>
+                                Hwagok
+                            </li>
+                            <li>
+                                ARTNINE
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        Gyeonggi
+                        <ol>
+                            <li>
+                                Goyang Starfield
+                            </li>
+                            <li>
+                                Gwangmyeong AK Plaza
+                            </li>
+                            <li>
+                                Gimpo Han River New Town
+                            </li>
+                            <li>
+                                Namyangju
+                            </li>
+                            <li>
+                                Namyangju Hyundai Outlet Space One
+                            </li>
+                            <li>
+                                Dongchan
+                            </li>
+                            <li>
+                                Misa Riverside
+                            </li>
+                            <li>
+                                Baekseok
+                            </li>
+                            <li>
+                                Byeolnae
+                            </li>
+                            <li>
+                                Bucheon Starfield City
+                            </li>
+                            <li>
+                                Bundang
+                            </li>
+                            <li>
+                                Suwon
+                            </li>
+                            <li>
+                                Suwon Nammun
+                            </li>
+                            <li>
+                                Siheung Baegot-dong
+                            </li>
+                            <li>
+                                Ansan Central
+                            </li>
+                            <li>
+                                Anseong Starfield
+                            </li>
+                            <li>
+                                Yangju
+                            </li>
+                            <li>
+                                Yeongtong
+                            </li>
+                            <li>
+                                Yongin Giheung
+                            </li>
+                            <li>
+                                Yongin Techno Valley
+                            </li>
+                            <li>
+                                Uijeongbu Minrak
+                            </li>
+                            <li>
+                                Ilsan
+                            </li>
+                            <li>
+                                Ilsan Bellacita
+                            </li>
+                            <li>
+                                KINTEX
+                            </li>
+                            <li>
+                                Paju Geumchon
+                            </li>
+                            <li>
+                                Paju Woonjung
+                            </li>
+                            <li>
+                                Paju Publishing City
+                            </li>
+                            <li>
+                                Hanam Starfield
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        Incheon
+                        <ol>
+                            <li>
+                                Sword-dan
+                            </li>
+                            <li>
+                                Songdo
+                            </li>
+                            <li>
+                                Yeongjong
+                            </li>
+                            <li>
+                                Incheon Nonhyeon
+                            </li>
+                            <li>
+                                Blue-green gel
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        Daejeon / Chungcheong / Sejong
+                        <ol>
+                            <li>
+                                Gongju
+                            </li>
+                            <li>
+                                Nonsan
+                            </li>
+                            <li>
+                                Daejeon
+                            </li>
+                            <li>
+                                Daejeon Shinsegae Art & Science
+                            </li>
+                            <li>
+                                Daejeon meteors
+                            </li>
+                            <li>
+                                Daejeon Jungang-ro
+                            </li>
+                            <li>
+                                Daejeon Hyundai Outlet
+                            </li>
+                            <li>
+                                Sejong (Chochiwon)
+                            </li>
+                            <li>
+                                Sejong Naseong
+                            </li>
+                            <li>
+                                Sejong Cheongsa
+                            </li>
+                            <li>
+                                Oh Chang
+                            </li>
+                            <li>
+                                Jecheon
+                            </li>
+                            <li>
+                                Jincheon
+                            </li>
+                            <li>
+                                Cheonan
+                            </li>
+                            <li>
+                                Cheongju Sangsa
+                            </li>
+                            <li>
+                                Chungju
+                            </li>
+                            <li>
+                                Hongseong Naepo
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        Busan / Daegu / Gyeongsang
+                        <ol>
+                            <li>
+                                Gyeongbok City Hall
+                            </li>
+                            <li>
+                                Gyeongsan Hayang-dong
+                            </li>
+                            <li>
+                                Gumi Gangdong
+                            </li>
+                            <li>
+                                Gimcheon
+                            </li>
+                            <li>
+                                Nampo Port
+                            </li>
+                            <li>
+                                Daegu (Chilsung-ro)
+                            </li>
+                            <li>
+                                Daegu Shinsegae (Dongdaegu)
+                            </li>
+                            <li>
+                                Daegu isia
+                            </li>
+                            <li>
+                                Deokcheon
+                            </li>
+                            <li>
+                                Masan
+                            </li>
+                            <li>
+                                Moonkyung
+                            </li>
+                            <li>
+                                Busan Theater
+                            </li>
+                            <li>
+                                Pusan National University
+                            </li>
+                            <li>
+                                Bukdaegu (Chilgok)
+                            </li>
+                            <li>
+                                Samcheonpo
+                            </li>
+                            <li>
+                                Yangsan
+                            </li>
+                            <li>
+                                Yangsan Lafiesta
+                            </li>
+                            <li>
+                                Ulsan
+                            </li>
+                            <li>
+                                Jeonggwan
+                            </li>
+                            <li>
+                                Changwon
+                            </li>
+                            <li>
+                                Changwon Naeseo
+                            </li>
+                            <li>
+                                Haeundae (Jangsan)
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        Gwangju / Jeolla
+                        <ol>
+                            <li>
+                                Gwangju Sangmu
+                            </li>
+                            <li>
+                                Gwangju Hanam
+                            </li>
+                            <li>
+                                Mokpo Hadang(Formo)
+                            </li>
+                            <li>
+                                Songcheon
+                            </li>
+                            <li>
+                                Suncheon
+                            </li>
+                            <li>
+                                Yeosu Ungcheon
+                            </li>
+                            <li>
+                                Jondae (Gwangju)
+                            </li>
+                            <li>
+                                Jeonju Hyuksi
+                            </li>
+                            <li>
+                                Cheomdan
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        Gangwon
+                        <ol>
+                            <li>
+                                Namchuncheon
+                            </li>
+                            <li>
+                                Sokcho
+                            </li>
+                            <li>
+                                Wonju
+                            </li>
+                            <li>
+                                Central
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+    
+            <div>
+                <button class="btnClose">Cancellation</button>
+                <button class="btnClose">Completion</button>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div>
+            <h1>
+                <a href="index_signIn.html"><img src="images/logo.png" alt="MEGABOX"></a>
+            </h1>
+            <nav>
+                <input type="button" class="material-icons mui" value="menu">
+                <ul>
+                    <li>
+                        <a href="movieMenu_boxoffice.html">
+                            Movie
+                        </a>
+                    </li>
+                    <li>
+                        <a href="reservation01.html">
+                            Reservation
+                        </a>
+                    </li>
+                    <li>
+                        <a href="theater.html">
+                            Theater
+                        </a>
+                    </li>
+                    <li>
+                        <a href="store.html">
+                            Store
+                        </a>
+                    </li>
+                    <li>
+                        <a href="benefit.html">
+                            Benefit
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                            Search
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sideBox">
+                <div>
+                    <span>Shin</span>
+                    <span class="material-icons">account_circle</span>
+                </div>
+                <ul>
+                    <li><a href="myPage_myPagePoint.html">Point of the membership</a></li>
+                    <li><a href="myPage_myPageCoupon.html">Coupon / Ticket</a></li>
+                    <li><a href="myPage_myPageReservation.html">Reservation / Purchase</a></li>
+                    <li><a href="myPage_myPageInterest.html">Content of interest</a></li>
+                    <li><a href="myPage_myPageMyInformation.html">My Megabox</a></li>
+                    <li><a href="index.html">Sign out</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="myPageAll">
+        <section>
+            <div>
+                <div>
+                    <h2>
+                        Nice to meet you,
+                        <span>Shin</span>
+                    </h2>
+                    <figure>
+                        <div>
+                            <img src="images/general_icon.png" alt="Rating general icon">
+                            <span>
+                                2021 Rating
+                                <mark>General</mark>
+                            </span>
+                        </div>
+    
+                        <figcaption>
+                            <h3>
+                                VIP Selection Activity  
+                            </h3>
+                            <ul>
+                                <li>
+                                    Watching Different Movies
+                                    <mark>Part 0</mark>
+                                </li>
+                                <li>
+                                    Old Point
+                                    <mark>0 P</mark>
+                                </li>
+                                <li>
+                                    New point
+                                    <mark>0 P</mark>
+                                    <ol>
+                                        <li>
+                                            - Ticket
+                                            <mark>0 P</mark>
+                                        </li>
+                                        <li>
+                                            - A company store
+                                            <mark>0 P</mark>
+                                        </li>
+                                        <li>
+                                            - Event
+                                            <mark>0 P</mark>
+                                        </li>
+                                    </ol>
+                                </li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+    
+                    <div>
+                        <span>
+                            POINT
+                            <mark>100 P</mark>
+                        </span>
+                        <span>
+                            Coupons / Tickets
+                            <mark>0</mark>
+                        </span>
+                    </div>
+                </div>
+    
+                <div>
+                    <h2>
+                        MY movie theater
+                        <a href="#myTheaterPopup" class="btnOpen" data-popName="myTheater"><i class="material-icons">settings</i></a>
+                    </h2>
+                    <ul>
+                        <li>
+                            <a href="#myTheaterPopup" class="btnOpen" data-popName="myTheater">
+                                1st
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#myTheaterPopup" class="btnOpen" data-popName="myTheater">
+                                2nd
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#myTheaterPopup" class="btnOpen" data-popName="myTheater">
+                                3rd
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section> 
+
+        <section>
+            <h2>myPageDetail</h2>
+
+            <ul>
+                <li><a href="myPage_myPagePoint.html">Point of the membership</a></li><li>
+                    <a href="myPage_myPageCoupon.html">Coupon / Ticket</a></li><li>
+                        <a href="myPage_myPageReservation.html">Reservation / Purchase</a></li><li class="active">
+                            <a href="myPage_myPageInterest.html">Content oft interest</a></li><li>
+                                <a href="myPage_myPageMyInformation.html">My Information Management</a></li>
+            </ul>
+
+            <ul class="interestList">
+                <li>
+                    <a href="movie_venom.html">
+                        <img src="images/venom_poster01.png" alt="Venom: Let There Be Carnage, 2021">
+                    </a>
+                </li>
+                <li>
+                    <a href="movie_dune.html">
+                        <img src="images/dune_poster01.png" alt="Dune, 2021">
+                    </a>
+                </li>
+                <li>
+                    <a href="movie_ronWrong.html">
+                        <img src="images/ronWrong_poster01.png" alt="Ron’s Gone Wrong, 2021">
+                    </a>
+                </li>
+                <li>
+                    <a href="movie_tada.html">
+                        <img src="images/tada_poster01.png" alt="TADA: A Portrait of Korean Startups, 2021">
+                    </a>
+                </li>
+                <li>
+                    <a href="movie_differentGirl.html">
+                        <img src="images/differentGirl_poster01.png" alt="The New Girl 2021">
+                    </a>
+                </li>
+                <li>
+                    <a href="movie_father.html">
+                        <img src="images/father_poster01.png" alt="Otac, Father, 2020">
+                    </a>
+                </li>
+                <li>
+                    <a href="movie_007noTime.html">
+                        <img src="images/007noTime_poster01.png" alt="007 No Time To Die, 2021">
+                    </a>
+                </li>
+                <li>
+                    <a href="movie_myCat.html">
+                        <img src="images/myCat_poster01.png" alt="Take Care Of My Cat, 2001">
+                    </a>
+                </li>
+                <li>
+                    <a href="movie_gravity.html">
+                        <img src="images/gravity_poster01.png" alt="Gravity, 2013">
+                    </a>
+                </li>
+                <li>
+                    <a href="movie_threadsLove.html">
+                        <img src="images/threadsLove_poster01.png" alt="Threads: Our Tapestry of Love, 2020">
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <h2>
+            <img src="images/logo.png" alt="MEGABOX" />
+        </h2>
+        <ul>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li>
+                <a href="https://jebo.joonganggroup.com/main.do">Ethical management</a>
+            </li>
+        </ul>
+        <div>
+            COPYRIGHT © MegaboxJoongAng, Inc. All rights reserved
+            <address>
+                240 World Cup Road, Mapo-gu, Seoul, 2F above ground (Seongsan-dong,
+                World Cup Main Stadium) ARS <a href="tel:+82215440070">1544-0070</a>
+            </address>
+            Representative name Kim Jin-sun · Cho Sang-yeon, the person in charge of
+            personal information protection · Business registration number
+            211-86-59478 · Communications sales business report number 833
+        </div>
+    </footer>
+</body>
+
+</html>

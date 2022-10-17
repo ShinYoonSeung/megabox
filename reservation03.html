@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEET PLAY SHARE, MEGABOX</title>
+    <!-- jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- plugin CDN -->
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+    <script src="js/inputNum.js"></script>
+</head>
+<body>
+
+    <button class="topBtn">TOP</button>
+    
+    <aside id="mgMembershipPointPopup">
+        <div>
+            <h3>
+                Megabox membership point
+                <i class="material-icons btnClose">close</i>
+            </h3>
+    
+            <div>
+                <label>Registration of discount coupons</label>
+                <input id="onlyNum" placeholder="Input points (available in units of 100P)">
+                <button>Maximum</button>
+                <input type="password" placeholder="Enter the password">
+            </div>
+            
+            <div class="reservationPopupBtn">
+                <button class="btnClose">Application</button>
+                <button class="btnClose">Cancellation</button>
+            </div>
+        </div>
+    </aside>
+
+    <aside id="mgDiscountCouponPopup">
+        <div>
+            <h3>
+                Megabox discount coupon
+                <i class="material-icons btnClose">close</i>
+            </h3>
+
+            <div>
+                <div>
+                    <h4>Registration of discount coupons</h4>
+                    <ul class="tabMenu">
+                        <li data-tabName="athenticationInformation" class="active">Authentication number</li>
+                        <li data-tabName="couponInformation">Coupon number</li>
+                    </ul>
+    
+                    <div class="active athenticationInformation">
+                        <input type="text" placeholder="Please enter your Authentication number">
+                        <input type="password" placeholder="Enter the password">
+                        <button>Registration</button>
+                    </div>
+    
+                    <div class="couponInformation">
+                        <input type="text" placeholder="Enter the discount coupon number">
+                        <input type="password" placeholder="Enter the password">
+                        <button>Registration</button>
+                    </div>
+                </div>
+    
+                <div>
+                    <h4>Available Discounts</h4>
+                    <div>
+                        <ul>
+                            <li>Coupon name</li>
+                            <li>Validity</li>
+                            <li>Use</li>
+                        </ul>
+                        <ul>
+                            <li>[2021 new member] 3,000 won discount on movies</li>
+                            <li>2021.11.10 ~ 2021.12.10</li>
+                            <li><input type="checkbox"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reservationPopupBtn">
+                <button class="btnClose">Application</button>
+                <button class="btnClose">Cancellation</button>
+            </div>
+
+            <p>
+                <strong>Information on how to use it</strong>
+                · Only available coupons will be exposed.<br>
+                · You can check the full list of coupons on my Megabox > Discount Coupon.<br>
+                · You can use the coupon you have after registering.
+            </p>
+        </div>
+    </aside>
+
+    <aside id="mgVipCouponPopup">
+        <div>
+            <h3>
+                Megabox VIP movie coupon
+                <i class="material-icons btnClose">close</i>
+            </h3>
+            
+            <div>
+                <h4>Available Discounts</h4>
+                    <div>
+                        <ul>
+                            <li>Coupon name</li>
+                            <li>Validity</li>
+                            <li>Use</li>
+                        </ul>
+                        <ul>
+                            <li>[2021 new member] 3,000 won discount on movies</li>
+                            <li>2021.11.10 ~ 2021.12.10</li>
+                            <li><input type="checkbox"></li>
+                        </ul>
+                    </div>
+            </div>
+
+            <div class="reservationPopupBtn">
+                <button class="btnClose">Application</button>
+                <button class="btnClose">Cancellation</button>
+            </div>
+        </div>
+    </aside>
+
+    <aside id="paymentTermsPopup">
+        <div>
+            <h3>
+                Checking the terms and conditions of the payment agency service
+            </h3>
+            
+            <div>
+                <ul class="tabMenu">
+                    <li data-tabName="termsInformation" class="active">Terms and conditions of electronic financial transactions</li>
+                    <li data-tabName="collectionInformation">Information on the collection and use of unique identification information</li>
+                    <li data-tabName="consentInformation">Consent to the collection and use of personal information</li>
+                    <li data-tabName="personalInformation">Personal information provision and consignment agreement</li>
+                </ul>
+    
+                <p class="active termsInformation">
+                    <strong>Terms and Conditions of Electronic Financial Transactions</strong>
+                    <strong>Article 1 (Purpose)</strong>
+                    The purpose of these terms and conditions is to secure the stability and reliability of electronic financial transactions by setting basic matters on electronic financial transactions between users and Kovan Co., Ltd., which provides electronic payment agency services.
+                    
+                    <strong>Article 2 (Definition of Terms)</strong>
+                    The definition of terms and conditions stipulated in these terms and conditions is as follows.<br>
+                    1. The term "electronic payment agency service" refers to a service that transmits or receives payment information in the purchase or use of goods or services electronically, or acts on behalf of or mediates the settlement of payment in return.<br>
+                    2. The term "user" refers to a person who agrees to these terms and conditions and uses the electronic payment agency service provided by the company.<br>
+                    3. Access media refers to Article 10 of the Electronic Financial Transactions Act, which stipulates electronic cards and equivalent electronic information (including credit card numbers), certificates registered with financial institutions or electronic financiers, user biometric information, and information.<br>
+                    4. The term "transaction order" refers to a user instructing a financial institution or electronic financial business entity to process electronic financial transactions in accordance with an electronic financial transaction contract.<br>
+                    5. "Error" refers to a case where an electronic financial transaction is not implemented according to an electronic financial transaction contract or a user's transaction instruction without the user's intention or negligence.
+    
+                    <strong>Article 3 (Specification and modification of terms and conditions)</strong>
+                    1. The company posts these terms and conditions before users use the electronic payment agency service and allows users to check the important contents of these terms and conditions.<br>
+                    2. At the request of the user, the company shall issue a copy of these terms and conditions to the user by means of transmission of electronic documents.<br>
+                    3. When the company changes the terms and conditions, it is notified to the user by posting the changed terms and conditions before January of the effective date on the payment payment information input screen and the company's website.
+                </p>
+    
+                <p class="collectionInformation">
+                    <strong>Terms and Conditions of Electronic Financial Transactions</strong>
+                    <strong>Article 1 (Purpose)</strong>
+                    The purpose of these terms and conditions is to secure the stability and reliability of electronic financial transactions by setting basic matters on electronic financial transactions between users and Kovan Co., Ltd., which provides electronic payment agency services.
+                    
+                    <strong>Article 2 (Definition of Terms)</strong>
+                    The definition of terms and conditions stipulated in these terms and conditions is as follows.<br>
+                    1. The term "electronic payment agency service" refers to a service that transmits or receives payment information in the purchase or use of goods or services electronically, or acts on behalf of or mediates the settlement of payment in return.<br>
+                    2. The term "user" refers to a person who agrees to these terms and conditions and uses the electronic payment agency service provided by the company.<br>
+                    3. Access media refers to Article 10 of the Electronic Financial Transactions Act, which stipulates electronic cards and equivalent electronic information (including credit card numbers), certificates registered with financial institutions or electronic financiers, user biometric information, and information.<br>
+                    4. The term "transaction order" refers to a user instructing a financial institution or electronic financial business entity to process electronic financial transactions in accordance with an electronic financial transaction contract.<br>
+                    5. "Error" refers to a case where an electronic financial transaction is not implemented according to an electronic financial transaction contract or a user's transaction instruction without the user's intention or negligence.
+    
+                    <strong>Article 3 (Specification and modification of terms and conditions)</strong>
+                    1. The company posts these terms and conditions before users use the electronic payment agency service and allows users to check the important contents of these terms and conditions.<br>
+                    2. At the request of the user, the company shall issue a copy of these terms and conditions to the user by means of transmission of electronic documents.<br>
+                    3. When the company changes the terms and conditions, it is notified to the user by posting the changed terms and conditions before January of the effective date on the payment payment information input screen and the company's website.
+                </p>
+    
+                <p class="consentInformation">
+                    <strong>Terms and Conditions of Electronic Financial Transactions</strong>
+                    <strong>Article 1 (Purpose)</strong>
+                    The purpose of these terms and conditions is to secure the stability and reliability of electronic financial transactions by setting basic matters on electronic financial transactions between users and Kovan Co., Ltd., which provides electronic payment agency services.
+                    
+                    <strong>Article 2 (Definition of Terms)</strong>
+                    The definition of terms and conditions stipulated in these terms and conditions is as follows.<br>
+                    1. The term "electronic payment agency service" refers to a service that transmits or receives payment information in the purchase or use of goods or services electronically, or acts on behalf of or mediates the settlement of payment in return.<br>
+                    2. The term "user" refers to a person who agrees to these terms and conditions and uses the electronic payment agency service provided by the company.<br>
+                    3. Access media refers to Article 10 of the Electronic Financial Transactions Act, which stipulates electronic cards and equivalent electronic information (including credit card numbers), certificates registered with financial institutions or electronic financiers, user biometric information, and information.<br>
+                    4. The term "transaction order" refers to a user instructing a financial institution or electronic financial business entity to process electronic financial transactions in accordance with an electronic financial transaction contract.<br>
+                    5. "Error" refers to a case where an electronic financial transaction is not implemented according to an electronic financial transaction contract or a user's transaction instruction without the user's intention or negligence.
+    
+                    <strong>Article 3 (Specification and modification of terms and conditions)</strong>
+                    1. The company posts these terms and conditions before users use the electronic payment agency service and allows users to check the important contents of these terms and conditions.<br>
+                    2. At the request of the user, the company shall issue a copy of these terms and conditions to the user by means of transmission of electronic documents.<br>
+                    3. When the company changes the terms and conditions, it is notified to the user by posting the changed terms and conditions before January of the effective date on the payment payment information input screen and the company's website.
+                </p>
+    
+                <p class="personalInformation">
+                    <strong>Terms and Conditions of Electronic Financial Transactions</strong>
+                    <strong>Article 1 (Purpose)</strong>
+                    The purpose of these terms and conditions is to secure the stability and reliability of electronic financial transactions by setting basic matters on electronic financial transactions between users and Kovan Co., Ltd., which provides electronic payment agency services.
+                    
+                    <strong>Article 2 (Definition of Terms)</strong>
+                    The definition of terms and conditions stipulated in these terms and conditions is as follows.<br>
+                    1. The term "electronic payment agency service" refers to a service that transmits or receives payment information in the purchase or use of goods or services electronically, or acts on behalf of or mediates the settlement of payment in return.<br>
+                    2. The term "user" refers to a person who agrees to these terms and conditions and uses the electronic payment agency service provided by the company.<br>
+                    3. Access media refers to Article 10 of the Electronic Financial Transactions Act, which stipulates electronic cards and equivalent electronic information (including credit card numbers), certificates registered with financial institutions or electronic financiers, user biometric information, and information.<br>
+                    4. The term "transaction order" refers to a user instructing a financial institution or electronic financial business entity to process electronic financial transactions in accordance with an electronic financial transaction contract.<br>
+                    5. "Error" refers to a case where an electronic financial transaction is not implemented according to an electronic financial transaction contract or a user's transaction instruction without the user's intention or negligence.
+    
+                    <strong>Article 3 (Specification and modification of terms and conditions)</strong>
+                    1. The company posts these terms and conditions before users use the electronic payment agency service and allows users to check the important contents of these terms and conditions.<br>
+                    2. At the request of the user, the company shall issue a copy of these terms and conditions to the user by means of transmission of electronic documents.<br>
+                    3. When the company changes the terms and conditions, it is notified to the user by posting the changed terms and conditions before January of the effective date on the payment payment information input screen and the company's website.
+                </p>
+            </div>
+
+            <button class="btnClose">Check it</button>
+        </div>
+    </aside>
+
+    <header>
+        <div>
+            <h1>
+                <a href="index_signIn.html"><img src="images/logo.png" alt="MEGABOX"></a>
+            </h1>
+            <nav>
+                <input type="button" class="material-icons mui" value="menu">
+                <ul>
+                    <li>
+                        <a href="movieMenu_boxoffice.html">
+                            Movie
+                        </a>
+                    </li>
+                    <li>
+                        <a href="reservation01.html">
+                            Reservation
+                        </a>
+                    </li>
+                    <li>
+                        <a href="theater.html">
+                            Theater
+                        </a>
+                    </li>
+                    <li>
+                        <a href="store.html">
+                            Store
+                        </a>
+                    </li>
+                    <li>
+                        <a href="benefit.html">
+                            Benefit
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                            Search
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sideBox">
+                <div>
+                    <span>Shin</span>
+                    <span class="material-icons">account_circle</span>
+                </div>
+                <ul>
+                    <li><a href="myPage_myPagePoint.html">Point of the membership</a></li>
+                    <li><a href="myPage_myPageCoupon.html">Coupon / Ticket</a></li>
+                    <li><a href="myPage_myPageReservation.html">Reservation / Purchase</a></li>
+                    <li><a href="myPage_myPageInterest.html">Content of interest</a></li>
+                    <li><a href="myPage_myPageMyInformation.html">My Megabox</a></li>
+                    <li><a href="index.html">Sign out</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="reservationWrap">
+        <div>
+            <ol class="reservationMenu">
+                <li class="menuAfter"><a href="reservation01.html">01 Running time</a></li>
+                <li class="menuAfter"><a href="reservation02.html">02 people / seat</a></li>
+                <li class="active"><a href="reservation03.html">03 Payment</a></li>
+                <li><a href="reservation04.html">04 Payment completed</a></li>
+            </ol>
+        
+            <div class="payment">
+                <div>
+                    <h2>Reservation information</h2>
+        
+                    <figure>
+                        <div>
+                            <img src="images/venom_poster01.png" alt="Venom: Let There Be Carnage, 2021 poster">
+                        </div>
+                        <figcaption>
+                            <h3>
+                                <mark class="fifteenAge">15</mark>
+                                Venom 2: Let Deer Bee Carnage
+                            </h3>
+                            <span>
+                                date:  
+                                <time datetime="2021-11-26T14:50">21.11.26(Fri)14:50</time>
+                                ~
+                                <time datetime="2021-11-26T16:27">16:27</time>
+                            </span>
+                            <span>Cinema: Konkuk University Entrance Hall 4 Vaccine Pass Hall - 2D</span>
+                            <span>personnel: Adult 1</span>
+                        </figcaption>
+                    </figure>
+                    <div>
+                        seat:
+                        <span>G8, G9</span>
+                    </div>
+                </div>
+
+                <div>
+                    <h2>Payment method </h2>
+                    <ul>
+                        <li>
+                            Megabox Point/Coupon <span class="material-icons">navigate_next</span>
+                            <ol>
+                                <li>
+                                    <a href="#mgMembershipPointPopup" class="btnOpen" data-popName="mgMembershipPoint">Megabox membership point</a>
+                                </li>
+                                <li>
+                                    <a href="#mgDiscountCouponPopup" class="btnOpen" data-popName="mgDiscountCoupon">Megabox discount coupon</a>
+                                </li>
+                                <li>
+                                    <a href="#mgVipCouponPopup" class="btnOpen" data-popName="mgVipCoupon">Megabox VIP movie coupon</a>
+                                </li>
+                            </ol>
+                        </li>
+                        <li class="ticketsMobile">
+                            Tickets/Mobile gift certificates <span class="material-icons">navigate_next</span>
+                            <ol>
+                                <li><a href="#mgMembershipPointPopup" class="btnOpen" data-popName="mgMembershipPoint">Megabox ticket</a></li>
+                                <li><a href="#mgDiscountCouponPopup" class="btnOpen" data-popName="mgDiscountCoupon">Store voucher</a></li>
+                                <li><a href="#mgVipCouponPopup" class="btnOpen" data-popName="mgVipCoupon">Mobile ticket</a></li>
+                                <li><a href="#mgMembershipPointPopup" class="btnOpen" data-popName="mgMembershipPoint">Gmarket reservation ticket</a></li>
+                                <li><a href="#mgDiscountCouponPopup" class="btnOpen" data-popName="mgDiscountCoupon">Book Culture Gift Certificate</a></li>
+                                <li><a href="#mgVipCouponPopup" class="btnOpen" data-popName="mgVipCoupon">Culture Land Mobile Gift Certificate</a></li>
+                                <li><a href="#mgDiscountCouponPopup" class="btnOpen" data-popName="mgMembershipPoint">Face mobile bill</a></li>
+                                <li><a href="#mgDiscountCouponPopup" class="btnOpen" data-popName="mgDiscountCoupon">Platinum / Starcaz/Friends</a></li>
+                                <li><a href="#mgVipCouponPopup" class="btnOpen" data-popName="mgVipCoupon">Megabox Honors Card</a></li>
+                            </ol>
+                            <small>Gifticons, gift shows, eye numbers, smart cones, and donut books you have are available on mobile tickets.</small>
+                        </li>
+                        <li class="affiliatePoints">
+                            Affiliate points <span class="material-icons">navigate_next</span>
+                            <ol>
+                                <li><a href="#mgMembershipPointPopup" class="btnOpen" data-popName="mgMembershipPoint">U+ membersthip</a></li>
+                                <li><a href="#mgDiscountCouponPopup" class="btnOpen" data-popName="mgDiscountCoupon">OK cashback</a></li>
+                                <li><a href="#mgVipCouponPopup" class="btnOpen" data-popName="mgVipCoupon">L.POINT</a></li>
+                                <li><a href="#mgMembershipPointPopup" class="btnOpen" data-popName="mgMembershipPoint">GS&POINT</a></li>
+                                <li><a href="#mgDiscountCouponPopup" class="btnOpen" data-popName="mgDiscountCoupon">Hyundai Oilbank</a></li>
+                                <li><a href="#mgVipCouponPopup" class="btnOpen" data-popName="mgVipCoupon">Happy point</a></li>
+                                <li><a href="#mgMembershipPointPopup" class="btnOpen" data-popName="mgMembershipPoint">Blue members' point</a></li>
+                                <li><a href="#mgDiscountCouponPopup" class="btnOpen" data-popName="mgDiscountCoupon">Central membership</a></li>
+                                <li><a href="#mgVipCouponPopup" class="btnOpen" data-popName="mgVipCoupon">Hyundai M point card</a></li>
+                                <li><a href="#mgMembershipPointPopup" class="btnOpen" data-popName="mgMembershipPoint">Happy money gift certificate Happy cash</a></li>
+                                <li><a href="#mgDiscountCouponPopup" class="btnOpen" data-popName="mgDiscountCoupon">Book Gift Certificate Book & Life Cash</a></li>
+                                <li><a href="#mgVipCouponPopup" class="btnOpen" data-popName="mgVipCoupon">Culture gift certificate Culture Cash</a></li>
+                                <li><a href="#mgMembershipPointPopup" class="btnOpen" data-popName="mgMembershipPoint">Culture Nuri Card</a></li>
+                            </ol>
+                        </li>
+                    </ul>
+        
+                    <div>
+                        Payment method choice
+                        <ul class="methodList">
+                            <li data-tabName="cardMethod">
+                                Credit/check card
+                            </li>
+                            <li data-tabName="phoneMethod">
+                                Paying with your phone
+                            </li>
+                            <li data-tabName="simpleMethod">
+                                Simple payment
+                            </li>
+                        </ul>
+
+                        <div id="cardMethod">
+                            <span>Choose a credit card company</span>
+                            <div>
+                                <span class="textField">
+                                    Choose a card
+                                </span>
+                                <ul class="selectComponent">
+                                    <li>Lotte Card</li>
+                                    <li>KB Card</li>
+                                    <li>Kakao Bank</li>
+                                    <li>Shinhan Card</li>
+                                    <li>Samsung Card</li>
+                                    <li>Hyundai Card</li>
+                                    <li>Hana Card</li>
+                                    <li>KEB Card</li>
+                                    <li>Woori Card</li>
+                                    <li>BC Card</li>
+                                    <li>Citi Card</li>
+                                    <li>NH Card</li>
+                                    <li>Jeonbuk Card</li>
+                                    <li>Gwangju Card</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div id="phoneMethod">
+                            - The amount you paid will be charged in addition to the mobile phone fee of the following month, and the mobile phone payment limit will be applied according to the monthly cumulative usage limit for each company.<br>
+                            - It may be difficult to use from 23:30 p.m. on the last day of every month to 00:10 p.m. next month (40 minutes) as a system inspection time.<br>
+                            - Please refer to the FAQ for additional information related to mobile phone payment.<br>
+                        </div>
+
+                        <div id="simpleMethod">
+                            <ul class="tabMenu">
+                                <li data-tabName="naverPay">
+                                    <input type="radio" name="simple" id="naver">
+                                    <label for="naver">Naver Pay</label>
+                                </li>
+                                <li data-tabName="kakaoPay">
+                                    <input type="radio" name="simple" id="kakao">
+                                    <label for="kakao">Kakao Pay</label>
+                                </li>
+                                <li data-tabName="paycoPay">
+                                    <input type="radio" name="simple" id="payco">
+                                    <label for="payco">Pay. Payco</label>
+                                </li>
+                                <li data-tabName="chaiPay">
+                                    <input type="radio" name="simple" id="chai">
+                                    <label for="chai">Pay. CHAI</label>
+                                </li>
+                            </ul>
+
+                            <p id="naverPay">
+                                - When paying for Naver Pay, benefits such as immediate discount, billing, and card point accumulation provided by Megabox are not available. However, you can receive interest-free and claim-off benefits for each credit card company provided by Naver Pay's simple payment company. <br>
+                                - 1% of the payment amount will be accumulated when paying Naver Pay.
+                            </p>
+
+                            <p id="kakaoPay">
+                                - Immediately discounted credit cards are not applicable.
+                            </p>
+
+                            <p id="paycoPay">
+                                - Immediately discounted credit cards are not applicable.<br>
+                                - An additional 2% of the payment amount will be accumulated when paying for Payco points.
+                            </p>
+
+                            <p id="chaiPay">
+                                - CHAI is a simple payment service that allows you to safely pay with a difference password by registering a bank account.<br>
+                                (It may be difficult to use from 23:30 to 00:30 during the bank inspection time.)<br>
+                                - If you cancel the payment or cancel the partial payment, you will be refunded with Cha Money.<br>
+                                - The payment limit is 2 million won per time.<br>
+                                - For orders that have benefited from the event, partial refunds may not be possible depending on the immediate discount base amount.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h2>make a payment</h2>
+                    <div>
+                        <div class="termsTatal">
+                            <!-- <img src="images/radio_button_unchecked_black_24dp.svg" alt="checkbox"> -->
+                            <input type="checkbox" name="terms" id="totalCheck">
+                            <label for="totalCheck">Agree to the terms and conditions of the payment agency service</label>
+                        </div>
+                        <ul>
+                            <li>
+                                <!-- <img src="images/radio_button_unchecked_black_24dp.svg" alt="checkbox"> -->
+                                <input type="checkbox" name="terms" id="termsChk1">
+                                <label for="termsChk1">
+                                    Terms and conditions of electronic financial transactions
+                                </label>
+                            </li>
+                            <li>
+                                <!-- <img src="images/radio_button_unchecked_black_24dp.svg" alt="checkbox"> -->
+                                <input type="checkbox" name="terms" id="termsChk2">
+                                <label for="termsChk2">
+                                    Information on the collection and use of unique identification information
+                                </label>
+                            </li>
+                            <li>
+                                <!-- <img src="images/radio_button_unchecked_black_24dp.svg" alt="checkbox"> -->
+                                <input type="checkbox" name="terms" id="termsChk3">
+                                <label for="termsChk3">
+                                    Agree to collect and use personal information
+                                </label>
+                            </li>
+                            <li>
+                                <!-- <img src="images/radio_button_unchecked_black_24dp.svg" alt="checkbox"> -->
+                                <input type="checkbox" name="terms" id="termsChk4">
+                                <label for="termsChk4">
+                                    Personal information provided/consigned to a third party
+                                </label>
+                            </li>
+                        </ul>
+                        <a href="#paymentTermsPopup" class="btnOpen" data-popName="paymentTerms">
+                            Checking the terms and conditions
+                            <span class="material-icons">navigate_next</span>
+                        </a>
+                    </div>
+        
+                    <ul>
+                        <li>Commodity amount <span>26,000 won</span></li>
+                        <li>Discount amount <span>- 0 won</span></li>
+                        <li>Payment amount <span>total 26,000 won</span></li>
+                    </ul>
+                    <a href="reservation04.html">Pay for it</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h2>
+            <img src="images/logo.png" alt="MEGABOX">
+        </h2>
+        <ul>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="https://jebo.joonganggroup.com/main.do">Ethical management</a></li>
+        </ul>
+        <div>
+            COPYRIGHT © MegaboxJoongAng, Inc. All rights reserved
+            <address>240 World Cup Road, Mapo-gu, Seoul, 2F above ground (Seongsan-dong, World Cup Main Stadium) ARS <a href="tel:+82215440070">1544-0070</a></address>    
+            Representative name Kim Jin-sun · Cho Sang-yeon, the person in charge of personal information protection  · Business registration number 211-86-59478
+            · Communications sales business report number 833
+        </div>
+    </footer>
+
+</body>
+</html>

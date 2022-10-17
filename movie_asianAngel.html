@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEET PLAY SHARE, MEGABOX</title>
+    <!-- jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- plugin CDN -->
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/fancybox.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    
+    <button class="topBtn">TOP</button>
+
+    <div id="movieSharePopup">
+        <div>
+            <h3>
+                Share it
+                <a class="material-icons btnClose">close</a>
+            </h3>
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/">
+                        <div>
+                            <img src="images/facebook.png" alt="Facebook icon">
+                        </div>
+                        Facebook
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/">
+                        <div>
+                            <img src="images/instagram.png" alt="Instagram icon">
+                        </div>
+                        Instagram
+                    </a>
+                </li>
+                <li>
+                    <a href="https://accounts.kakao.com/login?continue=https://sharer.kakao.com/talk/friends/picker/shortlink/NuuBj%253A%255Df%2540WBV%253CsT_ZrSA5j%253D%255Eiw%253C5hNV%255E1I%2540z%252FotrV4OrFf35%253Au4%253FiPmYP%253DRL0%253Br4">
+                        <div>
+                            <img src="images/kakao-talk.png" alt="Kakao Talk icon">
+                        </div>
+                        Kakao Talk
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="interestPopup">
+        <div>
+            <h3>
+                Notification
+                <i class="material-icons btnClose">close</i>
+            </h3>
+
+            <p>
+                You have been registered as an item of interest.
+            </p>
+
+            <a href="myPage_myPageInterest.html">Going to see it</a>
+        </div>
+    </div>
+    
+    <header>
+        <div>
+            <h1>
+                <a href="index_signIn.html"><img src="images/logo.png" alt="MEGABOX"></a>
+            </h1>
+            <nav>
+                <input type="button" class="material-icons mui" value="menu">
+                <ul>
+                    <li>
+                        <a href="movieMenu_boxoffice.html">
+                            Movie
+                        </a>
+                    </li>
+                    <li>
+                        <a href="reservation01.html">
+                            Reservation
+                        </a>
+                    </li>
+                    <li>
+                        <a href="theater.html">
+                            Theater
+                        </a>
+                    </li>
+                    <li>
+                        <a href="store.html">
+                            Store
+                        </a>
+                    </li>
+                    <li>
+                        <a href="benefit.html">
+                            Benefit
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                            Search
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sideBox">
+                <div>
+                    <span>Shin</span>
+                    <span class="material-icons">account_circle</span>
+                </div>
+                <ul>
+                    <li><a href="myPage_myPagePoint.html">Point of the membership</a></li>
+                    <li><a href="myPage_myPageCoupon.html">Coupon / Ticket</a></li>
+                    <li><a href="myPage_myPageReservation.html">Reservation / Purchase</a></li>
+                    <li><a href="myPage_myPageInterest.html">Content of interest</a></li>
+                    <li><a href="myPage_myPageMyInformation.html">My Megabox</a></li>
+                    <li><a href="index.html">Sign out</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="asianAngelAll">
+        <article>
+            <h2>
+                The Asian Angel
+            </h2>
+            <div>
+                <span>
+                    <mark class="twelveAge">12</mark>
+                    <span>2021</span>
+                    <span>2 hours 8 minutes</span>
+                </span>
+                <span>
+                    Drama
+                </span>
+            </div>
+            <div>
+                <a href="reservation01.html" class="reservationBtn">
+                    <span>
+                        <img src="images/reservation_01.png" alt="Ticket icon"><img src="images/reservation_02.png" alt="Ticket icon">
+                    </span>
+                    Reservation
+                </a>
+                <a href="#interestPopup" class="popupOpen" data-popName="interest">
+                    <i class="material-icons">add</i>
+                </a>
+                <a href="#movieSharePopup" class="btnOpen" data-popName="movieShare">
+                    <i class="material-icons">share</i>
+                </a>
+            </div>
+            <p>
+                Tsuyoshi (Ikematsu Sosuke), who recklessly flew to Korea with his son believing in the words of his brother Toru (Odagirijo), who said he was doing well as a business in Seoul, is on the verge of throwing himself on the unfamiliar street in Seoul overnight because of his brother who was scammed by his partner. 
+            </p>
+        </article>
+    
+    
+        <div class="movieTab">
+            <ul class="tabMenu">
+                <li data-tabName="detailInformation" class="active">Details</li>
+                <li data-tabName="trailerInformation" class="callTheSlider">Trailer</li>
+                <li data-tabName="steelcutInformation">Steelcut</li>
+            </ul>
+    
+            <div>
+                <div class="active detailInformation">
+                    <h3>The Asian Angel</h3>
+                    <div>
+                        <p>
+                            Tsuyoshi (Ikematsu Sosuke), who recklessly flew to Korea with his son believing in the words of his brother Toru (Odagirijo), who said he was doing well as a business in Seoul, is on the verge of throwing himself on the unfamiliar street in Seoul overnight because of his brother who was scammed by his partner. Then Toru seduces Tsuyoshi, who was frustrated by saying that he had a brilliant business item, and heads to Gangneung, and meets three siblings Sol (Choi Hee-seo), Bom (Kim Ye-eun), and Jung-woo (Kim Min-jae) who accidentally appear to be full of stories on the train and accompanies him.
+                            <br>
+                            <br>A fate that happened in a life full of bad luck!
+                            <br>When we were desperate for miracles, we met!
+                        </p>
+                        <ul>
+                            <li>
+                                Running time:
+                                <span>2 hours 8 minutes</span>
+                            </li>
+                            <li>
+                                Release date:
+                                <time datetime="2021-10-28">2021.10.28</time>
+                            </li>
+                            <li>
+                                Genre:
+                                <span>Drama</span>
+                            </li>
+                            <li>
+                                Grade:
+                                <mark class="twelveAge">12</mark>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                Director:
+                                <span>Yuya Ishii</span>
+                            </li>
+                            <li>
+                                Cast:
+                                <ol>
+                                    <li>
+                                        Sosuke Ikematsu
+                                    </li>
+                                    <li>
+                                        Choi Hee Seo
+                                    </li>
+                                    <li>
+                                        Odagiri Joe
+                                    </li>
+                                    <li>
+                                        Kim Min Jae
+                                    </li>
+                                    <li>
+                                        KIM Yae Eun
+                                    </li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="trailerInformation">
+                    <ul class="trailerSlider">
+                        <li id="trailer01">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/V6P2r_Fi0I0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </li>
+                        <li id="trailer02">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/_immXtTtI1E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </li>
+                        <li id="trailer03">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/18WNDWrw_hk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </li>
+                    </ul>
+                    <ol class="customPager">
+                        <li>
+                            <a data-slide-index="0">
+                                <span>Teaser trailer</span>
+                                <img src="images/asianAngel_trailer01.png" alt="Teaser trailer">
+                            </a>
+                        </li>
+                        <li>
+                            <a data-slide-index="1">
+                                <span>Teaser trailer</span>
+                                <img src="images/asianAngel_trailer02.png" alt="Main trailer">
+                            </a>
+                        </li>
+                        <li>
+                            <a data-slide-index="2">
+                                <span>Teaser trailer</span>
+                                <img src="images/asianAngel_trailer03.png" alt="30 seconds trailer">
+                            </a>
+                        </li>
+                    </ol>
+                </div>
+    
+                <div class="steelcutInformation">
+                    <ul>
+                        <li><a href="images/asianAngel_poster01.png" data-fancybox="asianAngelCut"><img src="images/asianAngel_poster01.png" alt="The Asian Angel, 2021 poster"></a></li>
+                        <li><a href="images/asianAngel_stealcut02.png" data-fancybox="asianAngelCut"><img src="images/asianAngel_stealcut02.png" alt="The Asian Angel, 2021 Steal image"></a></li>
+                        <li><a href="images/asianAngel_stealcut07.png" data-fancybox="asianAngelCut"><img src="images/asianAngel_stealcut07.png" alt="The Asian Angel, 2021 Steal image"></a></li>
+                        <li><a href="images/asianAngel_stealcut12.png" data-fancybox="asianAngelCut"><img src="images/asianAngel_stealcut12.png" alt="The Asian Angel, 2021 Steal image"></a></li>
+                        <li><a href="images/asianAngel_stealcut17.png" data-fancybox="asianAngelCut"><img src="images/asianAngel_stealcut17.png" alt="The Asian Angel, 2021 Steal image"></a></li>
+                    </ul>
+                    
+                    <ul>
+                        <li><a href="images/asianAngel_poster02.png" data-fancybox="asianAngelCut"><img src="images/asianAngel_poster02.png" alt="The Asian Angel, 2021 poster"></a></li>
+                        <li><a href="images/asianAngel_stealcut03.png" data-fancybox="asianAngelCut"><img src="images/asianAngel_stealcut03.png" alt="The Asian Angel, 2021 Steal image"></a></li>
+                        <li><a href="images/asianAngel_stealcut08.png" data-fancybox="asianAngelCut"><img src="images/asianAngel_stealcut08.png" alt="The Asian Angel, 2021 Steal image"></a></li>
+                        <li><a href="images/asianAngel_stealcut13.png" data-fancybox="asianAngelCut"><img src="images/asianAngel_stealcut13.png" alt="The Asian Angel, 2021 Steal image"></a></li>
+                        <li><a href="images/asianAngel_stealcut18.png" data-fancybox="asianAngelCut"><img src="images/asianAngel_stealcut18.png" alt="The Asian Angel, 2021 Steal image"></a></li>
+                    </ul>
+                    
+                    <ul>
+                        <li><a href="images/asianAngel_poster02.png" data-fancybox="asianAngelCut"><img src="images/asianAngel_poster02.png" alt="The Asian Angel, 2021 poster"></a></li>
+                        <li><a href="images/asianAngel_stealcut04.png" data-fancybox="asianAngelCut"><img src="images/asianAngel_stealcut04.png" alt="The Asian Angel, 2021 Steal image"></a></li>
+                        <li><a href="images/asianAngel_stealcut09.png" data-fancybox="asianAngelCut"><img src="images/asianAngel_stealcut09.png" alt="The Asian Angel, 2021 Steal image"></a></li>
+                        <li><a href="images/asianAngel_stealcut14.png" data-fancybox="asianAngelCut"><img src="images/asianAngel_stealcut14.png" alt="The Asian Angel, 2021 Steal image"></a></li>
+                    </ul>
+                    
+                    <ul>
+                        <li><a href="images/asianAngel_poster03.png" data-fancybox="asianAngelCut"><img src="images/asianAngel_poster03.png" alt="The Asian Angel, 2021 poster"></a></li>
+                        <li><a href="images/asianAngel_stealcut05.png" data-fancybox="asianAngelCut"><img src="images/asianAngel_stealcut05.png" alt="The Asian Angel, 2021 Steal image"></a></li>
+                        <li><a href="images/asianAngel_stealcut10.png" data-fancybox="asianAngelCut"><img src="images/asianAngel_stealcut10.png" alt="The Asian Angel, 2021 Steal image"></a></li>
+                        <li><a href="images/asianAngel_stealcut15.png" data-fancybox="asianAngelCut"><img src="images/asianAngel_stealcut15.png" alt="The Asian Angel, 2021 Steal image"></a></li>
+                    </ul>
+                    
+                    <ul>
+                        <li><a href="images/asianAngel_stealcut01.png" data-fancybox="asianAngelCut"><img src="images/asianAngel_stealcut01.png" alt="The Asian Angel, 2021 Steal image"></a></li>
+                        <li><a href="images/asianAngel_stealcut06.png" data-fancybox="asianAngelCut"><img src="images/asianAngel_stealcut06.png" alt="The Asian Angel, 2021 Steal image"></a></li>
+                        <li><a href="images/asianAngel_stealcut11.png" data-fancybox="asianAngelCut"><img src="images/asianAngel_stealcut11.png" alt="The Asian Angel, 2021 Steal image"></a></li>
+                        <li><a href="images/asianAngel_stealcut16.png" data-fancybox="asianAngelCut"><img src="images/asianAngel_stealcut16.png" alt="The Asian Angel, 2021 Steal image"></a></li>
+                        <li><a href="images/asianAngel_stealcut19.png" data-fancybox="asianAngelCut"><img src="images/asianAngel_stealcut19.png" alt="The Asian Angel, 2021 Steal image"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h2>
+            <img src="images/logo.png" alt="MEGABOX">
+        </h2>
+        <ul>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="https://jebo.joonganggroup.com/main.do">Ethical management</a></li>
+        </ul>
+        <div>
+            COPYRIGHT © MegaboxJoongAng, Inc. All rights reserved
+            <address>240 World Cup Road, Mapo-gu, Seoul, 2F above ground (Seongsan-dong, World Cup Main Stadium) ARS <a href="tel:+82215440070">1544-0070</a></address>    
+            Representative name Kim Jin-sun · Cho Sang-yeon, the person in charge of personal information protection  · Business registration number 211-86-59478
+            · Communications sales business report number 833
+        </div>
+    </footer>
+</body>
+</html>

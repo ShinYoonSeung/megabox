@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEET PLAY SHARE, MEGABOX</title>
+    <!-- jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- plugin CDN -->
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+
+    <button class="topBtn">TOP</button>
+
+    <header>
+        <div>
+            <h1>
+                <a href="index_signIn.html"><img src="images/logo.png" alt="MEGABOX"></a>
+            </h1>
+            <nav>
+                <input type="button" class="material-icons mui" value="menu">
+                <ul>
+                    <li>
+                        <a href="movieMenu_boxoffice.html">
+                            Movie
+                        </a>
+                    </li>
+                    <li>
+                        <a href="reservation01.html">
+                            Reservation
+                        </a>
+                    </li>
+                    <li>
+                        <a href="theater.html">
+                            Theater
+                        </a>
+                    </li>
+                    <li>
+                        <a href="store.html">
+                            Store
+                        </a>
+                    </li>
+                    <li>
+                        <a href="benefit.html">
+                            Benefit
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                            Search
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sideBox">
+                <div>
+                    <span>Shin</span>
+                    <span class="material-icons">account_circle</span>
+                </div>
+                <ul>
+                    <li><a href="myPage_myPagePoint.html">Point of the membership</a></li>
+                    <li><a href="myPage_myPageCoupon.html">Coupon / Ticket</a></li>
+                    <li><a href="myPage_myPageReservation.html">Reservation / Purchase</a></li>
+                    <li><a href="myPage_myPageInterest.html">Content of interest</a></li>
+                    <li><a href="myPage_myPageMyInformation.html">My Megabox</a></li>
+                    <li><a href="index.html">Sign out</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="reservationWrap">
+        <div>
+            <ol class="reservationMenu">
+                <li class="menuAfter"><a href="reservation01.html">01 Running time</a></li>
+                <li class="active"><a href="reservation02.html">02 people / seat</a></li>
+                <li><a href="reservation03.html">03 Payment</a></li>
+                <li><a href="reservation04.html">04 Payment completed</a></li>
+            </ol>
+        
+            <div class="peopleSeat">
+                <h2>
+                    Seat selection and personnel
+                    <small>The number of available up to eight.</small>
+                </h2>
+        
+                <div>
+                    <figure>
+                        <div>
+                            <img src="images/venom_poster01.png" alt="Venom: Let There Be Carnage, 2021 poster">
+                        </div>
+                        <figcaption>
+                            <h3>
+                                <mark class="fifteenAge">15</mark>
+                                Venom 2: Let Deer Bee Carnage
+                            </h3>
+                            <span>
+                                <time datetime="2021-11-26T14:50">21.11.26(Fri)14:50</time>
+                                to
+                                <time datetime="2021-11-26T16:27">16:27</time>
+                            </span>
+                            <span>Hall 2 (sixth floor position), General</span>
+                        </figcaption>
+                    </figure>
+        
+                    <ul>
+                        <li>
+                            <strong>Adult</strong>
+                            <span class="bxNum" id="adultCount">
+                                <button class="btnMins">minus</button>
+                                <input type="text" class="txtNum" value="0">
+                                <button class="btnPlus">plus</button>
+                            </span>
+                        </li>
+        
+                        <li>
+                            <strong>Teenager</strong>
+                            <span class="bxNum" id="tennaagerCount">
+                                <button class="btnMins">minus</button>
+                                <input type="text" class="txtNum" value="0">
+                                <button class="btnPlus">plus</button>
+                            </span>
+                        </li>
+        
+                        <li>
+                            <strong>Senior</strong>
+                            <span class="bxNum" id="seniorCount">
+                                <button class="btnMins">minus</button>
+                                <input type="text" class="txtNum" value="0">
+                                <button class="btnPlus">plus</button>
+                            </span>
+                        </li>
+                        <li>
+                            <strong>A disabled person</strong>
+                            <span class="bxNum" id="disacledCount">
+                                <button class="btnMins">minus</button>
+                                <input type="text" class="txtNum" value="0">
+                                <button class="btnPlus">plus</button>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+        
+                <div>
+                    <small>Please select a number of people.</small>
+                    <strong>SCREEN</strong>
+                    <div>
+                        <img src="images/seat.png" alt="A seating chart">
+                    </div>
+                    <form>
+                        <ul class="pcSeat">
+                            <li>
+                                <span>A</span>
+                                <div>
+                                    <input type="checkbox" id="a1_1">
+                                    <label for="a1_1">1</label>
+                                    <input type="checkbox" id="a1_2">
+                                    <label for="a1_2">2</label>
+                                    <input type="checkbox" id="a1_3">
+                                    <label for="a1_3">3</label>
+                                    <input type="checkbox" id="a1_4">
+                                    <label for="a1_4">4</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="a2_1">
+                                    <label for="a2_1">5</label>
+                                    <input type="checkbox" id="a2_2">
+                                    <label for="a2_2">6</label>
+                                    <input type="checkbox" id="a2_3">
+                                    <label for="a2_3">7</label>
+                                    <input type="checkbox" id="a2_4">
+                                    <label for="a2_4">8</label>
+                                    <input type="checkbox" id="a2_5">
+                                    <label for="a2_5">9</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="a3_1">
+                                    <label for="a3_1">10</label>
+                                    <input type="checkbox" id="a3_2">
+                                    <label for="a3_2">11</label>
+                                    <input type="checkbox" id="a3_3">
+                                    <label for="a3_3">12</label>
+                                    <input type="checkbox" id="a3_4">
+                                    <label for="a3_4">13</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="a4_1">
+                                    <label for="a4_1">14</label>
+                                    <input type="checkbox" id="a4_2">
+                                    <label for="a4_2">15</label>
+                                    <input type="checkbox" id="a4_3">
+                                    <label for="a4_3">16</label>
+                                    <input type="checkbox" id="a4_4">
+                                    <label for="a4_4">17</label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>B</span>
+                                <div>
+                                    <input type="checkbox" id="b1_1">
+                                    <label for="b1_1">1</label>
+                                    <input type="checkbox" id="b1_2">
+                                    <label for="b1_2">2</label>
+                                    <input type="checkbox" id="b1_3">
+                                    <label for="b1_3">3</label>
+                                    <input type="checkbox" id="b1_4">
+                                    <label for="b1_4">4</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="b2_1">
+                                    <label for="b2_1">5</label>
+                                    <input type="checkbox" id="b2_2">
+                                    <label for="b2_2">6</label>
+                                    <input type="checkbox" id="b2_3">
+                                    <label for="b2_3">7</label>
+                                    <input type="checkbox" id="b2_4">
+                                    <label for="b2_4">8</label>
+                                    <input type="checkbox" id="b2_5">
+                                    <label for="b2_5">9</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="b3_1">
+                                    <label for="b3_1">10</label>
+                                    <input type="checkbox" id="b3_2">
+                                    <label for="b3_2">11</label>
+                                    <input type="checkbox" id="b3_3">
+                                    <label for="b3_3">12</label>
+                                    <input type="checkbox" id="b3_4">
+                                    <label for="b3_4">13</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="b4_1">
+                                    <label for="b4_1">14</label>
+                                    <input type="checkbox" id="b4_2">
+                                    <label for="b4_2">15</label>
+                                    <input type="checkbox" id="b4_3">
+                                    <label for="b4_3">16</label>
+                                    <input type="checkbox" id="b4_4">
+                                    <label for="b4_4">17</label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>C</span>
+                                <div>
+                                    <input type="checkbox" id="c1_1">
+                                    <label for="c1_1">1</label>
+                                    <input type="checkbox" id="c1_2">
+                                    <label for="c1_2">2</label>
+                                    <input type="checkbox" id="c1_3">
+                                    <label for="c1_3">3</label>
+                                    <input type="checkbox" id="c1_4">
+                                    <label for="c1_4">4</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="c2_1">
+                                    <label for="c2_1">5</label>
+                                    <input type="checkbox" id="c2_2">
+                                    <label for="c2_2">6</label>
+                                    <input type="checkbox" id="c2_3">
+                                    <label for="c2_3">7</label>
+                                    <input type="checkbox" id="c2_4">
+                                    <label for="c2_4">8</label>
+                                    <input type="checkbox" id="c2_5">
+                                    <label for="c2_5">9</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="c3_1">
+                                    <label for="c3_1">10</label>
+                                    <input type="checkbox" id="c3_2">
+                                    <label for="c3_2">11</label>
+                                    <input type="checkbox" id="c3_3">
+                                    <label for="c3_3">12</label>
+                                    <input type="checkbox" id="c3_4">
+                                    <label for="c3_4">13</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="c4_1">
+                                    <label for="c4_1">14</label>
+                                    <input type="checkbox" id="c4_2">
+                                    <label for="c4_2">15</label>
+                                    <input type="checkbox" id="c4_3">
+                                    <label for="c4_3">16</label>
+                                    <input type="checkbox" id="c4_4">
+                                    <label for="c4_4">17</label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>D</span>
+                                <div>
+                                    <input type="checkbox" id="d1_1">
+                                    <label for="d1_1">1</label>
+                                    <input type="checkbox" id="d1_2">
+                                    <label for="d1_2">2</label>
+                                    <input type="checkbox" id="d1_3">
+                                    <label for="d1_3">3</label>
+                                    <input type="checkbox" id="d1_4">
+                                    <label for="d1_4">4</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="d2_1">
+                                    <label for="d2_1">5</label>
+                                    <input type="checkbox" id="d2_2">
+                                    <label for="d2_2">6</label>
+                                    <input type="checkbox" id="d2_3">
+                                    <label for="d2_3">7</label>
+                                    <input type="checkbox" id="d2_4">
+                                    <label for="d2_4">8</label>
+                                    <input type="checkbox" id="d2_5">
+                                    <label for="d2_5">9</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="d3_1">
+                                    <label for="d3_1">10</label>
+                                    <input type="checkbox" id="d3_2">
+                                    <label for="d3_2">11</label>
+                                    <input type="checkbox" id="d3_3">
+                                    <label for="d3_3">12</label>
+                                    <input type="checkbox" id="d3_4">
+                                    <label for="d3_4">13</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="d4_1">
+                                    <label for="d4_1">14</label>
+                                    <input type="checkbox" id="d4_2">
+                                    <label for="d4_2">15</label>
+                                    <input type="checkbox" id="d4_3">
+                                    <label for="d4_3">16</label>
+                                    <input type="checkbox" id="d4_4">
+                                    <label for="d4_4">17</label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>E</span>
+                                <div>
+                                    <input type="checkbox" id="e1_1">
+                                    <label for="e1_1">1</label>
+                                    <input type="checkbox" id="e1_2">
+                                    <label for="e1_2">2</label>
+                                    <input type="checkbox" id="e1_3">
+                                    <label for="e1_3">3</label>
+                                    <input type="checkbox" id="e1_4">
+                                    <label for="e1_4">4</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="e2_1">
+                                    <label for="e2_1">5</label>
+                                    <input type="checkbox" id="e2_2">
+                                    <label for="e2_2">6</label>
+                                    <input type="checkbox" id="e2_3">
+                                    <label for="e2_3">7</label>
+                                    <input type="checkbox" id="e2_4">
+                                    <label for="e2_4">8</label>
+                                    <input type="checkbox" id="e2_5">
+                                    <label for="e2_5">9</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="e3_1">
+                                    <label for="e3_1">10</label>
+                                    <input type="checkbox" id="e3_2">
+                                    <label for="e3_2">11</label>
+                                    <input type="checkbox" id="e3_3">
+                                    <label for="e3_3">12</label>
+                                    <input type="checkbox" id="e3_4">
+                                    <label for="e3_4">13</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="e4_1">
+                                    <label for="e4_1">14</label>
+                                    <input type="checkbox" id="e4_2">
+                                    <label for="e4_2">15</label>
+                                    <input type="checkbox" id="e4_3">
+                                    <label for="e4_3">16</label>
+                                    <input type="checkbox" id="e4_4">
+                                    <label for="e4_4">17</label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>F</span>
+                                <div>
+                                    <input type="checkbox" id="f1_1">
+                                    <label for="f1_1">1</label>
+                                    <input type="checkbox" id="f1_2">
+                                    <label for="f1_2">2</label>
+                                    <input type="checkbox" id="f1_3">
+                                    <label for="f1_3">3</label>
+                                    <input type="checkbox" id="f1_4">
+                                    <label for="f1_4">4</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="f2_1">
+                                    <label for="f2_1">5</label>
+                                    <input type="checkbox" id="f2_2">
+                                    <label for="f2_2">6</label>
+                                    <input type="checkbox" id="f2_3">
+                                    <label for="f2_3">7</label>
+                                    <input type="checkbox" id="f2_4">
+                                    <label for="f2_4">8</label>
+                                    <input type="checkbox" id="f2_5">
+                                    <label for="f2_5">9</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="f3_1">
+                                    <label for="f3_1">10</label>
+                                    <input type="checkbox" id="f3_2">
+                                    <label for="f3_2">11</label>
+                                    <input type="checkbox" id="f3_3">
+                                    <label for="f3_3">12</label>
+                                    <input type="checkbox" id="f3_4">
+                                    <label for="f3_4">13</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="f4_1">
+                                    <label for="f4_1">14</label>
+                                    <input type="checkbox" id="f4_2">
+                                    <label for="f4_2">15</label>
+                                    <input type="checkbox" id="f4_3">
+                                    <label for="f4_3">16</label>
+                                    <input type="checkbox" id="f4_4">
+                                    <label for="f4_4">17</label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>G</span>
+                                <div>
+                                    <input type="checkbox" id="g1_1">
+                                    <label for="g1_1">1</label>
+                                    <input type="checkbox" id="g1_2">
+                                    <label for="g1_2">2</label>
+                                    <input type="checkbox" id="g1_3">
+                                    <label for="g1_3">3</label>
+                                    <input type="checkbox" id="g1_4">
+                                    <label for="g1_4">4</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="g2_1">
+                                    <label for="g2_1">5</label>
+                                    <input type="checkbox" id="g2_2">
+                                    <label for="g2_2">6</label>
+                                    <input type="checkbox" id="g2_3">
+                                    <label for="g2_3">7</label>
+                                    <input type="checkbox" id="g2_4">
+                                    <label for="g2_4">8</label>
+                                    <input type="checkbox" id="g2_5">
+                                    <label for="g2_5">9</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="g3_1">
+                                    <label for="g3_1">10</label>
+                                    <input type="checkbox" id="g3_2">
+                                    <label for="g3_2">11</label>
+                                    <input type="checkbox" id="g3_3">
+                                    <label for="g3_3">12</label>
+                                    <input type="checkbox" id="g3_4">
+                                    <label for="g3_4">13</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="g4_1">
+                                    <label for="g4_1">14</label>
+                                    <input type="checkbox" id="g4_2">
+                                    <label for="g4_2">15</label>
+                                    <input type="checkbox" id="g4_3">
+                                    <label for="g4_3">16</label>
+                                    <input type="checkbox" id="g4_4">
+                                    <label for="g4_4">17</label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>H</span>
+                                <div>
+                                    <input type="checkbox" id="h1_1">
+                                    <label for="h1_1">1</label>
+                                    <input type="checkbox" id="h1_2">
+                                    <label for="h1_2">2</label>
+                                    <input type="checkbox" id="h1_3">
+                                    <label for="h1_3">3</label>
+                                    <input type="checkbox" id="h1_4">
+                                    <label for="h1_4">4</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="h2_1">
+                                    <label for="h2_1">5</label>
+                                    <input type="checkbox" id="h2_2">
+                                    <label for="h2_2">6</label>
+                                    <input type="checkbox" id="h2_3">
+                                    <label for="h2_3">7</label>
+                                    <input type="checkbox" id="h2_4">
+                                    <label for="h2_4">8</label>
+                                    <input type="checkbox" id="h2_5">
+                                    <label for="h2_5">9</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="h3_1">
+                                    <label for="h3_1">10</label>
+                                    <input type="checkbox" id="h3_2">
+                                    <label for="h3_2">11</label>
+                                    <input type="checkbox" id="h3_3">
+                                    <label for="h3_3">12</label>
+                                    <input type="checkbox" id="h3_4">
+                                    <label for="h3_4">13</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="h4_1">
+                                    <label for="h4_1">14</label>
+                                    <input type="checkbox" id="h4_2">
+                                    <label for="h4_2">15</label>
+                                    <input type="checkbox" id="h4_3">
+                                    <label for="h4_3">16</label>
+                                    <input type="checkbox" id="h4_4">
+                                    <label for="h4_4">17</label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>I</span>
+                                <div>
+                                    <input type="checkbox" id="i1_1">
+                                    <label for="i1_1">1</label>
+                                    <input type="checkbox" id="i1_2">
+                                    <label for="i1_2">2</label>
+                                    <input type="checkbox" id="i1_3">
+                                    <label for="i1_3">3</label>
+                                    <input type="checkbox" id="i1_4">
+                                    <label for="i1_4">4</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="i2_1">
+                                    <label for="i2_1">5</label>
+                                    <input type="checkbox" id="i2_2">
+                                    <label for="i2_2">6</label>
+                                    <input type="checkbox" id="i2_3">
+                                    <label for="i2_3">7</label>
+                                    <input type="checkbox" id="i2_4">
+                                    <label for="i2_4">8</label>
+                                    <input type="checkbox" id="i2_5">
+                                    <label for="i2_5">9</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="i3_1">
+                                    <label for="i3_1">10</label>
+                                    <input type="checkbox" id="i3_2">
+                                    <label for="i3_2">11</label>
+                                    <input type="checkbox" id="i3_3">
+                                    <label for="i3_3">12</label>
+                                    <input type="checkbox" id="i3_4">
+                                    <label for="i3_4">13</label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>J</span>
+                                <div>
+                                    <input type="checkbox" id="j1_1">
+                                    <label for="j1_1">1</label>
+                                    <input type="checkbox" id="j1_2">
+                                    <label for="j1_2">2</label>
+                                    <input type="checkbox" id="j1_3">
+                                    <label for="j1_3">3</label>
+                                    <input type="checkbox" id="j1_4">
+                                    <label for="j1_4">4</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="j2_1">
+                                    <label for="j2_1">5</label>
+                                    <input type="checkbox" id="j2_2">
+                                    <label for="j2_2">6</label>
+                                    <input type="checkbox" id="j2_3">
+                                    <label for="j2_3">7</label>
+                                    <input type="checkbox" id="j2_4">
+                                    <label for="j2_4">8</label>
+                                    <input type="checkbox" id="j2_5">
+                                    <label for="j2_5">9</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="j3_1">
+                                    <label for="j3_1">10</label>
+                                    <input type="checkbox" id="j3_2">
+                                    <label for="j3_2">11</label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>K</span>
+                                <div>
+                                    <input type="checkbox" id="k1_1">
+                                    <label for="k1_1">1</label>
+                                    <input type="checkbox" id="k1_2">
+                                    <label for="k1_2">2</label>
+                                    <input type="checkbox" id="k1_3">
+                                    <label for="k1_3">3</label>
+                                    <input type="checkbox" id="k1_4">
+                                    <label for="k1_4">4</label>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul>
+                            <li><mark>Choice</mark>Choice</li>
+                            <li><mark>Reservation completed</mark>Reservation completed</li>
+                            <li><mark>Unselectable seat</mark>Unselectable seat</li>
+                            <li><mark>Spacing seats</mark>Spacing seats</li>
+                            <li><mark>General Seat</mark>General Seat</li>
+                        </ul>
+
+                        <ul class="mbtabSeat">
+                            <li>
+                                <span class="rowTextField">
+                                    choice the ROW
+                                </span>
+                                <i class="material-icons">navigate_next</i>
+                                <ol class="rowList">
+                                    <li data-tabName="fistColumn">A</li>
+                                    <li data-tabName="fistColumn">B</li>
+                                    <li data-tabName="fistColumn">C</li>
+                                    <li data-tabName="fistColumn">D</li>
+                                    <li data-tabName="fistColumn">E</li>
+                                    <li data-tabName="fistColumn">F</li>
+                                    <li data-tabName="fistColumn">G</li>
+                                    <li data-tabName="fistColumn">H</li>
+                                    <li data-tabName="secondColumn">I</li>
+                                    <li data-tabName="thirdColumn">J</li>
+                                    <li data-tabName="fourthColumn">K</li>
+                                </ol>
+                            </li>
+                            <li>
+                                <span class="columnTextField">
+                                    choice the COLUMN
+                                </span>
+                                <i class="material-icons">navigate_next</i>
+                                <ol class="active fistColumn">
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                    <li>6</li>
+                                    <li>7</li>
+                                    <li>8</li>
+                                    <li>9</li>
+                                    <li>10</li>
+                                    <li>11</li>
+                                    <li>12</li>
+                                    <li>13</li>
+                                    <li>14</li>
+                                    <li>15</li>
+                                    <li>16</li>
+                                    <li>17</li>
+                                </ol>
+                                <ol class="secondColumn">
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                    <li>6</li>
+                                    <li>7</li>
+                                    <li>8</li>
+                                    <li>9</li>
+                                    <li>10</li>
+                                    <li>11</li>
+                                    <li>12</li>
+                                    <li>13</li>
+                                </ol>
+                                <ol class="thirdColumn">
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                    <li>6</li>
+                                    <li>7</li>
+                                    <li>8</li>
+                                    <li>9</li>
+                                    <li>10</li>
+                                    <li>11</li>
+                                </ol>
+                                <ol class="fourthColumn">
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+                
+                <div>
+                    <div>
+                        <label for="totalPrice">total sum</label>
+                        <input type="text" id="totalPrice" readonly value="0"> won
+                    </div>
+                    <a href="reservation03.html">make a payment</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h2>
+            <img src="images/logo.png" alt="MEGABOX">
+        </h2>
+        <ul>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="https://jebo.joonganggroup.com/main.do">Ethical management</a></li>
+        </ul>
+        <div>
+            COPYRIGHT © MegaboxJoongAng, Inc. All rights reserved
+            <address>240 World Cup Road, Mapo-gu, Seoul, 2F above ground (Seongsan-dong, World Cup Main Stadium) ARS <a href="tel:+82215440070">1544-0070</a></address>    
+            Representative name Kim Jin-sun · Cho Sang-yeon, the person in charge of personal information protection  · Business registration number 211-86-59478
+            · Communications sales business report number 833
+        </div>
+    </footer>
+
+</body>
+</html>

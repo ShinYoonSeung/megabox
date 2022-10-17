@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEET PLAY SHARE, MEGABOX</title>
+    <!-- jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- plugin CDN -->
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+
+    <button class="topBtn">TOP</button>
+
+    <div id="myTheaterPopup">
+        <div>
+            <h2>
+                My movie theater setting
+            </h2>
+            
+            <div>
+                <p>
+                    ·The first registered movie theater will be set as the representative preferred movie theater.<br>
+                    ·If you register your favorite movie theater as My movie theater, you can receive a variety of customized information such as various benefits, events, previews, and stage greetings provided by the movie theater you registered.
+                </p>
+                <ul class="theaterChoice">
+                    <li>
+                        <i class="material-icons">add</i>
+                        <span>1st</span>
+                    </li>
+                    <li>
+                        <i class="material-icons">add</i>
+                        <span>2nd</span>
+                    </li>
+                    <li>
+                        <i class="material-icons">add</i>
+                        <span>3rd</span>
+                    </li>
+                </ul>
+        
+                <ul class="theaterList">
+                    <li class="active">
+                        Seoul
+                        <ol>
+                            <li>
+                                Gangnam
+                            </li>
+                            <li>
+                                Gangnam-daero(City)
+                            </li>
+                            <li>
+                                Gangdong
+                            </li>
+                            <li>
+                                Gunja
+                            </li>
+                            <li>
+                                Dongdaemun
+                            </li>
+                            <li>
+                                Magok
+                            </li>
+                            <li>
+                                Mokdong
+                            </li>
+                            <li>
+                                Sangbong
+                            </li>
+                            <li>
+                                Samam World Cup Stadium
+                            </li>
+                            <li>
+                                Seongsu
+                            </li>
+                            <li>
+                                Central
+                            </li>
+                            <li>
+                                Songpa Park Habio
+                            </li>
+                            <li>
+                                Sinchon
+                            </li>
+                            <li>
+                                Isu
+                            </li>
+                            <li>
+                                Changdong
+                            </li>
+                            <li>
+                                COEX
+                            </li>
+                            <li>
+                                Hongdae
+                            </li>
+                            <li>
+                                Hwagok
+                            </li>
+                            <li>
+                                ARTNINE
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        Gyeonggi
+                        <ol>
+                            <li>
+                                Goyang Starfield
+                            </li>
+                            <li>
+                                Gwangmyeong AK Plaza
+                            </li>
+                            <li>
+                                Gimpo Han River New Town
+                            </li>
+                            <li>
+                                Namyangju
+                            </li>
+                            <li>
+                                Namyangju Hyundai Outlet Space One
+                            </li>
+                            <li>
+                                Dongchan
+                            </li>
+                            <li>
+                                Misa Riverside
+                            </li>
+                            <li>
+                                Baekseok
+                            </li>
+                            <li>
+                                Byeolnae
+                            </li>
+                            <li>
+                                Bucheon Starfield City
+                            </li>
+                            <li>
+                                Bundang
+                            </li>
+                            <li>
+                                Suwon
+                            </li>
+                            <li>
+                                Suwon Nammun
+                            </li>
+                            <li>
+                                Siheung Baegot-dong
+                            </li>
+                            <li>
+                                Ansan Central
+                            </li>
+                            <li>
+                                Anseong Starfield
+                            </li>
+                            <li>
+                                Yangju
+                            </li>
+                            <li>
+                                Yeongtong
+                            </li>
+                            <li>
+                                Yongin Giheung
+                            </li>
+                            <li>
+                                Yongin Techno Valley
+                            </li>
+                            <li>
+                                Uijeongbu Minrak
+                            </li>
+                            <li>
+                                Ilsan
+                            </li>
+                            <li>
+                                Ilsan Bellacita
+                            </li>
+                            <li>
+                                KINTEX
+                            </li>
+                            <li>
+                                Paju Geumchon
+                            </li>
+                            <li>
+                                Paju Woonjung
+                            </li>
+                            <li>
+                                Paju Publishing City
+                            </li>
+                            <li>
+                                Hanam Starfield
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        Incheon
+                        <ol>
+                            <li>
+                                Sword-dan
+                            </li>
+                            <li>
+                                Songdo
+                            </li>
+                            <li>
+                                Yeongjong
+                            </li>
+                            <li>
+                                Incheon Nonhyeon
+                            </li>
+                            <li>
+                                Blue-green gel
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        Daejeon / Chungcheong / Sejong
+                        <ol>
+                            <li>
+                                Gongju
+                            </li>
+                            <li>
+                                Nonsan
+                            </li>
+                            <li>
+                                Daejeon
+                            </li>
+                            <li>
+                                Daejeon Shinsegae Art & Science
+                            </li>
+                            <li>
+                                Daejeon meteors
+                            </li>
+                            <li>
+                                Daejeon Jungang-ro
+                            </li>
+                            <li>
+                                Daejeon Hyundai Outlet
+                            </li>
+                            <li>
+                                Sejong (Chochiwon)
+                            </li>
+                            <li>
+                                Sejong Naseong
+                            </li>
+                            <li>
+                                Sejong Cheongsa
+                            </li>
+                            <li>
+                                Oh Chang
+                            </li>
+                            <li>
+                                Jecheon
+                            </li>
+                            <li>
+                                Jincheon
+                            </li>
+                            <li>
+                                Cheonan
+                            </li>
+                            <li>
+                                Cheongju Sangsa
+                            </li>
+                            <li>
+                                Chungju
+                            </li>
+                            <li>
+                                Hongseong Naepo
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        Busan / Daegu / Gyeongsang
+                        <ol>
+                            <li>
+                                Gyeongbok City Hall
+                            </li>
+                            <li>
+                                Gyeongsan Hayang-dong
+                            </li>
+                            <li>
+                                Gumi Gangdong
+                            </li>
+                            <li>
+                                Gimcheon
+                            </li>
+                            <li>
+                                Nampo Port
+                            </li>
+                            <li>
+                                Daegu (Chilsung-ro)
+                            </li>
+                            <li>
+                                Daegu Shinsegae (Dongdaegu)
+                            </li>
+                            <li>
+                                Daegu isia
+                            </li>
+                            <li>
+                                Deokcheon
+                            </li>
+                            <li>
+                                Masan
+                            </li>
+                            <li>
+                                Moonkyung
+                            </li>
+                            <li>
+                                Busan Theater
+                            </li>
+                            <li>
+                                Pusan National University
+                            </li>
+                            <li>
+                                Bukdaegu (Chilgok)
+                            </li>
+                            <li>
+                                Samcheonpo
+                            </li>
+                            <li>
+                                Yangsan
+                            </li>
+                            <li>
+                                Yangsan Lafiesta
+                            </li>
+                            <li>
+                                Ulsan
+                            </li>
+                            <li>
+                                Jeonggwan
+                            </li>
+                            <li>
+                                Changwon
+                            </li>
+                            <li>
+                                Changwon Naeseo
+                            </li>
+                            <li>
+                                Haeundae (Jangsan)
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        Gwangju / Jeolla
+                        <ol>
+                            <li>
+                                Gwangju Sangmu
+                            </li>
+                            <li>
+                                Gwangju Hanam
+                            </li>
+                            <li>
+                                Mokpo Hadang(Formo)
+                            </li>
+                            <li>
+                                Songcheon
+                            </li>
+                            <li>
+                                Suncheon
+                            </li>
+                            <li>
+                                Yeosu Ungcheon
+                            </li>
+                            <li>
+                                Jondae (Gwangju)
+                            </li>
+                            <li>
+                                Jeonju Hyuksi
+                            </li>
+                            <li>
+                                Cheomdan
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        Gangwon
+                        <ol>
+                            <li>
+                                Namchuncheon
+                            </li>
+                            <li>
+                                Sokcho
+                            </li>
+                            <li>
+                                Wonju
+                            </li>
+                            <li>
+                                Central
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+    
+            <div>
+                <button class="btnClose">Cancellation</button>
+                <button class="btnClose">Completion</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="mobileTicketPopup">
+        <div>
+            <h3>
+                <span>
+                    Get tickets right away on your cell phone
+                </span>
+                <i class="material-icons btnClose">close</i>
+            </h3>
+            
+            <div>
+                <p>
+                    · Tike is sent only through Kakao Talk.<br>
+                    Please enter the mobile phone number you want to receive. (You can send it twice per reservation)<br>
+                    · The reception number cannot be changed.<br>
+                    · If you enter the wrong number, please enter through the mobile bar ticket or print out the ticket on site through the reservation number.<br>
+                    · If you block Megabox Kakao Notification Talk or do not install Kakao Talk, the reservation details will be switched to SNS.
+                </p>
+                
+                <div>
+                    <label for="onlyNum">Cell phone number</label>
+                    <input type="text" id="onlyNum" placeholder="Please enter your mobile phone number (-omitted)">
+                </div>
+        
+                <div>
+                    <input type="checkbox" id="consentChk">
+                    <label for="consentChk" class="consentChk">
+                        Consent to collecting personal information
+                    </label>
+                    <p>
+                        Purpose: Send the ticket right away
+                        <strong>
+                            Collection item: Cell phone number
+                        </strong>
+                        <strong>
+                            Retention period: 70 days of storage and 5 years of storage separately
+                        </strong>
+                        You may refuse to agree, but in this case, you cannot use the ticket sending service immediately.
+                    </p>
+                </div>
+            </div>
+    
+            <div>
+                <button class="btnClose">Cancellation</button>
+                <button class="btnClose">Check</button>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div>
+            <h1>
+                <a href="index_signIn.html"><img src="images/logo.png" alt="MEGABOX"></a>
+            </h1>
+            <nav>
+                <input type="button" class="material-icons mui" value="menu">
+                <ul>
+                    <li>
+                        <a href="movieMenu_boxoffice.html">
+                            Movie
+                        </a>
+                    </li>
+                    <li>
+                        <a href="reservation01.html">
+                            Reservation
+                        </a>
+                    </li>
+                    <li>
+                        <a href="theater.html">
+                            Theater
+                        </a>
+                    </li>
+                    <li>
+                        <a href="store.html">
+                            Store
+                        </a>
+                    </li>
+                    <li>
+                        <a href="benefit.html">
+                            Benefit
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                            Search
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sideBox">
+                <div>
+                    <span>Shin</span>
+                    <span class="material-icons">account_circle</span>
+                </div>
+                <ul>
+                    <li><a href="myPage_myPagePoint.html">Point of the membership</a></li>
+                    <li><a href="myPage_myPageCoupon.html">Coupon / Ticket</a></li>
+                    <li><a href="myPage_myPageReservation.html">Reservation / Purchase</a></li>
+                    <li><a href="myPage_myPageInterest.html">Content of interest</a></li>
+                    <li><a href="myPage_myPageMyInformation.html">My Megabox</a></li>
+                    <li><a href="index.html">Sign out</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <div class="myPageAll">
+        <section>
+            <div>
+                <div>
+                    <h2>
+                        Nice to meet you,
+                        <span>Shin</span>
+                    </h2>
+                    <figure>
+                        <div>
+                            <img src="images/general_icon.png" alt="Rating general icon">
+                            <span>
+                                2021 Rating
+                                <mark>General</mark>
+                            </span>
+                        </div>
+    
+                        <figcaption>
+                            <h3>
+                                VIP Selection Activity  
+                            </h3>
+                            <ul>
+                                <li>
+                                    Watching Different Movies
+                                    <mark>Part 0</mark>
+                                </li>
+                                <li>
+                                    Old Point
+                                    <mark>0 P</mark>
+                                </li>
+                                <li>
+                                    New point
+                                    <mark>0 P</mark>
+                                    <ol>
+                                        <li>
+                                            - Ticket
+                                            <mark>0 P</mark>
+                                        </li>
+                                        <li>
+                                            - A company store
+                                            <mark>0 P</mark>
+                                        </li>
+                                        <li>
+                                            - Event
+                                            <mark>0 P</mark>
+                                        </li>
+                                    </ol>
+                                </li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+    
+                    <div>
+                        <span>
+                            POINT
+                            <mark>100 P</mark>
+                        </span>
+                        <span>
+                            Coupons / Tickets
+                            <mark>0</mark>
+                        </span>
+                    </div>
+                </div>
+    
+                <div>
+                    <h2>
+                        MY movie theater
+                        <a href="#myTheaterPopup" class="btnOpen" data-popName="myTheater"><i class="material-icons">settings</i></a>
+                    </h2>
+                    <ul>
+                        <li>
+                            <a href="#myTheaterPopup" class="btnOpen" data-popName="myTheater">
+                                1st
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#myTheaterPopup" class="btnOpen" data-popName="myTheater">
+                                2nd
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#myTheaterPopup" class="btnOpen" data-popName="myTheater">
+                                3rd
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>  
+
+        <section>
+            <h2>myPageDetail</h2>
+
+            <ul>
+                <li><a href="myPage_myPagePoint.html">Point of the membership</a></li><li>
+                    <a href="myPage_myPageCoupon.html">Coupon / Ticket</a></li><li class="active">
+                        <a href="myPage_myPageReservation.html">Reservation / Purchase</a></li><li>
+                            <a href="myPage_myPageInterest.html">Content oft interest</a></li><li>
+                                <a href="myPage_myPageMyInformation.html">My Information Management</a></li>
+            </ul>
+
+            <div class="reservationDetail">
+                <ul class="tabMenu">
+                    <li data-tabName="reservationInformation" class="active">Reservation details</li>
+                    <li data-tabName="giftInformation">Purchase / Gift details</li>
+                    <li data-tabName="cancellationInformation">Cancellation details</li>
+                </ul>
+
+                <div class="active reservationInformation">
+                    <span>
+                        <i class="material-icons">error_outline</i>
+                        Only information can be inquired within the last 70 days.
+                    </span>
+
+                    <div class="reservationList">
+                        <ul>
+                            <li>
+                                <time datetime="2021-11-25">2021. 11. 25 (Thu)</time>
+                                <button>Button</button>
+                                <div>
+                                    <dl>
+                                        <dt>The future of 10 months(2D)</dt>
+                                        <dd>13,000won</dd>
+                                        <dd>Reserva tion No. 10982112</dd>
+                                        <dd>You can cancel it.</dd>
+                                    </dl>
+                                    <div>
+                                        <figure>
+                                            <div>
+                                                <img src="images/tenMonths_poster01.png" alt="Ten Months, 2020 poster">
+                                            </div>
+                                            <figcaption>
+                                                <h4>
+                                                    Reservation number
+                                                    <span>15285467</span>
+                                                </h4>
+                                                <dl>
+                                                    <dt>Screening date and time</dt>
+                                                    <dd>
+                                                        <time datetime="2021-11-26T14:50">2021-11-26 (Friday) 14:50</time>
+                                                        ~
+                                                        <time datetime="2021-11-26T16:27">16:27</time>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>The theater</dt>
+                                                    <dd>Konkuk University Entrance Hall 4</dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>The number of viewers</dt>
+                                                    <dd>Adult 2</dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>Seat</dt>
+                                                    <dd>G12, G13</dd>
+                                                </dl>
+        
+                                                <div>
+                                                    <a href="#mobileTicketPopup"  class="btnOpen" data-popName="mobileTicket">Get tickets right away on your cell phone</a>
+                                                    <button>Cancel the payment</button>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+        
+                                        <span>
+                                            Payment date and time
+                                            <time datetime="2021-11-24T03:23">2021-11-24 3:23:48 pm</time>
+                                        </span>
+        
+                                        <form>
+                                            <fieldset>
+                                                <div>
+                                                    <label for="order02">Order amount</label>
+                                                    <input type="text" id="order02" value="11,000" readonly>
+                                                    <span>won</span>
+                                                    <i class="material-icons">remove</i>
+                                                </div>
+                                                <div>
+                                                    <label for="discount02">Discount amount</label>
+                                                    <input type="text" id="discount02" value="0" readonly>
+                                                    <span>won</span>
+                                                    <i class="material-icons">drag_handle</i>
+                                                </div>
+                                                <div>
+                                                    <label for="total02">Total payment amount</label>
+                                                    <input type="text" id="total02" value="11,000" readonly>
+                                                    <span>won</span>
+                                                </div>
+                                            </fieldset>
+                                            <div>
+                                                <mark>Credit card</mark>Kakao Pay online
+                                                <!-- a tag -->
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <i class="material-icons">navigate_next</i>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="giftInformation">
+                    <span>
+                        <i class="material-icons">error_outline</i>
+                        Purchase/gift details do not exist.
+                    </span>
+                </div>
+
+                <div class="cancellationInformation">
+                    <span>
+                        <i class="material-icons">error_outline</i>
+                        Only information can be inquired within the last 70 days.
+                    </span>
+
+                    <div class="reservationList">
+                        <ul>
+                            <li>
+                                <time datetime="2021-12-08">2021. 11. 25 (Thu)</time>
+                                <button>Button</button>
+                                <div>
+                                    <dl>
+                                        <dt>General ticket</dt>
+                                        <dd>11,000won</dd>
+                                        <dd>Purchase No. 109821120890000084</dd>
+                                        <dd>2021.11.25 Cancellation completed</dd>
+                                    </dl>
+                                    <div>
+                                        <figure>
+                                            <div>
+                                                <img src="images/store_megaticket_01.png" alt="[2021] General admission ticket (2D)">
+                                            </div>
+                                            <figcaption>
+                                                <h4>
+                                                    Reservation number
+                                                    <span>15285467</span>
+                                                </h4>
+                                                <dl>
+                                                    <dt>Product name</dt>
+                                                    <dd>2D general ticket</dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>Period of use</dt>
+                                                    <dd>
+                                                        Online tickets
+                                                        <br>2021-12-08 to 2023-12-10
+                                                    </dd>
+                                                </dl>
+                                            </figcaption>
+                                        </figure>
+        
+                                        <span>
+                                            Payment date and time
+                                            <time datetime="2021-11-24T03:23">2021-11-24 3:23:48 pm</time>
+                                        </span>
+        
+                                        <form>
+                                            <fieldset>
+                                                <div>
+                                                    <label for="order">Order amount</label>
+                                                    <input type="text" id="order" value="11,000" readonly>
+                                                    <span>won</span>
+                                                    <i class="material-icons">remove</i>
+                                                </div>
+                                                <div>
+                                                    <label for="discount">Discount amount</label>
+                                                    <input type="text" id="discount" value="0" readonly>
+                                                    <span>won</span>
+                                                    <i class="material-icons">drag_handle</i>
+                                                </div>
+                                                <div>
+                                                    <label for="total">Total payment amount</label>
+                                                    <input type="text" id="total" value="11,000" readonly>
+                                                    <span>won</span>
+                                                </div>
+                                            </fieldset>
+                                            <div>
+                                                <mark>Credit card</mark>Kakao Pay online
+                                                <!-- a tag -->
+                                            </div>
+                                        </form>
+        
+                                        <span>
+                                            Cancellation date and time
+                                            <time datetime="2021-11-25T01:45">2021-11-25 1:45:19 pm</time>
+                                        </span>
+                                    </div>
+                                    <i class="material-icons">navigate_next</i>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <h2>
+            <img src="images/logo.png" alt="MEGABOX">
+        </h2>
+        <ul>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="https://jebo.joonganggroup.com/main.do">Ethical management</a></li>
+        </ul>
+        <div>
+            COPYRIGHT © MegaboxJoongAng, Inc. All rights reserved
+            <address>240 World Cup Road, Mapo-gu, Seoul, 2F above ground (Seongsan-dong, World Cup Main Stadium) ARS <a href="tel:+82215440070">1544-0070</a></address>    
+            Representative name Kim Jin-sun · Cho Sang-yeon, the person in charge of personal information protection  · Business registration number 211-86-59478
+            · Communications sales business report number 833
+        </div>
+    </footer>
+
+</body>
+</html>

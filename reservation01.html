@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEET PLAY SHARE, MEGABOX</title>
+    <!-- jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- plugin CDN -->
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+
+    <button class="topBtn">TOP</button>
+
+    <header>
+        <div>
+            <h1>
+                <a href="index_signIn.html"><img src="images/logo.png" alt="MEGABOX"></a>
+            </h1>
+            <nav>
+                <input type="button" class="material-icons mui" value="menu">
+                <ul>
+                    <li>
+                        <a href="movieMenu_boxoffice.html">
+                            Movie
+                        </a>
+                    </li>
+                    <li>
+                        <a href="reservation01.html">
+                            Reservation
+                        </a>
+                    </li>
+                    <li>
+                        <a href="theater.html">
+                            Theater
+                        </a>
+                    </li>
+                    <li>
+                        <a href="store.html">
+                            Store
+                        </a>
+                    </li>
+                    <li>
+                        <a href="benefit.html">
+                            Benefit
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                            Search
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sideBox">
+                <div>
+                    <span>Shin</span>
+                    <span class="material-icons">account_circle</span>
+                </div>
+                <ul>
+                    <li><a href="myPage_myPagePoint.html">Point of the membership</a></li>
+                    <li><a href="myPage_myPageCoupon.html">Coupon / Ticket</a></li>
+                    <li><a href="myPage_myPageReservation.html">Reservation / Purchase</a></li>
+                    <li><a href="myPage_myPageInterest.html">Content of interest</a></li>
+                    <li><a href="myPage_myPageMyInformation.html">My Megabox</a></li>
+                    <li><a href="index.html">Sign out</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="reservationWrap">
+        <div>
+            <ol class="reservationMenu">
+                <li class="active"><a href="reservation01.html">01 Running time</a></li>
+                <li><a href="reservation02.html">02 people / seat</a></li>
+                <li><a href="reservation03.html">03 Payment</a></li>
+                <li><a href="reservation04.html">04 Payment completed</a></li>
+            </ol>
+            <div class="runningTime">
+                <div>
+                    <h2>Movie theater</h2>
+                    <ul class="tabMenu rpert">
+                        <li data-tabName="entireTheater" class="active">
+                            The entire
+                        </li>
+                        <li data-tabName="specialTheater">
+                            Special Hall
+                        </li>
+                    </ul>
+                    <ul class="active" id="entireTheater">
+                        <li class="active">
+                            Seoul (19)
+                            <ol>
+                                <li>Gangnam</li>
+                                <li>Gangnam-daero(City)</li>
+                                <li>Gangdong</li>
+                                <li>Gunja</li>
+                                <li>Dongdaemun</li>
+                                <li>Magok</li>
+                                <li>Mokdong</li>
+                                <li>Reunion</li>
+                                <li>Sangam World Cup Stadium</li>
+                                <li>Seongsu</li>
+                                <li>Central</li>
+                                <li>Songpa Park Habio</li>
+                                <li>Sinchon</li>
+                                <li>Isu</li>
+                                <li>Changdong</li>
+                                <li>COEX</li>
+                                <li>Hongdae</li>
+                                <li>Hwagok (A Korean traditional song)</li>
+                                <li>ARTNINE</li>
+                            </ol>
+                        </li>
+                        <li>
+                            Gyeonggi (28)
+                            <ol>
+                                <li>Goyang Starfield</li>
+                                <li>Gwangmyeong AK Plaza</li>
+                                <li>Gimpo Han River New Town</li>
+                                <li>Namyangju</li>
+                                <li>Namyangju Hyundai Outlet Space One</li>
+                                <li>Dongtan</li>
+                                <li>Misa Riverside</li>
+                                <li>Baekseok</li>
+                                <li>Byeolnae</li>
+                                <li>Bucheon Starfield City</li>
+                                <li>Bundang</li>
+                                <li>Suwon</li>
+                                <li>Suwon Nammun</li>
+                                <li>Siheung Baegot</li>
+                                <li>Ansan Central</li>
+                                <li>Anseong Starfield</li>
+                                <li>Yangju</li>
+                                <li>Yeongtong</li>
+                                <li>Yongin Giheung</li>
+                                <li>Yongin Techno Valley</li>
+                                <li>Uijeongbu Minrak</li>
+                                <li>Ilsan</li>
+                                <li>Ilsan Bellacita</li>
+                                <li>KINTEX</li>
+                                <li>Paju Geumchon</li>
+                                <li>Paju Woonjung</li>
+                                <li>Paju Publishing City</li>
+                                <li>Hanam Starfield</li>
+                            </ol>
+                        </li>
+                        <li>
+                            Incheon (5)
+                            <ol>
+                                <li>Geomdan</li>
+                                <li>Songdo</li>
+                                <li>Yeongjong</li>
+                                <li>Incheon Nonhyeon</li>
+                                <li>Blue-green gel</li>
+                            </ol>
+                        </li>
+                        <li>
+                            Daejeon/Chungcheong/Sejong (17)
+                            <ol>
+                                <li>Gongju</li>
+                                <li>Nonsan</li>
+                                <li>Daejeon</li>
+                                <li>Daejeon Shinsegae Art & Science</li>
+                                <li>Daejeon meteors</li>
+                                <li>Daejeon Jungang-ro</li>
+                                <li>Daejeon Hyundai Outlet</li>
+                                <li>Sejong (Chochiwon)</li>
+                                <li>Sejong Naseong</li>
+                                <li>Sejong Government Complex</li>
+                                <li>Oh Chang</li>
+                                <li>Jecheon</li>
+                                <li>Jincheon</li>
+                                <li>Cheonan</li>
+                                <li>Cheongju brothel</li>
+                                <li>Chungju</li>
+                                <li>Hongseong Naepo</li>
+                            </ol>
+                        </li>
+                        <li>
+                            Busan/Daegu/Gyeongsang (22)
+                            <ol>
+                                <li>Gyeongbuk Provincial Office</li>
+                                <li>Gyeongsan Hayang</li>
+                                <li>Gumi Gangdong</li>
+                                <li>Gimcheon</li>
+                                <li>Nampo Port</li>
+                                <li>Daegu (Chilsung-ro)</li>
+                                <li>Daegu New World (Dongdaegu)</li>
+                                <li>Daegu isia</li>
+                                <li>Deokcheon</li>
+                                <li>Masan</li>
+                                <li>Moonkyung</li>
+                                <li>Busan Theater</li>
+                                <li>Pusan National University</li>
+                                <li>Bukdaegu (Chilgok)</li>
+                                <li>Samcheonpo</li>
+                                <li>Yangsan</li>
+                                <li>Yangsan Lafiesta</li>
+                                <li>Ulsan</li>
+                                <li>Jeonggwan-dong</li>
+                                <li>Changwon</li>
+                                <li>Changwon Naeseo</li>
+                                <li>Haeundae (Jangsan)</li>
+                            </ol>
+                        </li>
+                        <li>
+                            Gwangju/Jeonla (9)
+                            <ol>
+                                <li>Gwangju Sangmu</li>
+                                <li>Gwangju Hanam</li>
+                                <li>Mokpo Hadang (Formo)</li>
+                                <li>Songcheon</li>
+                                <li>Suncheon</li>
+                                <li>Yeosu Ungcheon</li>
+                                <li>Jondae-dong (Gwangju)</li>
+                                <li>Jeonju Innovation</li>
+                                <li>Cheomdan</li>
+                            </ol>
+                        </li>
+                        <li>
+                            Gangwon(4)
+                            <ol>
+                                <li>Namchuncheon</li>
+                                <li>Sokcho</li>
+                                <li>Wonju</li>
+                                <li>Wonju Central</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <ul id="specialTheater">
+                        <li>
+                            Dolby Cinema(4)
+                            <ol>
+                                <li>Namyangju Hyundai Outlet Space One</li>
+                                <li>Daejeon Shinsegae Art & Science</li>
+                                <li>Anseong Starfield</li>
+                                <li>COEX</li>
+                            </ol>
+                        </li>
+                        <li>
+                            THE BOUTIQUE(8)
+                            <ol>
+                                <li>Daejeon Shinsegae Art & Science</li>
+                                <li>Bundang</li>
+                                <li>Seongsu</li>
+                                <li>Central</li>
+                                <li>Ilsan Bellacita</li>
+                                <li>COEX</li>
+                                <li>KINTEX</li>
+                                <li>Hanam Starfield</li>
+                            </ol>
+                        </li>
+                        <li>
+                            MX(9)
+                            <ol>
+                                <li>Goyang Starfield</li>
+                                <li>Goyang Starfield</li>
+                                <li>Daejeon Hyundai Outlet</li>
+                                <li>Mokdong</li>
+                                <li>Sangam World Cup Stadium</li>
+                                <li>Seongsu</li>
+                                <li>Songdo</li>
+                                <li>Yeongtong</li>
+                                <li>Hanam Starfield</li>
+                            </ol>
+                        </li>
+                        <li>
+                            COMFORT(38)
+                            <ol>
+                                <li>Geomdan</li>
+                                <li>Gwangmyeong AK Plaza</li>
+                                <li>Gwangju Sangmu</li>
+                                <li>Gwangju Hanam</li>
+                                <li>Namyangju Hyundai Outlet Space One</li>
+                                <li>Daegu (Chilsung-ro)</li>
+                                <li>Daegu isia</li>
+                                <li>Daejeon</li>
+                                <li>Daejeon Shinsegae Art & Science</li>
+                                <li>Deokcheon</li>
+                                <li>Dongdaemun</li>
+                                <li>Dongtan</li>
+                                <li>Dongtan</li>
+                                <li>Mokdong</li>
+                                <li>Baekseok</li>
+                                <li>Pusan National University</li>
+                                <li>Sangbong</li>
+                                <li>Sangam World Cup Stadium</li>
+                                <li>Sejong Government Complex</li>
+                                <li>Songdo</li>
+                                <li>Suwon Nammun</li>
+                                <li>Siheung Baego</li>
+                                <li>Sinchon</li>
+                                <li>Yangsan</li>
+                                <li>Yangsan Lafiesta</li>
+                                <li>Yangju</li>
+                                <li>Yongin Giheung</li>
+                                <li>Yongin Techno Valley</li>
+                                <li>Ulsan</li>
+                                <li>Changwon Naeseo-dong</li>
+                                <li>Cheonan</li>
+                                <li>Blue-green gel</li>
+                                <li>Cheongju brothel</li>
+                                <li>COEX</li>
+                                <li>KINTEX</li>
+                                <li>Paju Geumchon</li>
+                                <li>Haeundae (Jangsan)</li>
+                            </ol>
+                        </li>
+                        <li>
+                            MEGABOX KIDS(4)
+                            <ol>
+                                <li>Masan</li>
+                                <li>Yeongtong</li>
+                                <li>Hanam Starfield</li>
+                                <li>Haeundae (Jangsan)</li>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+        
+                <div>
+                    <h2>Movie selection</h2>
+                    <div>
+                        <span class="textField">
+                            The entire
+                        </span>
+                        <ul class="tabMenu selectComponent">
+                            <li data-tabName="entireMovie" class="active">The entire</li>
+                            <li data-tabName="curationMovie">Curation</li>
+                        </ul>
+                    </div>
+                    <ul class="active entireMovie">
+                        <li>
+                            <mark class="fifteenAge">15</mark>
+                            After We Fell
+                        </li>
+                        <li>
+                            <mark class="fifteenAge">15</mark>
+                            Venom: Let There Be Carnage
+                        </li>
+                        <li>
+                            <mark class="fifteenAge">15</mark>
+                            The Green Knight
+                        </li>
+                        <li>
+                            <mark class="allAge">All</mark>
+                            The Elephant and The Butterfly
+                        </li>
+                        <li>
+                            <mark class="eighteenAge">18</mark>
+                            The Boy Behind the Door
+                        </li>
+                        <li>
+                            <mark class="twelveAge">12</mark>
+                            DUNE
+                        </li>
+                        <li>
+                            <mark class="fifteenAge">15</mark>
+                            Legends Of The Fall
+                        </li>
+                        <li>
+                            <mark class="twelveAge">12</mark>
+                            CODA
+                        </li>
+                        <li>
+                            <mark class="allAge">All</mark>
+                            BanG Dream! FILM LIVE 2nd Stage
+                        </li>
+                        <li>
+                            <mark class="twelveAge">12</mark>
+                            Dongbaek
+                        </li>
+                        <li>
+                            <mark class="twelveAge">12</mark>
+                            Otac, Father
+                        </li>
+                        <li>
+                            <mark class="twelveAge">12</mark>
+                            The Garden of Words
+                        </li>
+                        <li>
+                            <mark class="allAge">All</mark>
+                            The Birth of Resonance
+                        </li>
+                        <li>
+                            <mark class="fifteenAge">15</mark>
+                            Escape from Mogadish
+                        </li>
+                        <li>
+                            <mark class="fifteenAge">15</mark>
+                            Never Gonna Snow Again
+                        </li>
+                        <li>
+                            <mark class="fifteenAge">15</mark>
+                            CAVEAT
+                        </li>
+                        <li>
+                            <mark class="allAge">All</mark>
+                            La Boheme
+                        </li>
+                        <li>
+                            <mark class="allAge">All</mark>
+                            Our Departures
+                        </li>
+                        <li>
+                            <mark class="eighteenAge">18</mark>
+                            A Different Girl
+                        </li>
+                        <li>
+                            <mark class="twelveAge">15</mark>
+                            Gravity
+                        </li>
+
+                    </ul>
+                    <ul class="curationMovie">
+                        <li>
+                            <mark class="allAge">All</mark>
+                            The Elephant and The Butterfly
+                        </li>
+                        <li>
+                            <mark class="fifteenAge">15</mark>
+                            Legends Of The Fall
+                        </li>
+                        <li>
+                            <mark class="twelveAge">12</mark>
+                            CODA
+                        </li>
+                        <li>
+                            <mark class="twelveAge">12</mark>
+                            Otac, Father
+                        </li>
+                        <li>
+                            <mark class="allAge">All</mark>
+                            The Birth of Resonance
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h2>yyyy-mm-dd (Today)</h2>
+                    <div class="carouselCalendarContainer">
+                        <ol class="carouselCalendar">
+                            <li>
+                                <span>November</span>
+                                <time datetime="2021-11-26" class="active">26</time>
+                                today
+                            </li>
+                            <li>
+                                <time datetime="2021-11-27">27</time>
+                                Sat
+                            </li>
+                            <li class="holiday">
+                                <time datetime="2021-11-28">28</time>
+                                Sun
+                            </li>
+                            <li>
+                                <time datetime="2021-11-29">29</time>
+                                Mon
+                            </li>
+                            <li>
+                                <time datetime="2021-11-30">30</time>
+                                Tue
+                            </li>
+                            <li>
+                                <span>December</span>
+                                <time datetime="2021-12-01">1</time>
+                                Wed
+                            </li>
+                            <li>
+                                <time datetime="2021-12-02">2</time>
+                                Thu
+                            </li>
+                            <li>
+                                <time datetime="2021-12-03">3</time>
+                                Fri
+                            </li>
+                            <li>
+                                <time datetime="2021-12-04">4</time>
+                                Sat
+                            </li>
+                            <li class="holiday">
+                                <time datetime="2021-12-05">5</time>
+                                Sun
+                            </li>
+                            <li>
+                                <time datetime="2021-12-06">6</time>
+                                Mon
+                            </li>
+                            <li>
+                                <time datetime="2021-12-07">7</time>
+                                Tue
+                            </li>
+                            <li>
+                                <time datetime="2021-12-08">8</time>
+                                Wed
+                            </li>
+                            <li>
+                                <time datetime="2021-12-09">9</time>
+                                Thu
+                            </li>
+                            <li>
+                                <time datetime="2021-12-10">10</time>
+                                Fri
+                            </li>
+                            <li>
+                                <time datetime="2021-12-11">11</time>
+                                Sat
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="movieTime">
+                        <ul>
+                            <li class="active">all</li>
+                            <li>special hall</li>
+                            <li>after 13 hour</li>
+                            <li>after 19 hour</li>
+                            <li>late night</li>
+                        </ul>
+                        <div>
+                            <span>
+                                <mark class="fifteenAge">15</mark>
+                                Venom: Let There Be Carnage
+                            </span>
+                            <div>
+                                <span>2D</span>
+                                <span>Vaccine Free Pass Hall</span>
+                                <ul class="listTime">
+                                    <li>
+                                        <a href="#none">
+                                            <dl>
+                                                <dt>14:50</dt>
+                                                <dd><strong>109</strong> / 118</dd>
+                                                <dd>Hall 5</dd>
+                                            </dl>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#none">
+                                            <dl>
+                                                <dt>16:20</dt>
+                                                <dd><strong>199</strong> / 332</dd>
+                                                <dd>Hall 4</dd>
+                                            </dl>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#none">
+                                            <dl>
+                                                <dt>17:05</dt>
+                                                <dd><strong>92</strong> / 142</dd>
+                                                <dd>Hall 2</dd>
+                                            </dl>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#none">
+                                            <dl>
+                                                <dt>18:20</dt>
+                                                <dd><strong>115</strong> / 332</dd>
+                                                <dd>Hall 1</dd>
+                                            </dl>
+                                        </a> 
+                                    </li>
+                                    <li>
+                                        <a href="#none">
+                                            <dl>
+                                                <dt>20:30</dt>
+                                                <dd><strong>20</strong> / 118</dd>
+                                                <dd>Hall 3</dd>
+                                            </dl>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#none">
+                                            <dl>
+                                                <dt>21:50</dt>
+                                                <dd><strong>35</strong> / 118</dd>
+                                                <dd>Hall 5</dd>
+                                            </dl>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h2>
+            <img src="images/logo.png" alt="MEGABOX">
+        </h2>
+        <ul>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="https://jebo.joonganggroup.com/main.do">Ethical management</a></li>
+        </ul>
+        <div>
+            COPYRIGHT © MegaboxJoongAng, Inc. All rights reserved
+            <address>240 World Cup Road, Mapo-gu, Seoul, 2F above ground (Seongsan-dong, World Cup Main Stadium) ARS <a href="tel:+82215440070">1544-0070</a></address>    
+            Representative name Kim Jin-sun · Cho Sang-yeon, the person in charge of personal information protection  · Business registration number 211-86-59478
+            · Communications sales business report number 833
+        </div>
+    </footer>
+
+</body>
+</html>

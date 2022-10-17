@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEET PLAY SHARE, MEGABOX</title>
+    <!-- jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- plugin CDN -->
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/fancybox.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+
+    <button class="topBtn">TOP</button>
+
+    <div id="movieSharePopup">
+        <div>
+            <h3>
+                Share it
+                <a class="material-icons btnClose">close</a>
+            </h3>
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/">
+                        <div>
+                            <img src="images/facebook.png" alt="Facebook icon">
+                        </div>
+                        Facebook
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/">
+                        <div>
+                            <img src="images/instagram.png" alt="Instagram icon">
+                        </div>
+                        Instagram
+                    </a>
+                </li>
+                <li>
+                    <a href="https://accounts.kakao.com/login?continue=https://sharer.kakao.com/talk/friends/picker/shortlink/NuuBj%253A%255Df%2540WBV%253CsT_ZrSA5j%253D%255Eiw%253C5hNV%255E1I%2540z%252FotrV4OrFf35%253Au4%253FiPmYP%253DRL0%253Br4">
+                        <div>
+                            <img src="images/kakao-talk.png" alt="Kakao Talk icon">
+                        </div>
+                        Kakao Talk
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="interestPopup">
+        <div>
+            <h3>
+                Notification
+                <i class="material-icons btnClose">close</i>
+            </h3>
+
+            <p>
+                You have been registered as an item of interest.
+            </p>
+
+            <a href="myPage_myPageInterest.html">Going to see it</a>
+        </div>
+    </div>
+    
+    <header>
+        <div>
+            <h1>
+                <a href="index_signIn.html"><img src="images/logo.png" alt="MEGABOX"></a>
+            </h1>
+            <nav>
+                <input type="button" class="material-icons mui" value="menu">
+                <ul>
+                    <li>
+                        <a href="movieMenu_boxoffice.html">
+                            Movie
+                        </a>
+                    </li>
+                    <li>
+                        <a href="reservation01.html">
+                            Reservation
+                        </a>
+                    </li>
+                    <li>
+                        <a href="theater.html">
+                            Theater
+                        </a>
+                    </li>
+                    <li>
+                        <a href="store.html">
+                            Store
+                        </a>
+                    </li>
+                    <li>
+                        <a href="benefit.html">
+                            Benefit
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                            Search
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sideBox">
+                <div>
+                    <span>Shin</span>
+                    <span class="material-icons">account_circle</span>
+                </div>
+                <ul>
+                    <li><a href="myPage_myPagePoint.html">Point of the membership</a></li>
+                    <li><a href="myPage_myPageCoupon.html">Coupon / Ticket</a></li>
+                    <li><a href="myPage_myPageReservation.html">Reservation / Purchase</a></li>
+                    <li><a href="myPage_myPageInterest.html">Content of interest</a></li>
+                    <li><a href="myPage_myPageMyInformation.html">My Megabox</a></li>
+                    <li><a href="index.html">Sign out</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="ronWrongAll">
+        <article>
+            <h2>
+                Ron’s Gone Wrong
+            </h2>
+            <div>
+                <span>
+                    <mark class="allAge">All</mark>
+                    <span>2021</span>
+                    <span>1 hour 46 minutes</span>
+                </span>
+                <span>
+                    Animation
+                </span>
+            </div>
+            <div>
+                <a href="reservation01.html" class="reservationBtn">
+                    <span>
+                        <img src="images/reservation_01.png" alt="Ticket icon"><img src="images/reservation_02.png" alt="Ticket icon">
+                    </span>
+                    Reservation
+                </a>
+                <a href="#interestPopup" class="popupOpen" data-popName="interest">
+                    <i class="material-icons">add</i>
+                </a>
+                <a href="#movieSharePopup" class="btnOpen" data-popName="movieShare">
+                    <i class="material-icons">share</i>
+                </a>
+            </div>
+            <p>
+                The world where the state-of-the-art social AI robot "Bibot" becomes friends with all children. Even to the timid boy "Bunny", whose only wish is to have a beobot, Finally, there is a Bibot called "Ron."
+            </p>
+        </article>
+    
+    
+        <div class="movieTab">
+            <ul class="tabMenu">
+                <li data-tabName="detailInformation" class="active">Details</li>
+                <li data-tabName="trailerInformation" class="callTheSlider">Trailer</li>
+                <li data-tabName="steelcutInformation">Steelcut</li>
+            </ul>
+    
+            <div>
+                <div class="active detailInformation">
+                    <h3>Ron’s Gone Wrong</h3>
+                    <div>
+                        <p>
+                            <strong>The world where the state-of-the-art social AI robot "Bibot" becomes friends with all children.</strong>
+                            Even to the timid boy "Bunny", whose only wish is to have a beobot, Finally, there is a Bibot called "Ron." However, unlike other bebots connected with advanced digital functions and social media, "Ron" with no network connection.
+                            It's free-spirited and wild. It's because of "Ron". We had a chaotic and thrilling adventure together. "Bunny" makes me realize what true friendship is.
+                            <br>
+                            <br>"Inside Out" & "Incredible 2" produced by the production team.
+                            <br>A new friendship and a special adventure will begin!
+                        </p>
+                        <ul>
+                            <li>
+                                Running time:
+                                <span>1 hour and 46 minutes</span>
+                            </li>
+                            <li>
+                                Release date:
+                                <time datetime="2021-10-27">2021.10.27</time>
+                            </li>
+                            <li>
+                                Genre:
+                                <span>Animation</span>
+                            </li>
+                            <li>
+                                Grade:
+                                <mark class="allAge">All</mark>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                Director:
+                                <ol>
+                                    <li>Sarah Smith</li>
+                                    <li>Jean-Philippe Vine</li>
+                                    <li>Octavio E. Rodriguez</li>
+                                </ol>
+                            </li>
+                            <li>
+                                Cast:
+                                <ol>
+                                    <li>
+                                        Zach Galifianakis
+                                    </li>
+                                    <li>
+                                        Jack Dylan Grazer
+                                    </li>
+                                    <li>
+                                        Olivia Colman
+                                    </li>
+                                    <li>
+                                        Ed Helms
+                                    </li>
+                                    <li>
+                                        Justice Smith
+                                    </li>
+                                    <li>
+                                        Rob Delaney
+                                    </li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="trailerInformation">
+                    <ul class="trailerSlider">
+                        <li id="trailer01">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/VVtvnSdqi2Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </li>
+                        <li id="trailer02">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/-2ehX5h91HM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </li>
+                        <li id="trailer03">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/G16igG9Rwbg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </li>
+                        <li id="trailer04">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/BrRWw1HO3kE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </li>
+                        <li id="trailer05">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/X2etvf6Bocc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </li>
+                        <li id="trailer06">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Fk3p0o3cO60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </li>
+                        <li id="trailer07">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/v9g9mB3TuJo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </li>
+                        <li id="trailer08">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/zzgSC8Z66Es" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </li>
+                    </ul>
+                    <ol class="customPager">
+                        <li>
+                            <a data-slide-index="0">
+                                <span>Teaser trailer</span>
+                                <img src="images/ronWrong_trailer01.png" alt="1st trailer">
+                            </a>
+                        </li>
+                        <li>
+                            <a data-slide-index="1">
+                                <span>Main trailer</span>
+                                <img src="images/ronWrong_trailer02.png" alt="2nd trailer">
+                            </a>
+                        </li>
+                        <li>
+                            <a data-slide-index="2">
+                                <span>30 second preview</span>
+                                <img src="images/ronWrong_trailer03.png" alt="Mush Venom 'Change Up' music video">
+                            </a>
+                        </li>
+                        <li>
+                            <a data-slide-index="3">
+                                <span>"Today is my first best friend!" Video</span>
+                                <img src="images/ronWrong_trailer04.png" alt="'Today is my first best friend! Video">
+                            </a>
+                        </li>
+                        <li>
+                            <a data-slide-index="4">
+                                <span>"Ron" character special clip</span>
+                                <img src="images/ronWrong_trailer05.png" alt="'Ron' character special clip">
+                            </a>
+                        </li>
+                        <li>
+                            <a data-slide-index="5">
+                                <span>Network inaccessible video</span>
+                                <img src="images/ronWrong_trailer06.png" alt="Network inaccessible videoo">
+                            </a>
+                        </li>
+                        <li>
+                            <a data-slide-index="6">
+                                <span>Friend request video</span>
+                                <img src="images/ronWrong_trailer07.png" alt="Friend request video">
+                            </a>
+                        </li>
+                        <li>
+                            <a data-slide-index="7">
+                                <span>Halon Win video</span>
+                                <img src="images/ronWrong_trailer08.png" alt="Halon Win video">
+                            </a>
+                        </li>
+                    </ol>
+                </div>
+    
+                <div class="steelcutInformation">
+                    <ul>
+                        <li><a href="images/ronWrong_poster01.png" data-fancybox="ronWrongCut"><img src="images/ronWrong_poster01.png" alt="Ron’s Gone Wrong, 2021 poster"></a></li>
+                        <li><a href="images/ronWrong_stealcut03.png" data-fancybox="ronWrongCut"><img src="images/ronWrong_stealcut03.png" alt="Ron’s Gone Wrong, 2021 Steal image"></a></li>
+                    </ul>
+                        
+                    <ul>
+                        <li><a href="images/ronWrong_poster02.png" data-fancybox="ronWrongCut"><img src="images/ronWrong_poster02.png" alt="Ron’s Gone Wrong, 2021 poster"></a></li>
+                        <li><a href="images/ronWrong_stealcut04.png" data-fancybox="ronWrongCut"><img src="images/ronWrong_stealcut04.png" alt="Ron’s Gone Wrong, 2021 Steal image"></a></li>
+                    </ul>
+                    
+                    <ul>
+                        <li><a href="images/ronWrong_poster03.png" data-fancybox="ronWrongCut"><img src="images/ronWrong_poster03.png" alt="Ron’s Gone Wrong, 2021 poster"></a></li>
+                        <li><a href="images/ronWrong_stealcut05.png" data-fancybox="ronWrongCut"><img src="images/ronWrong_stealcut05.png" alt="Ron’s Gone Wrong, 2021 Steal image"></a></li>
+                    </ul>
+                    
+                    <ul>
+                        <li><a href="images/ronWrong_stealcut01.png" data-fancybox="ronWrongCut"><img src="images/ronWrong_stealcut01.png" alt="Ron’s Gone Wrong, 2021 Steal image"></a></li>
+                        <li><a href="images/ronWrong_stealcut06.png" data-fancybox="ronWrongCut"><img src="images/ronWrong_stealcut06.png" alt="Ron’s Gone Wrong, 2021 Steal image"></a></li>
+                        <li><a href="images/ronWrong_stealcut08.png" data-fancybox="ronWrongCut"><img src="images/ronWrong_stealcut08.png" alt="Ron’s Gone Wrong, 2021 Steal image"></a></li>
+                    </ul>
+                    
+                    <ul>
+                        <li><a href="images/ronWrong_stealcut02.png" data-fancybox="ronWrongCut"><img src="images/ronWrong_stealcut02.png" alt="Ron’s Gone Wrong, 2021 Steal image"></a></li>
+                        <li><a href="images/ronWrong_stealcut07.png" data-fancybox="ronWrongCut"><img src="images/ronWrong_stealcut07.png" alt="Ron’s Gone Wrong, 2021 Steal image"></a></li>
+                    </ul>
+                    <!-- 이미지 a로(링크는 일단 냅두기 추후 아이디 지정) 감싸기 -->
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+    <footer>
+        <h2>
+            <img src="images/logo.png" alt="MEGABOX">
+        </h2>
+        <ul>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="https://jebo.joonganggroup.com/main.do">Ethical management</a></li>
+        </ul>
+        <div>
+            COPYRIGHT © MegaboxJoongAng, Inc. All rights reserved
+            <address>240 World Cup Road, Mapo-gu, Seoul, 2F above ground (Seongsan-dong, World Cup Main Stadium) ARS <a href="tel:+82215440070">1544-0070</a></address>    
+            Representative name Kim Jin-sun · Cho Sang-yeon, the person in charge of personal information protection  · Business registration number 211-86-59478
+            · Communications sales business report number 833
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEET PLAY SHARE, MEGABOX</title>
+    <!-- jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- plugin CDN -->
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/fancybox.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+
+    <button class="topBtn">TOP</button>
+
+    <div id="movieSharePopup">
+        <div>
+            <h3>
+                Share it
+                <a class="material-icons btnClose">close</a>
+            </h3>
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/">
+                        <div>
+                            <img src="images/facebook.png" alt="Facebook icon">
+                        </div>
+                        Facebook
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/">
+                        <div>
+                            <img src="images/instagram.png" alt="Instagram icon">
+                        </div>
+                        Instagram
+                    </a>
+                </li>
+                <li>
+                    <a href="https://accounts.kakao.com/login?continue=https://sharer.kakao.com/talk/friends/picker/shortlink/NuuBj%253A%255Df%2540WBV%253CsT_ZrSA5j%253D%255Eiw%253C5hNV%255E1I%2540z%252FotrV4OrFf35%253Au4%253FiPmYP%253DRL0%253Br4">
+                        <div>
+                            <img src="images/kakao-talk.png" alt="Kakao Talk icon">
+                        </div>
+                        Kakao Talk
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="interestPopup">
+        <div>
+            <h3>
+                Notification
+                <i class="material-icons btnClose">close</i>
+            </h3>
+
+            <p>
+                You have been registered as an item of interest.
+            </p>
+
+            <a href="myPage_myPageInterest.html">Going to see it</a>
+        </div>
+    </div>
+    
+    <header>
+        <div>
+            <h1>
+                <a href="index_signIn.html"><img src="images/logo.png" alt="MEGABOX"></a>
+            </h1>
+            <nav>
+                <input type="button" class="material-icons mui" value="menu">
+                <ul>
+                    <li>
+                        <a href="movieMenu_boxoffice.html">
+                            Movie
+                        </a>
+                    </li>
+                    <li>
+                        <a href="reservation01.html">
+                            Reservation
+                        </a>
+                    </li>
+                    <li>
+                        <a href="theater.html">
+                            Theater
+                        </a>
+                    </li>
+                    <li>
+                        <a href="store.html">
+                            Store
+                        </a>
+                    </li>
+                    <li>
+                        <a href="benefit.html">
+                            Benefit
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                            Search
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sideBox">
+                <div>
+                    <span>Shin</span>
+                    <span class="material-icons">account_circle</span>
+                </div>
+                <ul>
+                    <li><a href="myPage_myPagePoint.html">Point of the membership</a></li>
+                    <li><a href="myPage_myPageCoupon.html">Coupon / Ticket</a></li>
+                    <li><a href="myPage_myPageReservation.html">Reservation / Purchase</a></li>
+                    <li><a href="myPage_myPageInterest.html">Content of interest</a></li>
+                    <li><a href="myPage_myPageMyInformation.html">My Megabox</a></li>
+                    <li><a href="index.html">Sign out</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="miracleAll">
+        <article>
+            <h2>
+                Miracle
+            </h2>
+            <div>
+                <span>
+                    <mark class="twelveAge">12</mark>
+                    <span>2021</span>
+                    <span>1 hour 57 minutes</span>
+                </span>
+                <span>
+                    Drama
+                </span>
+            </div>
+            <div>
+                <a href="reservation01.html" class="reservationBtn">
+                    <span>
+                        <img src="images/reservation_01.png" alt="Ticket icon"><img src="images/reservation_02.png" alt="Ticket icon">
+                    </span>
+                    Reservation
+                </a>
+                <a href="#interestPopup" class="popupOpen" data-popName="interest">
+                    <i class="material-icons">add</i>
+                </a>
+                <a href="#movieSharePopup" class="btnOpen" data-popName="movieShare">
+                    <i class="material-icons">share</i>
+                </a>
+            </div>
+            <p>
+                There's only a railroad that I can go back and forth, It's a village where there's no train station. As of today, Joonkyung (Park Jungmin), who sent the 54th letter to Cheong Wa Dae, has only one goal! That is, a train station will be built in the village.
+            </p>
+        </article>
+    
+    
+        <div class="movieTab">
+            <ul class="tabMenu">
+                <li data-tabName="detailInformation" class="active">Details</li>
+                <li data-tabName="trailerInformation" class="callTheSlider">Trailer</li>
+                <li data-tabName="steelcutInformation">Steelcut</li>
+            </ul>
+    
+            <div>
+                <div class="active detailInformation">
+                    <h3>Miracle</h3>
+                    <div>
+                        <p>
+                            There's only a railroad that I can go back and forth, It's a village where there's no train station. As of today, Joonkyung (Park Jungmin), who sent the 54th letter to Cheong Wa Dae, has only one goal! That is, a train station will be built in the village.
+                            Despite the opposition of Taeyoon (Lee Seongmin), the father of the principle engineer, that the train station is not possible, Joonkyung, who insisted on staying in the village with his sister Bokyeong (Lee Sookyung) and going back and forth between school and school for five hours.
+                            With his self-proclaimed muse Rahee (Lim Yoonah), who recognized his extraordinaryness in his wackiness at once, Spelling class for convincing letter writing,Scholarship quiz test to gain popularity, Until the president's math contest!
+                            <br>Joonkyung's own efforts to build a train station continue.
+                            <br>
+                            <br>There is no giving up.
+                            <br>Until the train stops!
+                        </p>
+                        <ul>
+                            <li>
+                                Running time:
+                                <span>1 hour 57 minutes</span>
+                            </li>
+                            <li>
+                                Release date:
+                                <time datetime="2021-09-15">2021.09.15</time>
+                            </li>
+                            <li>
+                                Genre:
+                                <span>Drama</span>
+                            </li>
+                            <li>
+                                Grade:
+                                <mark class="twelveAge">12</mark>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                Director:
+                                <span>Lee Jang Hoon</span>
+                            </li>
+                            <li>
+                                Cast:
+                                <ol>
+                                    <li>
+                                        Park Jeong Min
+                                    </li>
+                                    <li>
+                                        Lee Seong Min
+                                    </li>
+                                    <li>
+                                        Yoon A
+                                    </li>
+                                    <li>
+                                        Lee Soo Kyung
+                                    </li>
+                                    <li>
+                                        Kim Kang Hoon
+                                    </li>
+                                    <li>
+                                        Jung Moon Sung
+                                    </li>
+                                    <li>
+                                        Kim Dong Hyun
+                                    </li>
+                                    <li>
+                                        Lee Dong Yong
+                                    </li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="trailerInformation">
+                    <ul class="trailerSlider">
+                        <li id="trailer01">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/ha54tghMPTw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </li>
+                        <li id="trailer02">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/py0_g0UetN0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </li>
+                        <li id="trailer03">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/zGNxA4IDSyQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </li>
+                    </ul>
+                    <ol class="customPager">
+                        <li>
+                            <a data-slide-index="0">
+                                <span>Teaser trailer</span>
+                                <img src="images/miracle_trailer01.png" alt="Teaser trailer">
+                            </a>
+                        </li>
+                        <li>
+                            <a data-slide-index="1">
+                                <span>Character trailer</span>
+                                <img src="images/miracle_trailer02.png" alt="Character trailer">
+                            </a>
+                        </li>
+                        <li>
+                            <a data-slide-index="2">
+                                <span>Main trailer</span>
+                                <img src="images/miracle_trailer03.png" alt="Main trailer">
+                            </a>
+                        </li>
+                    </ol>
+                </div>
+    
+                <div class="steelcutInformation">
+                    <ul>
+                        <li><a href="images/miracle_poster01.png" data-fancybox="miracleCut"><img src="images/miracle_poster01.png" alt="Miracle, 2020 poster"></a></li>
+                        <li><a href="images/miracle_stealcut01.png" data-fancybox="miracleCut"><img src="images/miracle_stealcut01.png" alt="Miracle, 2020 Steal image"></a></li>
+                        <li><a href="images/miracle_stealcut06.png" data-fancybox="miracleCut"><img src="images/miracle_stealcut06.png" alt="Miracle, 2020 Steal image"></a></li>
+                        <li><a href="images/miracle_stealcut11.png" data-fancybox="miracleCut"><img src="images/miracle_stealcut11.png" alt="Miracle, 2020 Steal image"></a></li>
+                        <li><a href="images/miracle_stealcut16.png" data-fancybox="miracleCut"><img src="images/miracle_stealcut16.png" alt="Miracle, 2020 Steal image"></a></li>
+                        <li><a href="images/miracle_stealcut21.png" data-fancybox="miracleCut"><img src="images/miracle_stealcut21.png" alt="Miracle, 2020 Steal image"></a></li>
+                    </ul>
+                    
+                    <ul>
+                        <li><a href="images/miracle_poster02.png" data-fancybox="miracleCut"><img src="images/miracle_poster02.png" alt="Miracle, 2020 poster"></a></li>
+                        <li><a href="images/miracle_stealcut02.png" data-fancybox="miracleCut"><img src="images/miracle_stealcut02.png" alt="Miracle, 2020 Steal image"></a></li>
+                        <li><a href="images/miracle_stealcut07.png" data-fancybox="miracleCut"><img src="images/miracle_stealcut07.png" alt="Miracle, 2020 Steal image"></a></li>
+                        <li><a href="images/miracle_stealcut12.png" data-fancybox="miracleCut"><img src="images/miracle_stealcut12.png" alt="Miracle, 2020 Steal image"></a></li>
+                        <li><a href="images/miracle_stealcut17.png" data-fancybox="miracleCut"><img src="images/miracle_stealcut17.png" alt="Miracle, 2020 Steal image"></a></li>
+                        <li><a href="images/miracle_stealcut22.png" data-fancybox="miracleCut"><img src="images/miracle_stealcut22.png" alt="Miracle, 2020 Steal image"></a></li>
+                    </ul>
+                    
+                    <ul>
+                        <li><a href="images/miracle_poster03.png" data-fancybox="miracleCut"><img src="images/miracle_poster03.png" alt="Miracle, 2020 poster"></a></li>
+                        <li><a href="images/miracle_stealcut03.png" data-fancybox="miracleCut"><img src="images/miracle_stealcut03.png" alt="Miracle, 2020 Steal image"></a></li>
+                        <li><a href="images/miracle_stealcut08.png" data-fancybox="miracleCut"><img src="images/miracle_stealcut08.png" alt="Miracle, 2020 Steal image"></a></li>
+                        <li><a href="images/miracle_stealcut13.png" data-fancybox="miracleCut"><img src="images/miracle_stealcut13.png" alt="Miracle, 2020 Steal image"></a></li>
+                        <li><a href="images/miracle_stealcut18.png" data-fancybox="miracleCut"><img src="images/miracle_stealcut18.png" alt="Miracle, 2020 Steal image"></a></li>
+                        <li><a href="images/miracle_stealcut23.png" data-fancybox="miracleCut"><img src="images/miracle_stealcut23.png" alt="Miracle, 2020 Steal image"></a></li>
+                    </ul>
+                    
+                    <ul>
+                        <li><a href="images/miracle_poster04.png" data-fancybox="miracleCut"><img src="images/miracle_poster04.png" alt="Miracle, 2020 poster"></a></li>
+                        <li><a href="images/miracle_stealcut04.png" data-fancybox="miracleCut"><img src="images/miracle_stealcut04.png" alt="Miracle, 2020 Steal image"></a></li>
+                        <li><a href="images/miracle_stealcut09.png" data-fancybox="miracleCut"><img src="images/miracle_stealcut09.png" alt="Miracle, 2020 Steal image"></a></li>
+                        <li><a href="images/miracle_stealcut14.png" data-fancybox="miracleCut"><img src="images/miracle_stealcut14.png" alt="Miracle, 2020 Steal image"></a></li>
+                        <li><a href="images/miracle_stealcut19.png" data-fancybox="miracleCut"><img src="images/miracle_stealcut19.png" alt="Miracle, 2020 Steal image"></a></li>
+                        <li><a href="images/miracle_stealcut24.png" data-fancybox="miracleCut"><img src="images/miracle_stealcut24.png" alt="Miracle, 2020 Steal image"></a></li>
+                    </ul>
+                    
+                    <ul>
+                        <li><a href="images/miracle_poster05.png" data-fancybox="miracleCut"><img src="images/miracle_poster05.png" alt="Miracle, 2020 poster"></a></li>
+                        <li><a href="images/miracle_stealcut05.png" data-fancybox="miracleCut"><img src="images/miracle_stealcut05.png" alt="Miracle, 2020 Steal image"></a></li>
+                        <li><a href="images/miracle_stealcut10.png" data-fancybox="miracleCut"><img src="images/miracle_stealcut10.png" alt="Miracle, 2020 Steal image"></a></li>
+                        <li><a href="images/miracle_stealcut15.png" data-fancybox="miracleCut"><img src="images/miracle_stealcut15.png" alt="Miracle, 2020 Steal image"></a></li>
+                        <li><a href="images/miracle_stealcut20.png" data-fancybox="miracleCut"><img src="images/miracle_stealcut20.png" alt="Miracle, 2020 Steal image"></a></li>
+                        <li><a href="images/miracle_stealcut25.png" data-fancybox="miracleCut"><img src="images/miracle_stealcut25.png" alt="Miracle, 2020 Steal image"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h2>
+            <img src="images/logo.png" alt="MEGABOX">
+        </h2>
+        <ul>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="https://jebo.joonganggroup.com/main.do">Ethical management</a></li>
+        </ul>
+        <div>
+            COPYRIGHT © MegaboxJoongAng, Inc. All rights reserved
+            <address>240 World Cup Road, Mapo-gu, Seoul, 2F above ground (Seongsan-dong, World Cup Main Stadium) ARS <a href="tel:+82215440070">1544-0070</a></address>    
+            Representative name Kim Jin-sun · Cho Sang-yeon, the person in charge of personal information protection  · Business registration number 211-86-59478
+            · Communications sales business report number 833
+        </div>
+    </footer>
+</body>
+</html>

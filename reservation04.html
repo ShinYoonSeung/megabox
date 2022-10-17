@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEET PLAY SHARE, MEGABOX</title>
+    <!-- jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- plugin CDN -->
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+
+    <button class="topBtn">TOP</button>
+
+    <div id="mobileTicketPopup">
+        <div>
+            <h3>
+                <span>
+                    Get tickets right away on your cell phone
+                </span>
+                <i class="material-icons btnClose">close</i>
+            </h3>
+            
+            <div>
+                <p>
+                    · Tike is sent only through Kakao Talk.<br>
+                    Please enter the mobile phone number you want to receive. (You can send it twice per reservation)<br>
+                    · The reception number cannot be changed.<br>
+                    · If you enter the wrong number, please enter through the mobile bar ticket or print out the ticket on site through the reservation number.<br>
+                    · If you block Megabox Kakao Notification Talk or do not install Kakao Talk, the reservation details will be switched to SNS.
+                </p>
+                
+                <div>
+                    <label for="onlyNum">Cell phone number</label>
+                    <input type="text" id="onlyNum" placeholder="Please enter your mobile phone number (-omitted)">
+                </div>
+        
+                <div>
+                    <input type="checkbox" id="consentChk">
+                    <label for="consentChk" class="consentChk">
+                        Consent to collecting personal information
+                    </label>
+                    <p>
+                        Purpose: Send the ticket right away
+                        <strong>
+                            Collection item: Cell phone number
+                        </strong>
+                        <strong>
+                            Retention period: 70 days of storage and 5 years of storage separately
+                        </strong>
+                        You may refuse to agree, but in this case, you cannot use the ticket sending service immediately.
+                    </p>
+                </div>
+            </div>
+    
+            <div>
+                <button class="btnClose">Cancellation</button>
+                <button class="btnClose">Check</button>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div>
+            <h1>
+                <a href="index_signIn.html"><img src="images/logo.png" alt="MEGABOX"></a>
+            </h1>
+            <nav>
+                <input type="button" class="material-icons mui" value="menu">
+                <ul>
+                    <li>
+                        <a href="movieMenu_boxoffice.html">
+                            Movie
+                        </a>
+                    </li>
+                    <li>
+                        <a href="reservation01.html">
+                            Reservation
+                        </a>
+                    </li>
+                    <li>
+                        <a href="theater.html">
+                            Theater
+                        </a>
+                    </li>
+                    <li>
+                        <a href="store.html">
+                            Store
+                        </a>
+                    </li>
+                    <li>
+                        <a href="benefit.html">
+                            Benefit
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                            Search
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sideBox">
+                <div>
+                    <span>Shin</span>
+                    <span class="material-icons">account_circle</span>
+                </div>
+                <ul>
+                    <li><a href="myPage_myPagePoint.html">Point of the membership</a></li>
+                    <li><a href="myPage_myPageCoupon.html">Coupon / Ticket</a></li>
+                    <li><a href="myPage_myPageReservation.html">Reservation / Purchase</a></li>
+                    <li><a href="myPage_myPageInterest.html">Content of interest</a></li>
+                    <li><a href="myPage_myPageMyInformation.html">My Megabox</a></li>
+                    <li><a href="index.html">Sign out</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="reservationWrap">
+        <div>
+            <ol class="reservationMenu">
+                <li class="menuAfter"><a href="reservation01.html">01 Running time</a></li>
+                <li class="menuAfter"><a href="reservation02.html">02 people / seat</a></li>
+                <li class="menuAfter"><a href="reservation03.html">03 Payment</a></li>
+                <li class="active"><a href="reservation04.html">04 Payment completed</a></li>
+            </ol>
+        
+            <div class="paymentCompleted">
+                <h2>Payment completed</h2>
+                <div>
+                    <!-- background -->
+                    <p>
+                        <!-- <span class="material-icons">credit_score</span> -->
+                        Dear member <span>Shin Yoon Seung</span>, The payment has been successfully completed.
+                    </p>
+                    <div class="paymentDone">
+                        <figure>
+                            <div>
+                                <img src="images/venom_poster01.png" alt="Venom: Let There Be Carnage, 2021 poster">
+                            </div>
+                            <figcaption>
+                                <h4>
+                                    Reservation number
+                                    <span>15285467</span>
+                                </h4>
+                                <dl>
+                                    <dt>Screening date and time</dt>
+                                    <dd>
+                                        <time datetime="2021-11-26T14:50">2021-11-26 (Friday) 14:50</time>
+                                        ~
+                                        <time datetime="2021-11-26T16:27">16:27</time>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>The theater</dt>
+                                    <dd>Konkuk University Entrance Hall 4</dd>
+                                </dl>
+                                <dl>
+                                    <dt>The number of viewers</dt>
+                                    <dd>Adult 2</dd>
+                                </dl>
+                                <dl>
+                                    <dt>Seat</dt>
+                                    <dd>G8, G9</dd>
+                                </dl>
+                                <a href="#mobileTicketPopup"  class="btnOpen" data-popName="mobileTicket">Get tickets right away on your cell phone</a>
+                            </figcaption>
+                        </figure>
+                    
+                        <form>
+                            <fieldset>
+                                <div>
+                                    <label for="order">Order amount</label>
+                                    <input type="text" id="order" value="26,000" readonly>
+                                    <span>won</span>
+                                    <i class="material-icons">remove</i>
+                                </div>
+                            
+                                <div>
+                                    <label for="discount">Discount amount</label>
+                                    <input type="text" id="discount" value="0" readonly>
+                                    <span>won</span>
+                                    <i class="material-icons">drag_handle</i>
+                                </div>
+                            
+                                <div>
+                                    <label for="total">Total payment amount</label>
+                                    <input type="text" id="total" value="26,000" readonly>
+                                    <span>won</span>
+                                </div>
+                            </fieldset>
+                            <div>
+                                <mark>Credit card</mark>Kakao Pay online
+                                <!-- a tag -->
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <p>
+                    - Cancellation of online reservations and additional product purchases can be made 20 minutes before the start of the screening.<br>
+                    - It can only be canceled at the movie theater site 20 minutes before the start of the screening.<br>
+                    - Only the entire cancellation is possible, and partial cancellation of reservations or additional products is not possible.<br>
+                    - Both reservations and cancellations are not possible when additional products are received.<br>
+                    - If you complete the photo ticket ticketing, you can only get a refund at the movie theater after bringing all the issued photo tickets.<br>
+                    - Reservations for stage greetings can be canceled 24 hours before the start of the screening.<br>
+                </p>
+                <p>
+                    - The L.point to be accumulated will be accumulated the day after watching the movie.<br>
+                    - The start of the movie may be about 10 minutes different due to circumstances such as preview screening.<br>
+                    - Reservation tickets cannot be found with your resident number according to your personal information protection policy. Please check the reservation number.<br>
+                    - Products purchased from the store can be checked and used on My Page > Reservation/Purchase Details.<br>
+                </p>
+        
+                <div>
+                    <a href="store.html">Go to the store right away</a>
+                    <a href="index_signIn.html">Go straight to home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h2>
+            <img src="images/logo.png" alt="MEGABOX">
+        </h2>
+        <ul>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="https://jebo.joonganggroup.com/main.do">Ethical management</a></li>
+        </ul>
+        <div>
+            COPYRIGHT © MegaboxJoongAng, Inc. All rights reserved
+            <address>240 World Cup Road, Mapo-gu, Seoul, 2F above ground (Seongsan-dong, World Cup Main Stadium) ARS <a href="tel:+82215440070">1544-0070</a></address>    
+            Representative name Kim Jin-sun · Cho Sang-yeon, the person in charge of personal information protection  · Business registration number 211-86-59478
+            · Communications sales business report number 833
+        </div>
+    </footer>
+
+</body>
+</html>

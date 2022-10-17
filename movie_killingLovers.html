@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEET PLAY SHARE, MEGABOX</title>
+    <!-- jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- plugin CDN -->
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/fancybox.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+
+    <button class="topBtn">TOP</button>
+
+    <div id="movieSharePopup">
+        <div>
+            <h3>
+                Share it
+                <a class="material-icons btnClose">close</a>
+            </h3>
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/">
+                        <div>
+                            <img src="images/facebook.png" alt="Facebook icon">
+                        </div>
+                        Facebook
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/">
+                        <div>
+                            <img src="images/instagram.png" alt="Instagram icon">
+                        </div>
+                        Instagram
+                    </a>
+                </li>
+                <li>
+                    <a href="https://accounts.kakao.com/login?continue=https://sharer.kakao.com/talk/friends/picker/shortlink/NuuBj%253A%255Df%2540WBV%253CsT_ZrSA5j%253D%255Eiw%253C5hNV%255E1I%2540z%252FotrV4OrFf35%253Au4%253FiPmYP%253DRL0%253Br4">
+                        <div>
+                            <img src="images/kakao-talk.png" alt="Kakao Talk icon">
+                        </div>
+                        Kakao Talk
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="interestPopup">
+        <div>
+            <h3>
+                Notification
+                <i class="material-icons btnClose">close</i>
+            </h3>
+
+            <p>
+                You have been registered as an item of interest.
+            </p>
+
+            <a href="myPage_myPageInterest.html">Going to see it</a>
+        </div>
+    </div>
+    
+    <header>
+        <div>
+            <h1>
+                <a href="index_signIn.html"><img src="images/logo.png" alt="MEGABOX"></a>
+            </h1>
+            <nav>
+                <input type="button" class="material-icons mui" value="menu">
+                <ul>
+                    <li>
+                        <a href="movieMenu_boxoffice.html">
+                            Movie
+                        </a>
+                    </li>
+                    <li>
+                        <a href="reservation01.html">
+                            Reservation
+                        </a>
+                    </li>
+                    <li>
+                        <a href="theater.html">
+                            Theater
+                        </a>
+                    </li>
+                    <li>
+                        <a href="store.html">
+                            Store
+                        </a>
+                    </li>
+                    <li>
+                        <a href="benefit.html">
+                            Benefit
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                            Search
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sideBox">
+                <div>
+                    <span>Shin</span>
+                    <span class="material-icons">account_circle</span>
+                </div>
+                <ul>
+                    <li><a href="myPage_myPagePoint.html">Point of the membership</a></li>
+                    <li><a href="myPage_myPageCoupon.html">Coupon / Ticket</a></li>
+                    <li><a href="myPage_myPageReservation.html">Reservation / Purchase</a></li>
+                    <li><a href="myPage_myPageInterest.html">Content of interest</a></li>
+                    <li><a href="myPage_myPageMyInformation.html">My Megabox</a></li>
+                    <li><a href="index.html">Sign out</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="killingLoversAll">
+        <article>
+            <h2>
+                The Killing of Two Lovers
+            </h2>
+            <div>
+                <span>
+                    <mark class="twelveAge">12</mark>
+                    <span>2021</span>
+                    <span>1 hour and 24 minutes</span>
+                </span>
+                <span>
+                    Melo/Romance
+                </span>
+            </div>
+            <div>
+                <a href="reservation01.html" class="reservationBtn">
+                    <span>
+                        <img src="images/reservation_01.png" alt="Ticket icon"><img src="images/reservation_02.png" alt="Ticket icon">
+                    </span>
+                    Reservation
+                </a>
+                <a href="#interestPopup" class="popupOpen" data-popName="interest">
+                    <i class="material-icons">add</i>
+                </a>
+                <a href="#movieSharePopup" class="btnOpen" data-popName="movieShare">
+                    <i class="material-icons">share</i>
+                </a>
+            </div>
+            <p>
+                David, who agrees to meet someone different from Nicky and is separated, feels unbearable anger after accidentally learning the existence of his wife's lover Derek.
+            </p>
+        </article>
+    
+    
+        <div class="movieTab">
+            <ul class="tabMenu">
+                <li data-tabName="detailInformation" class="active">Details</li>
+                <li data-tabName="trailerInformation" class="callTheSlider">Trailer</li>
+                <li data-tabName="steelcutInformation">Steelcut</li>
+            </ul>
+    
+            <div>
+                <div class="active detailInformation">
+                    <h3>The Killing of Two Lovers</h3>
+                    <div>
+                        <p>
+                            David, who agrees to meet someone different from Nicky and is separated, feels unbearable anger after accidentally learning the existence of his wife's lover Derek. Meanwhile, Nicky, who got a job at a law firm to achieve her dream of being cut off by marriage and childcare, becomes increasingly fond of Derek, who works in the same building, and Derek, who wants to develop his relationship with Nicky, visits her house every night to develop his desire to own her fully. The desire of the three lovers to stay next to each other drives them into a dangerous whirlpool…
+                        </p>
+                        <ul>
+                            <li>
+                                Running time:
+                                <span>1 hour and 24 minutes</span>
+                            </li>
+                            <li>
+                                Release date:
+                                <time datetime="2021-10-14">2021.10.14</time>
+                            </li>
+                            <li>
+                                Genre:
+                                <span>Melo/Romance</span>
+                            </li>
+                            <li>
+                                Grade:
+                                <mark class="=twelveAge">12</mark>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                Director:
+                                <span>Robert Machoian</span>
+                            </li>
+                            <li>
+                                Cast:
+                                <ol>
+                                    <li>
+                                        Clayne Crawford
+                                    </li>
+                                    <li>
+                                        Sepideh Moafi
+                                    </li>
+                                    <li>
+                                        Chris Coy
+                                    </li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="trailerInformation">
+                    <ul class="trailerSlider">
+                        <li id="trailer01">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/umB_l_aT9XE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </li>
+                        <li id="trailer02">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/-Gb4Ysku7i0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </li>
+                    </ul>
+                    <ol class="customPager">
+                        <li>
+                            <a data-slide-index="0">
+                                <span>Main trailerr</span>
+                                <img src="images/killingLovers_trailer01.png" alt="Main trailerr">
+                            </a>
+                        </li>
+                        <li>
+                            <a data-slide-index="1">
+                                <span>30 second trailer</span>
+                                <img src="images/killingLovers_trailer02.png" alt="30 second trailer">
+                            </a>
+                        </li>
+                    </ol>
+                </div>
+    
+                <div class="steelcutInformation">
+                    <ul>
+                        <li><a href="images/killingLovers_poster01.png" data-fancybox="killingLoversCut"><img src="images/killingLovers_poster01.png" alt="The Killing of Two Lovers, 2020 poster"></a></li>
+                        <li><a href="images/killingLovers_stealcut01.png" data-fancybox="killingLoversCut"><img src="images/killingLovers_stealcut01.png" alt="The Killing of Two Lovers, 2020 Steal image"></a></li>
+                        <li><a href="images/killingLovers_stealcut06.png" data-fancybox="killingLoversCut"><img src="images/killingLovers_stealcut06.png" alt="The Killing of Two Lovers, 2020 Steal image"></a></li>
+                        <li><a href="images/killingLovers_stealcut11.png" data-fancybox="killingLoversCut"><img src="images/killingLovers_stealcut11.png" alt="The Killing of Two Lovers, 2020 Steal image"></a></li>
+                    </ul>
+                    
+                    <ul>
+                        <li><a href="images/killingLovers_poster02.png" data-fancybox="killingLoversCut"><img src="images/killingLovers_poster02.png" alt="The Killing of Two Lovers, 2020 poster"></a></li>
+                        <li><a href="images/killingLovers_stealcut02.png" data-fancybox="killingLoversCut"><img src="images/killingLovers_stealcut02.png" alt="The Killing of Two Lovers, 2020 Steal image"></a></li>
+                        <li><a href="images/killingLovers_stealcut07.png" data-fancybox="killingLoversCut"><img src="images/killingLovers_stealcut07.png" alt="The Killing of Two Lovers, 2020 Steal image"></a></li>
+                        <li><a href="images/killingLovers_stealcut12.png" data-fancybox="killingLoversCut"><img src="images/killingLovers_stealcut12.png" alt="The Killing of Two Lovers, 2020 Steal image"></a></li>
+                    </ul>
+                    
+                    <ul>
+                        <li><a href="images/killingLovers_poster03.png" data-fancybox="killingLoversCut"><img src="images/killingLovers_poster03.png" alt="The Killing of Two Lovers, 2020 poster"></a></li>
+                        <li><a href="images/killingLovers_stealcut03.png" data-fancybox="killingLoversCut"><img src="images/killingLovers_stealcut03.png" alt="The Killing of Two Lovers, 2020 Steal image"></a></li>
+                        <li><a href="images/killingLovers_stealcut08.png" data-fancybox="killingLoversCut"><img src="images/killingLovers_stealcut08.png" alt="The Killing of Two Lovers, 2020 Steal image"></a></li>
+                        <li><a href="images/killingLovers_stealcut13.png" data-fancybox="killingLoversCut"><img src="images/killingLovers_stealcut13.png" alt="The Killing of Two Lovers, 2020 Steal image"></a></li>
+                    </ul>
+                    
+                    <ul>
+                        <li><a href="images/killingLovers_poster04.png" data-fancybox="killingLoversCut"><img src="images/killingLovers_poster04.png" alt="The Killing of Two Lovers, 2020 poster"></a></li>
+                        <li><a href="images/killingLovers_stealcut04.png" data-fancybox="killingLoversCut"><img src="images/killingLovers_stealcut04.png" alt="The Killing of Two Lovers, 2020 Steal image"></a></li>
+                        <li><a href="images/killingLovers_stealcut09.png" data-fancybox="killingLoversCut"><img src="images/killingLovers_stealcut09.png" alt="The Killing of Two Lovers, 2020 Steal image"></a></li>
+                    </ul>
+                    
+                    <ul>
+                        <li><a href="images/killingLovers_poster05.png" data-fancybox="killingLoversCut"><img src="images/killingLovers_poster05.png" alt="The Killing of Two Lovers, 2020 poster"></a></li>
+                        <li><a href="images/killingLovers_stealcut05.png" data-fancybox="killingLoversCut"><img src="images/killingLovers_stealcut05.png" alt="The Killing of Two Lovers, 2020 Steal image"></a></li>
+                        <li><a href="images/killingLovers_stealcut10.png" data-fancybox="killingLoversCut"><img src="images/killingLovers_stealcut10.png" alt="The Killing of Two Lovers, 2020 Steal image"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h2>
+            <img src="images/logo.png" alt="MEGABOX">
+        </h2>
+        <ul>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="https://jebo.joonganggroup.com/main.do">Ethical management</a></li>
+        </ul>
+        <div>
+            COPYRIGHT © MegaboxJoongAng, Inc. All rights reserved
+            <address>240 World Cup Road, Mapo-gu, Seoul, 2F above ground (Seongsan-dong, World Cup Main Stadium) ARS <a href="tel:+82215440070">1544-0070</a></address>    
+            Representative name Kim Jin-sun · Cho Sang-yeon, the person in charge of personal information protection  · Business registration number 211-86-59478
+            · Communications sales business report number 833
+        </div>
+    </footer>
+</body>
+</html>

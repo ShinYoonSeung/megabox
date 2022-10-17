@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEET PLAY SHARE, MEGABOX</title>
+    <!-- jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- plugin CDN -->
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+
+    <button class="topBtn">TOP</button>
+
+    <div id="availableTheaterPopup">
+        <div>
+            <h2>
+                Movie theaters available
+                <i class="material-icons btnClose">close</i>
+            </h2>
+    
+            <ul class="theaterList">
+                <li class="active">
+                    Seoul
+                    <ol>
+                        <li>
+                            Gangnam
+                        </li>
+                        <li>
+                            Gangnam-daero(City)
+                        </li>
+                        <li>
+                            Gangdong
+                        </li>
+                        <li>
+                            Gunja
+                        </li>
+                        <li>
+                            Dongdaemun
+                        </li>
+                        <li>
+                            Magok
+                        </li>
+                        <li>
+                            Mokdong
+                        </li>
+                        <li>
+                            Sangbong
+                        </li>
+                        <li>
+                            Samam World Cup Stadium
+                        </li>
+                        <li>
+                            Seongsu
+                        </li>
+                        <li>
+                            Central
+                        </li>
+                        <li>
+                            Songpa Park Habio
+                        </li>
+                        <li>
+                            Sinchon
+                        </li>
+                        <li>
+                            Isu
+                        </li>
+                        <li>
+                            Changdong
+                        </li>
+                        <li>
+                            COEX
+                        </li>
+                        <li>
+                            Hongdae
+                        </li>
+                        <li>
+                            Hwagok
+                        </li>
+                        <li>
+                            ARTNINE
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    Gyeonggi
+                    <ol>
+                        <li>
+                            Goyang Starfield
+                        </li>
+                        <li>
+                            Gwangmyeong AK Plaza
+                        </li>
+                        <li>
+                            Gimpo Han River New Town
+                        </li>
+                        <li>
+                            Namyangju
+                        </li>
+                        <li>
+                            Namyangju Hyundai Outlet Space One
+                        </li>
+                        <li>
+                            Dongchan
+                        </li>
+                        <li>
+                            Misa Riverside
+                        </li>
+                        <li>
+                            Baekseok
+                        </li>
+                        <li>
+                            Byeolnae
+                        </li>
+                        <li>
+                            Bucheon Starfield City
+                        </li>
+                        <li>
+                            Bundang
+                        </li>
+                        <li>
+                            Suwon
+                        </li>
+                        <li>
+                            Suwon Nammun
+                        </li>
+                        <li>
+                            Siheung Baegot-dong
+                        </li>
+                        <li>
+                            Ansan Central
+                        </li>
+                        <li>
+                            Anseong Starfield
+                        </li>
+                        <li>
+                            Yangju
+                        </li>
+                        <li>
+                            Yeongtong
+                        </li>
+                        <li>
+                            Yongin Giheung
+                        </li>
+                        <li>
+                            Yongin Techno Valley
+                        </li>
+                        <li>
+                            Uijeongbu Minrak
+                        </li>
+                        <li>
+                            Ilsan
+                        </li>
+                        <li>
+                            Ilsan Bellacita
+                        </li>
+                        <li>
+                            KINTEX
+                        </li>
+                        <li>
+                            Paju Geumchon
+                        </li>
+                        <li>
+                            Paju Woonjung
+                        </li>
+                        <li>
+                            Paju Publishing City
+                        </li>
+                        <li>
+                            Hanam Starfield
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    Incheon
+                    <ol>
+                        <li>
+                            Sword-dan
+                        </li>
+                        <li>
+                            Songdo
+                        </li>
+                        <li>
+                            Yeongjong
+                        </li>
+                        <li>
+                            Incheon Nonhyeon
+                        </li>
+                        <li>
+                            Blue-green gel
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    Daejeon / Chungcheong / Sejong
+                    <ol>
+                        <li>
+                            Gongju
+                        </li>
+                        <li>
+                            Nonsan
+                        </li>
+                        <li>
+                            Daejeon
+                        </li>
+                        <li>
+                            Daejeon Shinsegae Art & Science
+                        </li>
+                        <li>
+                            Daejeon meteors
+                        </li>
+                        <li>
+                            Daejeon Jungang-ro
+                        </li>
+                        <li>
+                            Daejeon Hyundai Outlet
+                        </li>
+                        <li>
+                            Sejong (Chochiwon)
+                        </li>
+                        <li>
+                            Sejong Naseong
+                        </li>
+                        <li>
+                            Sejong Cheongsa
+                        </li>
+                        <li>
+                            Oh Chang
+                        </li>
+                        <li>
+                            Jecheon
+                        </li>
+                        <li>
+                            Jincheon
+                        </li>
+                        <li>
+                            Cheonan
+                        </li>
+                        <li>
+                            Cheongju Sangsa
+                        </li>
+                        <li>
+                            Chungju
+                        </li>
+                        <li>
+                            Hongseong Naepo
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    Busan / Daegu / Gyeongsang
+                    <ol>
+                        <li>
+                            Gyeongbok City Hall
+                        </li>
+                        <li>
+                            Gyeongsan Hayang-dong
+                        </li>
+                        <li>
+                            Gumi Gangdong
+                        </li>
+                        <li>
+                            Gimcheon
+                        </li>
+                        <li>
+                            Nampo Port
+                        </li>
+                        <li>
+                            Daegu (Chilsung-ro)
+                        </li>
+                        <li>
+                            Daegu Shinsegae (Dongdaegu)
+                        </li>
+                        <li>
+                            Daegu isia
+                        </li>
+                        <li>
+                            Deokcheon
+                        </li>
+                        <li>
+                            Masan
+                        </li>
+                        <li>
+                            Moonkyung
+                        </li>
+                        <li>
+                            Busan Theater
+                        </li>
+                        <li>
+                            Pusan National University
+                        </li>
+                        <li>
+                            Bukdaegu (Chilgok)
+                        </li>
+                        <li>
+                            Samcheonpo
+                        </li>
+                        <li>
+                            Yangsan
+                        </li>
+                        <li>
+                            Yangsan Lafiesta
+                        </li>
+                        <li>
+                            Ulsan
+                        </li>
+                        <li>
+                            Jeonggwan
+                        </li>
+                        <li>
+                            Changwon
+                        </li>
+                        <li>
+                            Changwon Naeseo
+                        </li>
+                        <li>
+                            Haeundae (Jangsan)
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    Gwangju / Jeolla
+                    <ol>
+                        <li>
+                            Gwangju Sangmu
+                        </li>
+                        <li>
+                            Gwangju Hanam
+                        </li>
+                        <li>
+                            Mokpo Hadang(Formo)
+                        </li>
+                        <li>
+                            Songcheon
+                        </li>
+                        <li>
+                            Suncheon
+                        </li>
+                        <li>
+                            Yeosu Ungcheon
+                        </li>
+                        <li>
+                            Jondae (Gwangju)
+                        </li>
+                        <li>
+                            Jeonju Hyuksi
+                        </li>
+                        <li>
+                            Cheomdan
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    Gangwon
+                    <ol>
+                        <li>
+                            Namchuncheon
+                        </li>
+                        <li>
+                            Sokcho
+                        </li>
+                        <li>
+                            Wonju
+                        </li>
+                        <li>
+                            Central
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="giveGiftPopup">
+        <div>
+            <h2>
+                Giving a gift
+                <i class="material-icons btnClose">close</i>
+            </h2>
+
+            <div>
+                <label for="onlyNum">Gift recipient</label>
+                <input type="text" id="onlyNum" placeholder="Enter your mobile phone number">
+                <button>Additional</button>
+                <small>You can enter up to 5 pieces in total.</small>
+            </div>
+
+            <div>
+                <label for="giftName">The one who gives presents</label>
+                <input type="text" id="giftName" placeholder="Shin">
+            </div>
+
+            <div>
+                <input type="checkbox" id="information">
+                <label for="information" class="consentChk">
+                    Consent to collecting personal information
+                </label>
+                <p>
+                    Purpose: Shipment to gift the store
+                    <strong>Collection item: Mobile number of the person receiving the gift</strong>
+                    <strong>Retention period: 70 days of storage and 5 days of storage separately.</strong>
+                    You may refuse to agree, but in this case, you cannot use the ticket sending service immediately.
+                </p>
+
+                <button class="btnClose">Pay</button>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div>
+            <h1>
+                <a href="index_signIn.html"><img src="images/logo.png" alt="MEGABOX"></a>
+            </h1>
+            <nav>
+                <input type="button" class="material-icons mui" value="menu">
+                <ul>
+                    <li>
+                        <a href="movieMenu_boxoffice.html">
+                            Movie
+                        </a>
+                    </li>
+                    <li>
+                        <a href="reservation01.html">
+                            Reservation
+                        </a>
+                    </li>
+                    <li>
+                        <a href="theater.html">
+                            Theater
+                        </a>
+                    </li>
+                    <li>
+                        <a href="store.html">
+                            Store
+                        </a>
+                    </li>
+                    <li>
+                        <a href="benefit.html">
+                            Benefit
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                            Search
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sideBox">
+                <div>
+                    <span>Shin</span>
+                    <span class="material-icons">account_circle</span>
+                </div>
+                <ul>
+                    <li><a href="myPage_myPagePoint.html">Point of the membership</a></li>
+                    <li><a href="myPage_myPageCoupon.html">Coupon / Ticket</a></li>
+                    <li><a href="myPage_myPageReservation.html">Reservation / Purchase</a></li>
+                    <li><a href="myPage_myPageInterest.html">Content of interest</a></li>
+                    <li><a href="myPage_myPageMyInformation.html">My Megabox</a></li>
+                    <li><a href="index.html">Sign out</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <div class="productDetails">
+        <figure>
+            <div>
+                <img src="images/store_megaticket_05.png" alt="Exclusive admission to the boutique suite">
+            </div>
+            <figcaption>
+                <h2>
+                    Exclusive admission to the boutique suite
+                </h2>
+                <dl>
+                    <dt>The components</dt>
+                    <dd>a ticket reserved for the boutique suite</dd>
+                </dl>
+                <dl>
+                    <dt>Sales quantity</dt>
+                    <dd>8 units can be purchased at a time.</dd>
+                </dl>
+                <dl>
+                    <dt>Validity</dt>
+                    <dd>within two years of purchase Available</dd>
+                </dl>
+                <dl>
+                    <dt>Cancel After Purchase</dt>
+                    <dd>You can cancel it within 10 days from the date of purchase, and partial cancellation is not possible.</dd>
+                </dl>
+                <dl>
+                    <dt>Theater of Use</dt>
+                    <dd><a href="#availableTheaterPopup" class="btnOpen" data-popName="availableTheater">Available theater</a></dd>
+                </dl>
+            </figcaption>
+        </figure>
+
+        <div>
+            <div>
+                <span class="bxNum" id="goodsCount">
+                    <button class="btnMins">minus</button>
+                    <input type="text" class="txtNum" value="0">
+                    <button class="btnPlus">plus</button>
+                </span>
+                <span>
+                    Total commodity amount
+                    <mark>11,000 won</mark>
+                </span>
+            </div>
+
+            <div>
+                <a href="#giveGiftPopup" class="btnOpen" data-popName="giveGift">To give as a gift</a>
+                <a href="store_reservation.html">Buying</a>
+            </div>
+        </div>
+
+        <div class="storeDetailTab">
+            <ul class="tabMenu">
+                <li data-tabName="cancelInformation" class="active">
+                    Cancel After Purchase
+                </li>
+                <li data-tabName="productInformation">
+                    Product Usage GuideClosing Content
+                </li>
+            </ul>
+
+            <p class="active cancelInformation">
+                <strong>Extension/cancellation/refund information</strong>
+                - This product can be cancelled within 10 days of purchase.<br>
+                - The validity period can be extended within the validity period of this product and will be extended every three months (92 days) for a single extension.<br>
+                - The expiration date can be extended to 5 years from the date of purchase.<br>
+                - After the expiration of the initial validity period, 90% of the payment amount can be requested for a refund and may take more than 7 days to process the refund<br>
+                (Reception: 1544-0070).<br>
+                - Cancellation of purchase and refund requests can only be made for unused products and not for used products.<br>
+                - You can only get a lump-sum refund for tickets purchased, but you cannot get a partial refund.<br>
+                  (Example: If you purchase more than two tickets at once, all tickets must be canceled en masse, and the single page cannot be canceled.)<br>
+                - This product is not refundable in cash.
+                <br>
+                <br>
+                <strong>You can apply for an extension of the validity period only for purchased products after February 4, 2020.</strong>
+            </p>
+
+            <p class="productInformation">
+                - This ticket is automatically registered as an account at the time of purchase and is only available in the registered account.<br>
+                (However, the PIN number you received as a gift can be used after registering your store exchange voucher in your account.)<br>
+                - The book is valid for two years from the date of purchase.<br>
+                - Depending on the price policy, the amount of the ticket may change and the difference cannot be refunded. (Morning/Late Night/Youth/Children/Martine/Priority, etc.)<br>
+                - This copy will be sent via Kakao Notification Talk. (Customers who have not installed or not received Kakao Talk will be sent via MMS.)<br>
+                - You can only book this book on the Megabox website and application. (Telephone reservations, on-site ticket offices, unmanned ticket machines are not available)<br>
+                - Application and website reservation method: Branch > Movie name > Hours > Viewers/Mobile Gift Certificates > Enter 16 digits of PIN number sent to store ticket > Payment<br>
+                - A PIN number will be generated per purchase.<br>
+                - You can check the PIN number in the purchase details of Megabox homepage store.<br>
+                - Some theaters [Central, Ilsan Bellacita, Samcheonpo, Art Nine], special seats (Royal, Couple, Valcony, etc.) and special content are not available. (Not available for reservation regardless of difference payment)<br>
+                - You will earn points according to the Megabox rule when watching the movie with this book.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <h2>
+            <img src="images/logo.png" alt="MEGABOX">
+        </h2>
+        <ul>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="https://jebo.joonganggroup.com/main.do">Ethical management</a></li>
+        </ul>
+        <div>
+            COPYRIGHT © MegaboxJoongAng, Inc. All rights reserved
+            <address>240 World Cup Road, Mapo-gu, Seoul, 2F above ground (Seongsan-dong, World Cup Main Stadium) ARS <a href="tel:+82215440070">1544-0070</a></address>    
+            Representative name Kim Jin-sun · Cho Sang-yeon, the person in charge of personal information protection  · Business registration number 211-86-59478
+            · Communications sales business report number 833
+        </div>
+    </footer>
+
+</body>
+</html>

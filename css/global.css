@@ -1,0 +1,1367 @@
+body{font-family: 'Avenir'; background-color: #001530;}
+a{
+    text-decoration: none;
+}
+.topBtn{
+    position: fixed; display: block; text-align: center;  background-color: rgba(0,0,0,0.6); border: none;
+    font-weight: 500; border-radius: 5px; bottom: 10px; right: 2.35%; z-index: 100;
+}
+.btn{
+   border-radius: 3px; padding: 15px; box-sizing: border-box; font-size: 14px; font-weight: 500;
+}
+.btn.black,
+[class$='Sign'] form input[type="email"],
+[class$='Sign'] form input[type="password"],
+[class$='Sign'] form input[type="text"],
+.lostSign form input#onlyNum,
+.pageTitle [class$='Menu']:not(.tabMenu),
+.pageTitle [class$='Menu']:not(.tabMenu) ul,
+#interestPopup div a,
+.reservationPopupBtn button:first-of-type,
+#mgMembershipPointPopup > div div:first-of-type button,
+#mgDiscountCouponPopup > div > div:first-of-type > div:first-of-type div button,
+#paymentTermsPopup > div button,
+#giveGiftPopup > div div:first-of-type button,
+#giveGiftPopup > div div:last-of-type button,
+#mobileTicketPopup > div > div:last-of-type button:last-of-type,
+.reservationWrap > div .reservationMenu li.menuAfter,
+.reservationWrap > div .runningTime > div:last-of-type .carouselCalendarContainer .carouselCalendar li time.active,
+.reservationWrap .peopleSeat > div:nth-last-of-type(2) form ul li:nth-of-type(4) mark,
+.reservationWrap .peopleSeat > div:last-of-type{
+    background-color: #313131;
+}
+
+[id$='Popup'] > div,
+.reservationBtn,
+.reservationPopupBtn button:last-of-type,
+#mobileTicketPopup > div > div:last-of-type button:first-of-type,
+.reservationWrap,
+.reservationWrap > div .reservationMenu li,
+.reservationWrap > div .runningTime > div:first-of-type .tabMenu li.active,
+.reservationWrap > div .runningTime > div:first-of-type [id$='Theater'] li.active,
+.reservationWrap > div .runningTime > div:first-of-type [id$='Theater'] li.active ol,
+.reservationWrap > div .runningTime > div:nth-of-type(2) div span,
+.reservationWrap > div .runningTime > div:nth-of-type(2) div .selectComponent,
+.reservationWrap > div .runningTime > div:nth-of-type(2) [class$='Movie'] li.active,
+.reservationWrap .peopleSeat > div:first-of-type ul li .bxNum .btnMins,
+.reservationWrap .peopleSeat > div ul li .bxNum .btnPlus,
+.store .storeList li,
+.productDetails,
+.productDetails div:first-of-type div:first-of-type .bxNum .btnMins,
+.productDetails div:first-of-type div:first-of-type .bxNum .btnPlus,
+.benefitAll .benefitMembership strong,
+.benefitAll .benefitVip > div,
+.benefitAll #membershipPage, .benefitAll #vipPage,
+.myPageAll section:first-of-type > div,
+.myPageAll section:last-of-type,
+.myPageAll section:last-of-type .couponDetail > div fieldset .couponMenu span,
+.myPageAll section:last-of-type .couponDetail > div fieldset > ul li button,
+.termsPrivacy{
+    background-color: white;
+}
+
+.reservationBtn:hover,
+.reservationWrap > div .reservationMenu li.active,
+.reservationWrap .peopleSeat > div:nth-last-of-type(2) form ul li:first-of-type mark,
+.reservationWrap .peopleSeat > div:last-of-type a,
+.myPageAll section:first-of-type,
+.myPageAll section:last-of-type .pointDetail > div:first-of-type dl:first-of-type{
+    background-color: #8453f5;
+}
+
+.noneClick,
+.reservationWrap .peopleSeat > div:nth-last-of-type(2) form ul li:nth-of-type(2) mark,
+.reservationWrap .peopleSeat > div:nth-last-of-type(2) form ul li:last-of-type mark{
+    background-color: #c4c4c4;
+}
+
+#mgMembershipPointPopup > div div:first-of-type input,
+#mgDiscountCouponPopup > div > div:first-of-type > div:first-of-type div input,
+#mgDiscountCouponPopup > div > div:first-of-type > div:last-of-type div ul:first-of-type,
+#mgVipCouponPopup > div div ul:first-of-type,
+#mgDiscountCouponPopup > div p,
+#giveGiftPopup > div div input,
+#giveGiftPopup > div div:last-of-type p,
+#mobileTicketPopup > div div:nth-of-type(2) p,
+#mobileTicketPopup > div > div:first-of-type div:first-of-type input,
+.reservationWrap > div .runningTime > div:first-of-type,
+.reservationWrap > div .runningTime > div:nth-of-type(2),
+.reservationWrap .peopleSeat > div:nth-of-type(2),
+.reservationWrap > div .payment > div:nth-of-type(2),
+.benefitAll #membershipPage> div:first-of-type ul li,
+.benefitAll #membershipPage > div:nth-of-type(2) ul li,
+.benefitAll #membershipPage > div:nth-of-type(2) p,
+.myPageAll section:last-of-type .pointDetail > div:last-of-type ul li,
+.myPageAll section:last-of-type .couponDetail > div fieldset{
+    background-color: #f6f6f6;
+}
+
+[class$='Sign'] form input[type="button"],
+.reservationWrap .peopleSeat > div:nth-last-of-type(2) form ul li:nth-of-type(3) mark{
+    background-color: #0063e5;
+}
+
+header:not(.loginHeader) > div nav.active,
+header:not(.loginHeader) > div .sideBox:hover,
+footer,
+[class$='All'] > article > div:last-of-type > a:not(:first-of-type),
+[class$='All'] .movieTab > div .trailerInformation .customPager li,
+.reservationWrap > div .runningTime div h2,
+.reservationWrap > div .payment div h2,
+.reservationWrap > div .runningTime > div:last-of-type .movieTime > ul li.active::after,
+.reservationWrap .peopleSeat h2, .reservationWrap .paymentCompleted h2{
+    background-color: black;
+}
+
+.btnClose, .tabMenu li, button,
+header:not(.loginHeader) > div .sideBox,
+header:not(.loginHeader) > div nav .mui,
+.upSign form div:first-of-type label,
+.upSign form div:last-of-type label,
+.lostSign form > p:last-of-type button,
+.pageTitle .movieMenu span, .pageTitle .storeMenu span, .pageTitle .bebfitMenu span,
+.pageTitle .movieMenu .material-icons, .pageTitle .storeMenu .material-icons, .pageTitle .bebfitMenu .material-icons,
+#movieSharePopup div h3 a,
+#giveGiftPopup > div div:first-of-type button,
+.reservationWrap .peopleSeat > div:first-of-type ul li .bxNum .btnMins,
+.reservationWrap .peopleSeat > div ul li .bxNum .btnPlus,
+.productDetails div:first-of-type div:first-of-type .bxNum .btnMins,
+.productDetails div:first-of-type div:first-of-type .bxNum .btnPlus
+.movieTab .tabMenu li, .theaterTab .tabMenu li,
+[class$='All'] .movieTab > div .trailerInformation .customPager li,
+#postalCodePopup > div .numAddressInformation div .textField,
+#postalCodePopup > div .roadAddressInformation input[type="submit"],
+#postalCodePopup > div .numAddressInformation input[type="submit"],
+.myPageAll section:last-of-type .tabMenu li,
+.myPageAll section:last-of-type .couponDetail > div fieldset .couponMenu ul li,
+.myPageAll section:last-of-type .couponDetail > div fieldset > ul li button{
+    cursor: pointer;
+}
+
+.carouselContainer h2,
+#mgMembershipPointPopup > div h3,
+#mgDiscountCouponPopup > div h3,
+#mgVipCouponPopup > div h3{
+    cursor: default;
+}
+
+[class$='Age']:not([class$='All'] > article > div:first-of-type > span:first-of-type [class$='Age'], [class$='All'] .movieTab > div .detailInformation div ul > li:last-of-type [class$='Age']){
+    border-radius: 100%;
+}
+[class$='Age']{
+    text-align: center;
+}
+.allAge{
+    background-color: #86d790; 
+}
+.fifteenAge{
+    background-color: #ffb135;
+}
+.twelveAge{
+    background-color: #579aff;
+}
+.eighteenAge{
+    background-color: #e70d0d;
+}
+
+[id$='Popup']{
+    display: none; position: fixed; left: 0; top: 0; z-index: 100; background-color: rgba(0, 0, 0, 0.5); height: 100vh; width: 100%;
+}
+[id$='Popup'] > div{
+    position: absolute;
+}
+
+
+
+[id$='Popup'],
+header:not(.loginHeader),
+header:not(.loginHeader) > div h1 a img,
+footer h2 img,
+header:not(.loginHeader) div nav ul li a:hover:after,
+header:not(.loginHeader) > div .sideBox > a,
+.loginHeader h1 a img,
+footer,
+.mainSlideContainer .bx-wrapper .mainSlider li a img,
+.specialHall li img,
+.specialHall li a,
+.mainSlideContainer .bx-wrapper,
+.carouselContainer ul li a img,
+.carouselContainer ul li:hover a div,
+.movieList li a img, .interestList li a img,
+.movieList li:hover a div,
+[class$='All'] .movieTab > div .trailerInformation .customPager li a img,
+[class$='Sign'] form input[type="email"], [class$='Sign'] form input[type="password"],
+[class$='Sign'] form input[type="text"], .lostSign form input#onlyNum,
+[class$='Sign'] form input[type="button"],
+[class$='All'] .movieTab > div .steelcutInformation ul li a img,
+.reservationWrap > div .payment > div:first-of-type figure div img,
+.reservationWrap .peopleSeat > div:nth-of-type(2) > div img,
+.theaterIntro div ul li a img,
+[class$='Theater'] .theaterTab > div > div ul:first-of-type li:first-of-type,
+[class$='Theater'] .theaterTab > div > div ul:first-of-type li img,
+#mgDiscountCouponPopup > div > div:first-of-type > div:first-of-type div button,
+#mgDiscountCouponPopup > div > div:first-of-type > div:first-of-type div input,
+.store .storeList li a div img,
+.productDetails figure div img,
+#movieSharePopup div ul li a div img,
+#giveGiftPopup > div div:first-of-type small,
+#giveGiftPopup > div div:nth-of-type(2) input,
+#giveGiftPopup > div div:last-of-type button,
+.benefitAll #membershipPage> div:first-of-type ul li div img,
+.benefitAll #membershipPage > div:not(:last-of-type) ul li div img,
+.benefitAll #membershipPage > div:nth-of-type(2) ul li div img,
+.benefitAll #membershipPage> div:last-of-type dl:last-of-type dd div img,
+.benefitAll #vipPage > div:first-of-type ul:first-of-type li dl dt div img,
+.benefitAll #vipPage > div:last-of-type > ul > li div:first-of-type div img,
+.myPageAll section:first-of-type,
+.reservationWrap > div .payment > div:first-of-type figure div img.reservationWrap .paymentCompleted > div:first-of-type .paymentDone figure::after,
+.myPageAll section:last-of-type .reservationDetail > div .reservationList ul li > div figure::after{
+    width: 100%;
+}
+
+.topBtn,
+.btn.black,
+.noneClick,
+.reservationPopupBtn button:first-of-type,
+.reservationBtn:hover,
+[class$='Age'],
+.lostSign form > p:last-of-type button,
+header:not(.loginHeader) > div nav .mui,
+header:not(.loginHeader) > div nav ul li a,
+header:not(.loginHeader) > div .sideBox,
+header:not(.loginHeader) > div .sideBox div span:first-of-type,
+header:not(.loginHeader) > div .sideBox:hover ul li a,
+footer,
+footer ul li a,
+footer > div address a,
+footer ul li a,
+[class$='Sign'],
+[class$='Sign'] form input[type="button"],
+.inSign form > span a,
+.carouselContainer h2,
+.carouselContainer ul li:hover a div span,
+.pageTitle h2,
+.pageTitle .movieMenu, .pageTitle .storeMenu, .pageTitle .bebfitMenu,
+.pageTitle .movieMenu ul li a, .pageTitle .storeMenu ul li a, .pageTitle .bebfitMenu ul li a,
+.movieList li:hover a div span,
+[class$='All'] > article h2, [class$='Theater'] > article h2,
+[class$='All'] > article > div:first-of-type > span:first-of-type span,
+[class$='All'] > article > div:first-of-type > span:last-of-type,
+[class$='All'] > article > div:last-of-type > a:nth-of-type(2),
+[class$='All'] > article > div:last-of-type > a:last-of-type,
+.movieTab .tabMenu li, .theaterTab .tabMenu li,
+[class$='All'] .movieTab > div .detailInformation,
+[class$='All'] .movieTab > div .trailerInformation .customPager li,
+.loginHeader > a,
+[class$='Sign'] form input[type="email"], [class$='Sign'] form input[type="password"],
+[class$='Sign'] form input[type="text"], .lostSign form input#onlyNum,
+#paymentTermsPopup > div button,
+#mgMembershipPointPopup > div div:first-of-type button,
+#mgDiscountCouponPopup > div > div:first-of-type > div:first-of-type div button,
+#giveGiftPopup > div div:first-of-type button,
+#giveGiftPopup > div div:last-of-type button,
+#mobileTicketPopup > div > div:last-of-type button:last-of-type,
+.reservationWrap > div .runningTime div h2,
+.reservationWrap > div .payment div h2,
+.reservationWrap > div .reservationMenu li.active a,
+.reservationWrap > div .reservationMenu li.menuAfter a,
+.reservationWrap .peopleSeat > div:nth-of-type(2) strong,
+.reservationWrap .peopleSeat > div:nth-of-type(2) form .pcSeat li div input[type="checkbox"]:checked + label,
+.reservationWrap .peopleSeat > div:last-of-type,
+.reservationWrap .peopleSeat > div:last-of-type div input[type="text"],
+.reservationWrap .peopleSeat > div:last-of-type a,
+.theaterIntro h2,
+.theaterIntro div ul li a,
+[class$='Theater'] .theaterTab > div h3,
+[class$='Theater'] .theaterTab > div > div > div,
+[class$='Theater'] .theaterTab .privateInformation > div div dl dd p,
+.reservationWrap .peopleSeat > div:nth-of-type(2) form .mbtabSeat > li,
+[class$='Theater'] .theaterTab .privateInformation > div div dl:first-of-type dd p,
+.store .storeList h3,
+header input[type="search"],
+.searchAll > span,
+.myPageAll section:last-of-type .pointDetail > div:first-of-type dl:first-of-type{
+    color: white;
+}
+
+header:not(.loginHeader) > div::after,
+header:not(.loginHeader) div nav ul li a::after,
+.carouselContainer ul:after,
+.movieList::after, .storeList::after, .storeList ul::after, .interestList::after,
+.movieTab .tabMenu::after, .theaterTab .tabMenu::after,
+[class$='All'] .movieTab > div .detailInformation div::after,
+[class$='All'] .movieTab > div .detailInformation div ul > li::after,
+[class$='All'] .movieTab > div .trailerInformation .bx-wrapper::after,
+[class$='All'] .movieTab > div .trailerInformation .customPager::after,
+[class$='All'] .movieTab > div .steelcutInformation::after,
+#mgDiscountCouponPopup > div > div:first-of-type ul::after,
+#mgVipCouponPopup > div div ul::after,
+#mgDiscountCouponPopup > div > div:first-of-type > div:last-of-type div ul::after,
+#giveGiftPopup > div div:first-of-type::after,
+#mgDiscountCouponPopup > div > div:first-of-type > div:nth-of-type(2) div ul:first-of-type::after,
+#mgVipCouponPopup > div > div:first-of-type div ul:first-of-type::after,
+.reservationWrap > div::after, .reservationWrap .peopleSeat::after, .reservationWrap > div .reservationMenu::after,
+.reservationWrap > div .runningTime::after,
+.reservationWrap > div .runningTime > div:first-of-type .tabMenu::after,
+.reservationWrap > div .runningTime > div:last-of-type .movieTime > div .listTime::after,
+.reservationWrap .peopleSeat::after, .reservationWrap .paymentCompleted::after,
+.reservationWrap .peopleSeat > div:first-of-type ul::after,
+.reservationWrap .peopleSeat > div:last-of-type::after,
+.reservationWrap > div .payment > div:nth-of-type(2) > div > ul::after,
+.reservationWrap > div .payment > div:nth-of-type(2) > div #cardMethod:after,
+.reservationWrap > div .payment > div:nth-of-type(2) > div #simpleMethod .tabMenu::after,
+.reservationWrap > div .payment >div:last-of-type > div::after,
+.reservationWrap > div .payment > div:last-of-type > div .termsTatal::after,
+.reservationWrap > div .payment > div:last-of-type > div ul li::after,
+.reservationWrap > div .payment > div:last-of-type > ul li::after,
+.reservationWrap .paymentCompleted > div:first-of-type  .paymentDone figure figcaption dl::after,
+.reservationWrap .paymentCompleted > div:first-of-type .paymentDone figure::after,
+.myPageAll section:last-of-type .reservationDetail > div .reservationList ul li > div figure::after,
+.myPageAll section:last-of-type .reservationDetail > div .reservationList ul li > div figure figcaption dl::after,
+.reservationWrap .peopleSeat > div:nth-of-type(2) form .pcSeat li::after,
+.reservationWrap .paymentCompleted > div:first-of-type  .paymentDone form::after,
+.myPageAll section:last-of-type .reservationDetail .reservationInformation div ul li > div form::after,
+.theaterIntro div::after,
+[class$='Theater'] .theaterTab > div > div::after,
+[class$='Theater'] .theaterTab > div > div ul:first-of-type::after,
+[class$='Theater'] .theaterTab > div > div > div::after,
+[class$='Theater'] .theaterTab > div > div ul:nth-of-type(2)::after,
+.productDetails figure::after,
+.productDetails figure figcaption dl::after,
+.productDetails > div:first-of-type div::after,
+.productDetails div:first-of-type div:last-of-type::after,
+.productDetails .storeDetailTab .tabMenu::after,
+.productDetails .storeDetailTab .tabMenu li.active::after,
+.benefitAll #membershipPage > div:first-of-type ul::after,
+.benefitAll #membershipPage > div:nth-of-type(2) ul::after,
+.benefitAll .benefitVip > div figure::after,
+.benefitAll .benefitVip > div figure figcaption ul li dl::after,
+.benefitAll #vipPage > div:first-of-type ul:first-of-type::after,
+.benefitAll #vipPage > div:last-of-type > ul::after,
+.benefitAll #vipPage > div:last-of-type > ul > li div dl dd::after,
+#postalCodePopup > div .tabMenu::after,
+.myPageAll section:first-of-type > div > div:first-of-type figure figcaption ul li::after,
+.myPageAll section:first-of-type > div > div:last-of-type h2::after,
+.myPageAll section:last-of-type .pointDetail > div:first-of-type::after,
+.myPageAll section:last-of-type .pointDetail > div:nth-of-type(2)::after,
+.myPageAll section:last-of-type .pointDetail > div:nth-of-type(2) ul::after,
+.myPageAll section:last-of-type .pointDetail > div:last-of-type ul::after,
+.myPageAll section:last-of-type .tabMenu::after,
+.myPageAll section:last-of-type .couponDetail > div fieldset::after,
+.myPageAll section:last-of-type .reservationDetail > div .reservationList ul li::after,
+.myPageAll section:last-of-type .reservationDetail > div .reservationList ul li > div > dl::after,
+.myPageAll section:last-of-type .reservationDetail > div .reservationList ul li > div > div figure::after,
+.myPageAll section:last-of-type .reservationDetail > div .reservationList ul li > div figure figcaption h4::after,
+.myPageAll section:last-of-type .reservationDetail > div .reservationList ul li > div > div form fieldset::after,
+.myPageAll section:last-of-type .myInformationDetail > ul:first-of-type li:nth-of-type(4) > div::after,
+.myPageAll section:last-of-type .myInformationDetail > ul:first-of-type li:last-of-type > div::after,
+.myPageAll section:last-of-type .myInformationDetail > ul:last-of-type::after,
+.termsPrivacy > div div::after{
+    content: ''; display: block; clear: both;
+}
+
+header:not(.loginHeader){
+    position: fixed; top: 0; z-index: 50; background-image: linear-gradient(180deg, black, transparent);
+}
+header:not(.loginHeader) > div{
+    position: relative; box-sizing: border-box;
+}
+
+[id$='Popup'].active,
+#loginPopup div > a,
+[class$='Sign'] form label,
+[class$='Sign'] form input[type="button"],
+.inPinSign form small,
+.upSign form > span,
+.upPinSign form > span,
+.lostPinSign form span:last-of-type,
+.upSign form div:first-of-type label,
+.upSign form div:last-of-type label,
+.lostPinSign form span,
+header:not(.loginHeader) > div h1 a,
+header:not(.loginHeader) > div nav.active ul,
+header:not(.loginHeader) > div nav ul li a,
+header:not(.loginHeader) > div .sideBox:hover ul,
+.mainSlideContainer .bx-wrapper .mainSlider li a,
+.specialHall li a,
+.mainSlideContainer .customPager li a,
+.carouselContainer .bx-wrapper .bx-viewport ul li a,
+.carouselContainer .bx-wrapper:hover .bx-controls,
+.carouselContainer ul li:hover a,
+.pageTitle .movieMenu span, .pageTitle .storeMenu span, .pageTitle .bebfitMenu span,
+.pageTitle .movieMenu:hover ul, .pageTitle .storeMenu:hover ul, .pageTitle .bebfitMenu:hover ul,
+.pageTitle .movieMenu ul li a, .pageTitle .storeMenu ul li a, .pageTitle .bebfitMenu ul li a,
+.movieList li:hover a,
+.pageTitle [class$='Menu']:not(.tabMenu):hover ul,
+[class$='All'] > article h2 small,
+[class$='All'] > article > div:first-of-type > span:last-of-type,
+[class$='Information'].active,
+[class$='All'] .movieTab > div .detailInformation div p strong,
+[class$='All'] .movieTab > div .trailerInformation .customPager li a,
+[class$='All'] .movieTab > div .steelcutInformation ul li a,
+#mgDiscountCouponPopup > div p strong,
+#giveGiftPopup > div div:last-of-type p strong,
+#mobileTicketPopup > div div:nth-of-type(2) p strong,
+#mobileTicketPopup > div h3 span,
+#mobileTicketPopup > div > div:first-of-type div:first-of-type label,
+#paymentTermsPopup > div div p strong,
+.reservationWrap > div .reservationMenu li a,
+.reservationWrap > div .runningTime > div:nth-of-type(2) div span,
+.reservationWrap [id$='Theater'].active,
+.reservationWrap > div .runningTime > div:nth-of-type(2) [class$='Movie'].active,
+.reservationWrap > div .runningTime > div:first-of-type [id$='Theater'] li.active ol,
+.reservationWrap > div .runningTime > div:nth-of-type(2) div:hover .selectComponent,
+.reservationWrap .peopleSeat > div:nth-of-type(2) small,
+.reservationWrap .peopleSeat > div:nth-of-type(2) strong,
+.reservationWrap > div .payment > div:first-of-type figure figcaption span,
+.theaterIntro div ul li a,
+[class$='Theater'] .theaterTab > div span,
+.productDetails div:first-of-type div:last-of-type a,
+.benefitAll .benefitMembership strong small,
+.benefitAll #membershipPage > div:nth-of-type(2) h4 span,
+.benefitAll #membershipPage > div:nth-of-type(2) span,
+.benefitAll .benefitVip > div > strong,
+.benefitAll .benefitVip > div > strong small,
+.benefitAll #membershipPage > div:nth-of-type(2) > span,
+.benefitAll .benefitVip > div figure div span:last-of-type small,
+.searchAll > span,
+.myPageAll section:last-of-type > ul:first-of-type li a,
+.myPageAll section:last-of-type .couponDetail > div fieldset .couponMenu:hover ul,
+.myPageAll section:last-of-type .couponDetail > div > div > ul li mark,
+.myPageAll section:last-of-type .reservationDetail > div > span,
+.myPageAll section:last-of-type .reservationDetail > div .reservationList ul li > div > div > span,
+.myPageAll section:last-of-type .myInformationDetail h3 strong{
+    display: block;
+}
+header:not(.loginHeader) > div nav ul li{
+    position: relative;
+}
+header:not(.loginHeader) > div nav ul li:nth-child(1) a{background-image: url('../images/theaters_white_24dp.svg');}
+header:not(.loginHeader) > div nav ul li:nth-child(2) a{background-image: url('../images/confirmation_number_white_24dp.svg');}
+header:not(.loginHeader) > div nav ul li:nth-child(3) a{background-image: url('../images/event_seat_white_24dp.svg');}
+header:not(.loginHeader) > div nav ul li:nth-child(4) a{background-image: url('../images/storefront_white_24dp.svg');}
+header:not(.loginHeader) > div nav ul li:nth-child(5) a{background-image: url('../images/people_white_24dp.svg');}
+header:not(.loginHeader) > div nav ul li:nth-child(6) a{background-image: url('../images/search_white_24dp.svg');}
+header:not(.loginHeader) > div nav ul li a{
+    background-repeat: no-repeat; background-position: left center;
+    background-size: contain; padding-left: 25px; font-weight: 500;
+}
+header:not(.loginHeader) > div .sideBox{
+    position: absolute; right: 0; top: 0;
+}
+
+header:not(.loginHeader) > div .sideBox div{
+    text-align: right;
+}
+header > div .sideBox span,
+.reservationBtn,
+.mainSlideContainer .customPager li,
+#interestPopup div a,
+[class$='All'] > article > div:first-of-type > span:first-of-type mark,
+[class$='All'] > article > div:last-of-type > a:nth-of-type(2),
+[class$='All'] > article > div:last-of-type > a:last-of-type,
+.loginHeader h1 a,
+.reservationBtn span,
+.reservationWrap .peopleSeat > div:nth-of-type(2) form .pcSeat li span,
+.reservationWrap .peopleSeat > div:nth-of-type(2) form .pcSeat li div,
+.reservationWrap .peopleSeat > div:nth-of-type(2) form .pcSeat li div input[type="checkbox"] + label,
+[class$='Theater'] .theaterTab .privateInformation > div div dl:first-of-type dd strong,
+[class$='Theater'] .theaterTab .privateInformation > div div dl:first-of-type dd p,
+.myPageAll section:last-of-type .reservationDetail > div .reservationList ul li > div figure figcaption h4{
+    display: inline-block;
+}
+header:not(.loginHeader) > div .sideBox:hover div{
+    border-bottom: 1px solid #d0d0d0;
+}
+header:not(.loginHeader) > div .sideBox div span.material-icons{
+    color: #d0d0d0; vertical-align: middle;
+}
+
+header:not(.loginHeader) > div .sideBox ul,
+.carouselContainer ul li a div,
+.pageTitle [class$='Menu']:not(.tabMenu) ul,
+.movieList li a div,
+[class$='Information'],
+#giveGiftPopup > div div:last-of-type input,
+#mobileTicketPopup > div div:nth-of-type(2) input,
+.reservationWrap [id$='Theater'],
+.reservationWrap > div .runningTime > div:nth-of-type(2) [class$='Movie'],
+.myPageAll section:last-of-type h2{
+    display: none;
+}
+header:not(.loginHeader) > div .sideBox:hover ul{
+    padding-top: 15px;
+}
+header:not(.loginHeader) > div .sideBox:hover ul li:not(:last-child){
+    margin-bottom: 25px;
+}
+
+footer{
+    text-align: center; padding: 20px; box-sizing: border-box;
+}
+footer h2{
+    margin: 0 auto 20px; max-width: 70px;
+}
+footer ul{
+    margin-bottom: 20px; font-size: 14px; font-weight: 500;
+}
+footer > div{
+    margin: 0 auto; font-weight: 300;
+}
+
+.bx-wrapper{
+    box-shadow: none; border: none; background: transparent;
+}
+.carouselContainer .bx-wrapper:hover .bx-controls .bx-controls-direction .bx-prev{
+    left: 0; background-image: url('../images/navigate_before_white_24dp.svg'); 
+}
+.carouselContainer .bx-wrapper:hover .bx-controls .bx-controls-direction .bx-next{
+    right: 0; background-image: url('../images/navigate_next_white_24dp.svg');
+}
+/* bxSlider customize */
+
+.centimeterAll{
+    background-image: url('../images/5centimeter_bg.png');
+}
+.noTimeAll{
+    background-image: url('../images/007noTime_bg.png');
+}
+.afterAll{
+    background-image: url('../images/after_bg.png');
+}
+.annetteAll{
+    background-image: url('../images/annette_bg.png');
+}
+.asianAngelAll{
+    background-image: url('../images/asianAngel_bg.png');
+}
+.bangDreamAll{
+    background-image: url('../images/bangDream_bg.png');
+}
+.birthOfResonanceAll{
+    background-image: url('../images/birthOfResonance_bg.png');
+}
+.boyBehindAll{
+    background-image: url('../images/boyBehind_bg.png');
+}
+.burningFlowerAll{
+    background-image: url('../images/burningFlower_bg.png');
+}
+.caveatAll{
+    background-image: url('../images/caveat_bg.png');
+}
+.codaAll{
+    background-image: url('../images/coda_bg.png');
+}
+.crayonAll{
+    background-image: url('../images/crayon_bg.png');
+}
+.departuresAll{
+    background-image: url('../images/departures_bg.png');
+}
+.differentGirlAll{
+    background-image: url('../images/differentGirl_bg.png');
+}
+.dongbaekAll{
+    background-image: url('../images/dongbaek_bg.png');
+}
+.duneAll{
+    background-image: url('../images/dune_bg.png');
+}
+.elephantAll{
+    background-image: url('../images/elephant_bg.png');
+}
+.venomAll{
+    background-image: url('../images/venom_bg.png');
+}
+.ronWrongAll{
+    background-image: url('../images/ronWrong_bg.png');
+}
+.fatherAll{
+    background-image: url('../images/father_bg.png');
+}
+.gardenWordsAll{
+    background-image: url('../images/gardenWords_bg.png');
+}
+.gravityAll{
+    background-image: url('../images/gravity_bg.png');
+}
+.greenKnightAll{
+    background-image: url('../images/greenKnight_bg.png');
+}
+.killingLoversAll{
+    background-image: url('../images/killingLovers_bg.png');
+}
+.laBohemeAll{
+    background-image: url('../images/laBoheme_bg.png');
+}
+.lastDuelAll{
+    background-image: url('../images/lastDuel_bg.png');
+}
+.leaveAll{
+    background-image: url('../images/leave_bg.png');
+}
+.legendsFallAll{
+    background-image: url('../images/legendsFall_bg.png');
+}
+.madamAll{
+    background-image: url('../images/madam_bg.png');
+}
+.miracleAll{
+    background-image: url('../images/miracle_bg.png');
+}
+.mogadishuAll{
+    background-image: url('../images/mogadishu_bg.png');
+}
+.momSongAll{
+    background-image: url('../images/momSong_bg.png');
+}
+.myCatAll{
+    background-image: url('../images/myCat_bg.png');
+}
+.neverGonnaSnowAll{
+    background-image: url('../images/neverGonnaSnow_bg.png');
+}
+.petiteMamanAll{
+    background-image: url('../images/petiteMaman_bg.png');
+}
+.pokemonAll{
+    background-image: url('../images/pokemon_bg.png');
+}
+.reconAll{
+    background-image: url('../images/recon_bg.png');
+}
+.sasangAll{
+    background-image: url('../images/sasang_bg.png');
+}
+.shadowFlowersAll{
+    background-image: url('../images/shadowFlowers_bg.png');
+}
+.shangChiAll{
+    background-image: url('../images/shangChi_bg.png');
+}
+.spaceSweepersAll{
+    background-image: url('../images/spaceSweepers_bg.png');
+}
+.tadaAll{
+    background-image: url('../images/tada_bg.png');
+}
+.tenMonthsAll{
+    background-image: url('../images/tenMonths_bg.png');
+}
+.theCallAll{
+    background-image: url('../images/theCall_bg.png');
+}
+.threadsLoveAll{
+    background-image: url('../images/threadsLove_bg.png');
+}
+.togetherAll{
+    background-image: url('../images/together_bg.png');
+}
+.toveAll{
+    background-image: url('../images/tove_bg.png');
+}
+.voiceAll{
+    background-image: url('../images/voice_bg.png');
+}
+.weatheringAll{
+    background-image: url('../images/weathering_bg.png');
+}
+.yourManAll{
+    background-image: url('../images/yourMan_bg.png');
+}
+.yourNameAll{
+    background-image: url('../images//yourName_bg.png');
+}
+
+.boutiqueTheater{
+    background-image: url('../images/boutique_bg.png');
+}
+.comfortTheater{
+    background-image: url('../images/comfort_bg.png');
+}
+.dolbyTheater{
+    background-image: url('../images/dolbyCinema_bg.png');
+}
+.kidsTheater{
+    background-image: url('../images/mgKid_bg.png');
+}
+.mxTheater{
+    background-image: url('../images/mx_bg.png');
+}
+
+.benefitAll .benefitMembership{
+    background-image: url('../images/benefit_membershipBanner.png');
+}
+.benefitAll .benefitVip{
+    background-image: url('../images/benefit_vipBanner.png');
+}
+
+#loginPopup div{
+   border: 1px solid #c4c4c4; padding: 15px 0px; border-radius: 10px; box-sizing: border-box;
+}
+#loginPopup div h3{
+    border-bottom: 1px solid #c4c4c4; padding-bottom: 15px; margin-bottom: 25px; position: relative;
+    font-size: 16px; font-weight: 500;
+}
+#loginPopup div h3 span:first-child{
+    font-size: 16px; font-weight: 500;
+}
+#loginPopup div h3 a.material-icons{
+    position: absolute; right: 15px; font-size: 15px; vertical-align: middle; cursor: pointer;
+}
+#loginPopup div p{
+    margin-bottom: 25px; font-size: 16px; font-weight: 500; line-height: 18px;
+}
+#loginPopup div > a:first-of-type{
+    margin: 0 auto 15px; max-width: 145px;
+}
+#loginPopup div > a:last-of-type{
+    color: black; font-size: 12px; font-weight: 300px; opacity: 0.6;
+}
+
+.reservationBtn{
+    position: relative; box-sizing: border-box; font-weight: 900; border-radius: 5px;
+    color: black; transition: all 0.35s ease-out;
+}
+.reservationBtn span{
+    vertical-align: middle;
+}
+.reservationBtn span img{
+    animation-duration: 0.35s; animation-timing-function: ease-out; animation-iteration-count: 1;
+    animation-fill-mode: forwards; animation-direction: alternate; filter: brightness(0); width: 7px;
+}
+@keyframes turnLeft{
+    0%{
+        transform: rotate(0deg);
+    }100%{
+        transform: rotate(-30deg); 
+    }
+}
+@keyframes turnRight{
+    0%{
+        transform: rotate(0deg);
+    }100%{
+        transform: rotate(30deg);
+    }
+}
+.reservationBtn:hover span img{
+    filter: brightness(100);
+}
+.reservationBtn:hover span img:first-of-type{
+    animation-name: turnLeft; transform-origin: left bottom; 
+}
+.reservationBtn:hover span img:last-of-type{
+    animation-name: turnRight; transform-origin: right bottom;
+}
+
+.loginHeader{
+    text-align: center; position: relative;
+}
+.loginHeader > a{
+    position: absolute; font-weight: 500;
+}
+
+
+[class$='Sign'] form label{
+    font-weight: 500; margin-bottom: 25px;
+}
+[class$='Sign'] form input[type="email"],
+[class$='Sign'] form input[type="password"],
+[class$='Sign'] form input[type="text"],
+.lostSign form input#onlyNum{
+    box-sizing: border-box; border-radius: 5px; border: none;
+    font-size: 18px; font-weight: 500;
+}
+[class$='Sign'] form input[type="email"],
+[class$='Sign'] form input[type="password"],
+[class$='Sign'] form input[type="text"]{
+    padding: 20px 10px;
+}
+[class$='Sign'] form input[type="email"],
+[class$='Sign'] form input[type="password"],
+.inPinSign form > small,
+.lostSign form input#onlyNum,
+.lostPinSign form span:last-of-type{
+    margin-bottom: 25px;
+}
+[class$='Sign'] form [type="button"]{
+    text-align: center; border-radius: 5px;
+    padding: 15px 0; margin-bottom: 15px; border: none;
+}
+.inSign form > span{
+    font-size: 12px; font-weight: 300;
+}
+.inSign form > span a{
+    font-weight: 500; margin-left: 10px;
+}
+.inPinSign form small{
+    color: #c4c4c4; font-size: 12px; font-weight: 300;
+}
+.inPinSign form a{
+    color: #0063e5; font-size: 12px; font-weight: 500;
+}
+.upSign form > span,
+.upPinSign form > span{
+    margin-bottom: 10px;
+}
+.upSign form > span,
+.upPinSign form > span,
+.lostPinSign form span:last-of-type{
+    font-size: 14px; font-weight: 500; color: #c4c4c4;
+}
+.upSign form input[type="text"],
+.upSign form div:first-of-type{
+    margin-bottom: 15px;
+}
+.upSign form div{
+    position: relative;
+}
+.upSign form div:last-of-type,
+.upPinSign form > p,
+.upPinSign form dl dd,
+.lostSign form p,
+.lostPinSign form span:first-of-type,
+.lostPinSign form span:last-of-type{
+    margin-bottom: 25px;
+}
+.upSign form div input[type="checkbox"]{
+    position: absolute;
+}
+.upSign form div:first-of-type label,
+.upSign form div:last-of-type label{
+    font-size: 14px; font-weight: 300; width: calc(100% - 35px); padding-left: 35px; line-height: 18px;
+}
+.upSign form div:first-of-type label a,
+.upSign form div:last-of-type label a{
+    color: #0063e5;
+}
+.upPinSign form > p,
+.lostSign form > p:last-of-type{
+    line-height: 18px; 
+}
+.upPinSign form > p, .upPinSign form dl dt,
+.lostSign form > p:last-of-type{
+    font-size: 14px; font-weight: 300;
+}
+.upPinSign form dl{
+    border-left: 1px solid white; padding-left: 20px;
+}
+.upPinSign form dl dt{
+    color: #c4c4c4; margin-bottom: 10px;
+}
+.upPinSign form dl dd{
+    font-size: 18px; font-weight: 500;
+}
+.lostSign form p{
+    font-size: 12px; font-weight: 500; line-height: 16px;
+}
+.lostSign form input#onlyNum{
+    text-align: center; letter-spacing: 10px; padding: 20px 0px 20px 7px;
+}
+.lostSign form > p:last-of-type{
+    color: #c4c4c4;
+}
+.lostSign form > p:last-of-type button{
+    display: block; margin-top: 10px; background: none; border: none;
+    padding: 0; font-size: 14px; font-weight: 500;
+}
+.lostPinSign form span:first-of-type{
+    font-size: 12px; font-weight: 500;
+}
+
+/*
+   sing fin
+*/
+
+
+.mainSlideContainer{
+    position: relative;
+}
+
+.carouselContainer h2{
+    font-weight: 500;
+}
+.carouselContainer .bx-wrapper{
+    position: relative;
+}
+.carouselContainer ul li{
+    transition: 0.2s; position: relative; 
+}
+.carouselContainer .bx-wrapper .bx-controls{
+    display: none;
+}
+.carouselContainer .bx-wrapper:hover .bx-controls .bx-controls-direction [class^="bx"]{
+    width: 70px; height: 100%; max-height: 473px; top: 30px; background-position: center; background-size: contain;
+    background-repeat: no-repeat;
+}
+.carouselContainer .bx-wrapper:hover .bx-controls .bx-controls-direction [class^="bx"]:hover{
+    background-color: rgba(0,0,0,0.6);
+}
+.carouselContainer .bx-wrapper .bx-viewport{
+    padding: 30px 0;
+}
+.carouselContainer ul li:hover a div{
+    height: 100%; position: absolute; top: 0; left: 0; background: linear-gradient(0deg, black, transparent);
+    display: flex; justify-content: center; align-items: flex-end; padding-bottom: 25px; box-sizing: border-box;
+}
+.carouselContainer ul li:hover{
+    transform: scale(1.1);
+}
+.carouselContainer ul li:hover a div span{
+    font-size: 20px; color: white; display: flex; align-items: center;
+}
+.carouselContainer ul li:hover  a div span mark{
+    background: none; color: #8453f5; font-size: 40px; font-weight: 500; margin-left: 25px; vertical-align: middle;
+}
+.ratingsB{
+    text-indent: -9999px;
+}
+
+/*index fin*/
+
+
+
+
+.pageTitle [class$='Menu']:not(.tabMenu){
+    border-radius: 20px;
+}
+.movieList, .storeList, .interestList{
+    margin: 0 auto;
+}
+.movieList li, .storeList > li, .storeList ul li{
+    transition: 0.3s;
+}
+.movieList li:hover{
+    transform: scale(1.03);
+}
+.movieList li:hover a div{
+    width: 100%; height: 100%; padding-bottom: 10px;
+    box-sizing: border-box; position: absolute; top: 0; left: 0;
+    background: linear-gradient(0deg, black, transparent);
+    display: flex; justify-content: center; align-items: flex-end;
+}
+.movieList li:hover a div span{
+    display: flex; align-items: center;
+}
+.movieList li:hover  a div span mark{
+    background: none; color: #8453f5; font-weight: 500;
+}
+
+/*movieList fin*/
+
+#movieSharePopup div h3{
+    border-bottom: 1px solid #c4c4c4; position: relative;
+    text-align: center; font-weight: 500;
+}
+#movieSharePopup div h3 a{
+    position: absolute;
+}
+#movieSharePopup div ul{
+    display: flex; justify-content: center;
+}
+#movieSharePopup div ul li a{
+    color: black;
+}
+
+#interestPopup div{
+    border: 1px solid #c4c4c4; border-radius: 20px; text-align: center;
+}
+#interestPopup div h3{
+    padding: 15px 0; position: relative; border-bottom: 1px solid #c4c4c4; font-size: 16px;
+    font-weight: 500;
+}
+#interestPopup div h3 i{
+    position: absolute; top: 13.5px; right: 15px; font-size: 15px;
+}
+#interestPopup div p{
+    font-size: 16px; font-weight: 500; line-height: 19px;
+}
+#interestPopup div a{
+    padding: 15px 25px; border-radius: 3px; font-size: 14px;
+    font-weight: 500; color: white; margin-bottom: 15px;
+}
+
+[class$='All'], [class$='Theater']{
+    background-repeat: no-repeat;
+    background-position: center top; background-size: 100%;
+}
+[class$='All'] > article > p{
+    color: #d0d0d0;
+}
+.movieTab .tabMenu, div:not(.boutiqueTheater) .theaterTab .tabMenu{
+    position: relative;
+}
+[class$='All'] .movieTab > div .detailInformation div ul > li ol li:not(:last-of-type){
+    margin-bottom: 5px;
+}
+[class$='All'] .movieTab > div .trailerInformation .customPager li:hover a span,
+[class$='All'] .movieTab > div .trailerInformation .customPager li a.active span{
+    opacity: 0;
+}
+[class$='All'] .movieTab > div .trailerInformation .customPager li a span{
+    position: absolute; left: 0; top: 0; width: 100%; height: 100%; display: flex;
+    justify-content: center; align-items: center; text-align: center; padding: 0 10px;
+    box-sizing: border-box; background-color: rgba(0, 0, 0, 0.7); font-weight: 500;
+}
+
+/*
+ detailPage fin
+*/
+
+
+
+.reservationPopupBtn button{
+    padding: 15px 0; font-size: 14px; font-weight: 500; border-radius: 3px; box-sizing: border-box;
+}
+.reservationPopupBtn button:first-of-type{
+    border: none;
+}
+.reservationPopupBtn button:last-of-type{
+    box-sizing: border-box; border: 1px solid #c4c4c4; color: black;
+}
+
+#mgMembershipPointPopup > div, #mgDiscountCouponPopup > div, #mgVipCouponPopup > div{
+    border: 1px solid #c4c4c4; border-radius: 10px; box-sizing: border-box;
+}
+#mgMembershipPointPopup > div h3, #mgDiscountCouponPopup > div h3, #mgVipCouponPopup > div h3{
+    font-weight: 500; text-align: center; position: relative;
+    border-bottom: 1px solid #c4c4c4; margin-bottom: 15px;
+}
+#mgMembershipPointPopup > div h3 i, #mgDiscountCouponPopup > div h3 i, #mgVipCouponPopup > div h3 i{
+    position: absolute; right: 15px; font-size: 15px;
+}
+#mgMembershipPointPopup > div div:first-of-type{
+    padding: 0 20px; margin-bottom: 20px;
+}
+#mgMembershipPointPopup > div div:first-of-type label{
+    font-size: 14px; font-weight: 500; margin-bottom: 10px; display: block;
+}
+#mgMembershipPointPopup > div div:first-of-type input{
+    border: none; padding: 10px;
+}
+#mgMembershipPointPopup > div div:first-of-type input:first-of-type{
+    width: calc(100% - 96.5px);
+}
+#mgMembershipPointPopup > div div:first-of-type button{
+    border: none; padding: 10px 5px;  border-radius: 3px;
+    font-size: 12px; font-weight: 500;
+}
+#mgMembershipPointPopup > div div:first-of-type input:last-of-type{
+    width: calc(100% - 20px); margin-top: 10px;
+}
+#mgMembershipPointPopup > div div:last-of-type{
+    text-align: center; padding: 0 20px;
+}
+#mgDiscountCouponPopup > div > div, #mgVipCouponPopup > div > div{
+    padding: 0 20px;
+}
+#mgDiscountCouponPopup > div > div:first-of-type > div h4, #mgVipCouponPopup > div h4{
+    font-size: 14px; font-weight: 500;
+}
+#mgDiscountCouponPopup > div > div:first-of-type > div:first-of-type ul li{
+    float: left; font-size: 12px; font-weight: 300; padding-left: 20px;
+    background-image: url('../images/radio_button_unchecked_FILL0_wght400_GRAD0_opsz48.svg'); background-repeat: no-repeat;
+    background-size: 13px;
+}
+#mgDiscountCouponPopup > div > div:first-of-type > div:first-of-type ul li.active{
+    background-image: url('../images/radio_button_checked_FILL0_wght400_GRAD0_opsz48.svg');
+}
+#mgDiscountCouponPopup > div > div:first-of-type > div:first-of-type ul li:first-of-type{
+    margin-bottom: 20px;
+}
+#mgDiscountCouponPopup > div > div:first-of-type > div:first-of-type div input{
+    border: none; padding: 10px; box-sizing: border-box;
+}
+#mgDiscountCouponPopup > div > div:first-of-type > div:first-of-type div input:first-of-type{
+    margin-bottom: 10px;
+}
+#mgDiscountCouponPopup > div > div:first-of-type > div:first-of-type div input:last-of-type{
+    margin-bottom: 20px;
+}
+#mgDiscountCouponPopup > div > div:first-of-type > div:first-of-type div button{
+    border: none; font-size: 14px; font-weight: 500;
+    padding: 15px; border-radius: 3px;
+}
+#mgDiscountCouponPopup > div p{
+    padding: 15px 20px; box-sizing: border-box; border-top: 1px solid #c4c4c4;
+    border-radius: 0 0 10px 10px; font-size: 12px; font-weight: 300; line-height: 15px;
+}
+#mgDiscountCouponPopup > div p strong{
+    font-size: 14px; font-weight: 500; margin-bottom: 15px;
+}
+
+#paymentTermsPopup > div{
+    position: absolute;
+}
+#paymentTermsPopup > div h3{
+    padding: 20px 0; font-size: 12px; font-weight: 300;
+}
+#paymentTermsPopup > div div{
+    border-bottom: 1px solid #c4c4c4;
+}
+#paymentTermsPopup > div div ul{
+    display: flex;
+}
+#paymentTermsPopup > div div ul li{
+    display: flex; align-items: center; font-size: 12px; font-weight: 300; border-width: 1px 0;
+    border-color: #c4c4c4; border-style: solid; padding: 15px 5px; box-sizing: border-box;
+}
+#paymentTermsPopup > div div ul li.active{
+    border-bottom: 1px solid #313131;
+}
+#paymentTermsPopup > div div p{
+    padding: 20px; box-sizing: border-box; max-height: 310px; overflow-y: scroll;
+    font-size: 12px; font-weight: 300; text-align: left;
+}
+#paymentTermsPopup > div div p strong{
+    font-size: 16px; font-weight: 500;
+}
+#paymentTermsPopup > div div p strong:not(:first-child){
+    padding: 15px 0;
+}
+#paymentTermsPopup > div button{
+    margin: 20px 0; padding: 15px 20px; font-size: 16px; font-weight: 500;
+    border-radius: 3px; border: none;
+}
+#giveGiftPopup > div{
+    border-radius: 10px; border: 1px solid #c4c4c4;
+    padding: 15px 0; box-sizing: border-box;
+}
+#giveGiftPopup > div h2{
+    font-size: 16px; font-weight: 500; padding-bottom: 15px; position: relative; text-align: center;
+    border-bottom: 1px solid #c4c4c4; margin-bottom: 15px;
+}
+#giveGiftPopup > div div{
+    padding: 0 20px;
+}
+#giveGiftPopup > div div:first-of-type{
+    margin-bottom: 10px;
+}
+#giveGiftPopup > div div:nth-of-type(2){
+    margin-bottom: 15px;
+}
+#giveGiftPopup > div div label{
+    font-size: 14px; font-weight: 500;
+}
+#giveGiftPopup > div div:first-of-type label{
+    float: left; width: 100%; margin-bottom: 10px;
+}
+#giveGiftPopup > div div input{
+    padding: 10px; box-sizing: border-box; font-size: 12px; font-weight: 300; border: 0;
+}
+#giveGiftPopup > div div:first-of-type input{
+    float: left;
+}
+#giveGiftPopup > div div:first-of-type button{
+    font-size: 12px; font-weight: 500; border-radius: 3px; padding: 10px;
+    border: 0; float: right;
+}
+#giveGiftPopup > div div:first-of-type small{
+    float: left; margin-top: 5px; font-size: 12px; font-weight: 300; opacity: 0.6;
+}
+#giveGiftPopup > div div:nth-of-type(2) input{
+    margin-top: 10px;
+}
+#giveGiftPopup > div div:last-of-type label,
+#mobileTicketPopup > div div:nth-of-type(2) label{
+    font-size: 14px; font-weight: 500; padding-left: 20px; background-position: 0 2px; background-size: 15px;
+}
+#giveGiftPopup > div div:last-of-type p,
+#mobileTicketPopup > div > div:first-of-type div:last-of-type p{
+    margin: 10px 0 20px; background-color: #f6f6f6; padding: 10px; box-sizing: border-box;
+    font-size: 12px; font-weight: 300;
+}
+#mgDiscountCouponPopup > div > div:first-of-type > div:nth-of-type(2) div ul,
+#mgVipCouponPopup > div div:first-of-type ul{
+    border-bottom: #c4c4c4 1px solid;
+}
+
+/* 
+    DIAT
+    1. 범위별 그룹핑.
+    ex> desktop / tablet 공용 (min-width: 768px)-> tablet / mobile 공용(max-width:1279px) -> m/q 범주 생성후
+
+    2. 공통값들을 모두 ,로 그룹핑을 개별적으로 찾아내어 수행한후 위의 범주에 결합
+
+    3. mobile / tablet / desktop 세부분이 일치하는 값들은 또 별도로 선별해서 all Use part로 올리기.
+*/
+
+
+@media screen and (max-width: 767px){
+    header:not(.loginHeader) > div{
+        display: flex; justify-content: center; align-items: center; padding: 10px 20px;
+    }
+    header:not(.loginHeader) > div h1{
+        width: 75px;
+    }
+    header:not(.loginHeader) > div nav{
+        position: absolute; left: 0; top: 0; padding: 12px 0 0 20px; box-sizing: border-box;
+    }
+    header:not(.loginHeader) > div nav.active{
+        padding-bottom: 15px; padding-right: 20px;
+    }
+    header:not(.loginHeader) > div nav .mui{
+        border: none; background: none; padding: 0;
+    }
+    header:not(.loginHeader) > div nav ul{
+        display: none;
+    }
+    header:not(.loginHeader) > div nav ul li:not(:first-child){
+        padding-top: 25px;
+    }
+    header:not(.loginHeader) > div nav ul li:first-child{
+        padding-top: 15px;
+    }
+    header:not(.loginHeader) > div nav ul li a{
+       font-size: 12px; line-height: 16px;
+    }
+    header:not(.loginHeader) > div .sideBox{
+        padding: 12px 20px 0 0;
+    }
+    header:not(.loginHeader) > div .sideBox:hover div{
+       padding-bottom: 15px;
+    }
+    header:not(.loginHeader) > div .sideBox div span:first-of-type{
+       font-size: 12px; font-weight: 500;
+    }
+    header:not(.loginHeader) > div .sideBox div span.material-icons{
+        font-size: 20px; margin-left: 5px;
+    }
+    header:not(.loginHeader) > div .sideBox:hover ul li a{
+       font-size: 12px; font-weight: 300;
+    }
+
+    footer ul li:not(:first-of-type){
+        margin-top: 25px;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1279px){
+    header:not(.loginHeader) > div nav{
+        line-height: 14px;
+    }
+    header:not(.loginHeader) > div nav ul li a{
+       font-size: 12px; line-height: 16px;
+    }
+    header:not(.loginHeader) > div .sideBox{
+        padding: 20px 20px 0 0;
+    }
+    header:not(.loginHeader) > div .sideBox:hover div{
+       padding-bottom: 20px;
+    }
+    header:not(.loginHeader) > div .sideBox div span:first-of-type{
+       font-size: 14px; font-weight: 500;
+    }
+    header:not(.loginHeader) > div .sideBox div span.material-icons{
+        font-size: 25px; margin-left: 10px;
+    }
+
+    footer{
+        padding: 20px 0;
+    }
+}
+
+
+/*mobile & tablet*/
+
+@media screen and (max-width: 1279px){
+    .topBtn{
+        width: 75px; line-height: 30px; font-size: 12px;
+    }
+    header:not(.loginHeader) > div .sideBox:hover{
+        padding-left: 20px; padding-bottom: 20px;
+    }
+    footer > div{
+        max-width: 630px; font-size: 11px; line-height: 14px;
+    }
+    footer > div address{
+        margin-top: 15px;
+    }
+}
+
+/*mobile & tablet fin*/
+
+
+@media screen and (min-width: 1280px){
+    .topBtn{
+        width: 105px; line-height: 45px; font-size: 18px;
+    }
+    header:not(.loginHeader) > div nav{
+        line-height: 30px;
+    }
+    header:not(.loginHeader) > div nav ul li a{
+       font-size: 16px; line-height: 18px;
+    }
+    header:not(.loginHeader) > div .sideBox{
+        padding: 15px 15px 0 0;
+    }
+    header:not(.loginHeader) > div .sideBox:hover{
+       padding-left: 15px; padding-bottom: 25px;
+    }
+    header:not(.loginHeader) > div .sideBox:hover div{
+        padding-bottom: 25px;
+    }
+    header:not(.loginHeader) > div .sideBox div span:first-of-type{
+       font-size: 16px; font-weight: 500;
+    }
+    header:not(.loginHeader) > div .sideBox div span.material-icons{
+        font-size: 50px; margin-left: 15px;
+    }
+
+    footer{
+        padding: 25px 0;
+    }
+    footer > div{
+        max-width: 812px; font-size: 12px; line-height: 18px;
+    }
+    footer > div address{
+        margin-top: 20px;
+    }
+}
+
+
+/*pc & tablet*/
+
+@media screen and (min-width: 768px){
+    .mui{
+        display: none;
+    }
+    header:not(.loginHeader) > div{
+        padding: 25px 0 25px 2.35%;
+    }
+    header:not(.loginHeader) > div > *:not(.sideBox){
+        float: left;
+    }
+    header:not(.loginHeader) > div h1{
+        width: 6%; max-width: 140px;
+    }
+    header:not(.loginHeader) > div nav{
+        margin-left: 3%; width: 89.5%;
+    }
+    header:not(.loginHeader) > div nav ul li{
+        display: inline-block;
+    }
+    header:not(.loginHeader) > div nav ul li:not(:first-child){
+        margin-left: 2%;
+    }
+    header:not(.loginHeader) > div nav ul li a::after{
+        width: 0; height: 1px; background-color: #fff; position: absolute; bottom: -5px; left: 0; transition: 0.3s;
+    }
+    header:not(.loginHeader) > div .sideBox{
+        width: 11.91%;
+    }
+    header:not(.loginHeader) > div .sideBox:hover ul li a{
+        font-size: 14px; font-weight: 300;
+    }
+
+    footer ul li{
+        display: inline-block;
+    }
+    footer ul li:not(:last-child){
+        margin-right: 20px;
+    }
+}
+
+/*pc & tablet fin*/
