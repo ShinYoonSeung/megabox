@@ -363,10 +363,6 @@ function trailerSlider(){
 }
 
 function carouselSlider(target){
-    var touchDevice = false;
-    if (navigator.userAgent.match(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/)) {
-          touchDevice = true;
-    }
     $(target).bxSlider({
         maxSlides: 5,
         minSlides: 1,
@@ -374,8 +370,7 @@ function carouselSlider(target){
         slideMargin: 20,
         infiniteLoop: false,
         slideWidth: 330,
-        pager: false,
-        touchEnabled : touchDevice
+        pager: false
     });
 }
 
@@ -386,8 +381,7 @@ function carouselCalendar(){
         infiniteLoop: false,
         slideMargin: 20,
         pager: false,
-        slideWidth: 30,
-        touchEnabled : false
+        slideWidth: 30
     });
 }
 
