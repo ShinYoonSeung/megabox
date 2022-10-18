@@ -338,16 +338,12 @@ function reservationListClick(){
 }
 
 function mainSlider(){
-    var touchDevice = false;
-    if (navigator.userAgent.match(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/)) {
-          touchDevice = true;
-    }
     $(".mainSlider").bxSlider({
         controls : false,
         pause: 4000,
         pagerCustom: '.customPager',
         auto: true,
-        touchEnabled : touchDevice
+        preventDefaultSwipeY: false
     });
 }
 
