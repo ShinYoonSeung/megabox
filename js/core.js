@@ -342,8 +342,7 @@ function mainSlider(){
         controls : false,
         pause: 4000,
         pagerCustom: '.customPager',
-        auto: true,
-        preventDefaultSwipeY: false
+        auto: true
     });
 }
 
