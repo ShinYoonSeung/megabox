@@ -496,12 +496,8 @@
 /*mobile*/
 
 @media screen and (max-width: 767px){
-    [id$='Popup']:not(#availableTheaterPopup, #paymentTermsPopup, #myTheaterPopup, #postalCodePopup) > div{
-        left: calc(50% - 120px);
-    }
-
     #loginPopup div{
-        width: 240px; text-align: center; top: calc(50% - 128.5px);
+        width: 240px; text-align: center; top: calc(50% - 128.5px); left: calc(50% - 120px);
     }
     #loginPopup div p{
         padding: 0 15px;
@@ -784,13 +780,10 @@
     }
 
     #mgMembershipPointPopup > div, #mgDiscountCouponPopup > div, #mgVipCouponPopup > div{
-        width: 240px;
+        width: calc(100% - 40px); left: 20px;
     }
     #mgMembershipPointPopup > div h3, #mgDiscountCouponPopup > div h3, #mgVipCouponPopup > div h3{
         font-size: 16px; padding: 15px 25px;
-    }
-    #mgMembershipPointPopup > div h3 i, #mgDiscountCouponPopup > div h3 i, #mgVipCouponPopup > div h3 i{
-        top: 24px;
     }
     #mgMembershipPointPopup > div{
         top: calc(50% - 172.5px);
@@ -859,14 +852,14 @@
     }
 
     #paymentTermsPopup > div{
-        width: 240px; text-align: center; top: calc(50% - 289.5px); left: calc(50% - 120px);
+        width: calc(100% - 40px); text-align: center; top: calc(50% - 289.5px); left: 20px;
     }
     #paymentTermsPopup > div div ul{
         overflow-y: scroll;
     }
 
     #giveGiftPopup > div{
-        width: 240px; top: calc(50% - 276.5px);
+        width: calc(100% - 40px); top: calc(50% - 276.5px); left: 20px;
     }
     #giveGiftPopup > div div:first-of-type input{
         width: calc(100% - 82.72px);
@@ -890,8 +883,8 @@
 
     
     #mobileTicketPopup > div{
-        width: 240px; border: 1px solid #c4c4c4; border-radius: 10px; box-sizing: border-box;
-        top: calc(50% - 306.5px);
+        width: calc(100% - 40px); border: 1px solid #c4c4c4; border-radius: 10px; box-sizing: border-box;
+        top: calc(50% - 306.5px); left: 20px;
     }
     #mobileTicketPopup > div h3{
         padding: 15px 0; text-align: center; font-size: 16px; font-weight: 500; position: relative;
@@ -1828,14 +1821,14 @@
     }
 
     #availableTheaterPopup div{
-        width: 240px; top: calc(50% - 238px); left: calc(50% - 120px);
+        width: calc(100% - 40px); top: calc(50% - 238px); left: 20px;
     }
     #availableTheaterPopup div h2{
         padding: 20px 0; text-align: center; position: relative; font-size: 16px;
         font-weight: 500; border-bottom: #c4c4c4 1px solid; box-sizing: border-box;
     }
     #availableTheaterPopup div h2 i, #giveGiftPopup div h2 i{
-        position: absolute; right: 10px; font-size: 15px; top: 50%; transform: translateY(-50%);
+        position: absolute; right: 10px; font-size: 15px;
     }
     .theaterList{
         position: relative; padding-bottom: 140px;
@@ -2219,7 +2212,7 @@
     }
 
     #postalCodePopup > div{
-        width: 240px; min-height: 380px; box-sizing: border-box; top: calc(50% - 190px); left: calc(50% - 120px);
+        width: calc(100% - 40px); min-height: 380px; box-sizing: border-box; top: calc(50% - 190px); left: 20px;
     }
     #postalCodePopup > div h3{
         font-size: 24px; font-weight: 900; padding: 15px 0 45px;
@@ -2285,7 +2278,7 @@
 
     #savePopup > div{
         width: 240px; border: #c4c4c4 1px solid; box-sizing: border-box; border-radius: 10px;
-        text-align: center; top: calc(50% - 111px);
+        text-align: center; top: calc(50% - 111px); left: calc(50% - 120px);
     }
     #savePopup > div h3{
         padding: 15px 0; position: relative; border-bottom: #c4c4c4 1px solid; font-size: 16px; font-weight: 500; margin-bottom: 25px;
@@ -3211,6 +3204,9 @@
     }
     #mgDiscountCouponPopup > div > div:first-of-type > div:first-of-type ul{
         padding-bottom: 10px;
+    }
+    #mgDiscountCouponPopup > div > div:first-of-type > div:first-of-type ul li{
+        float: left;
     }
     #mgDiscountCouponPopup > div > div:first-of-type > div:first-of-type ul li:first-of-type{
         margin-right: 15px;
