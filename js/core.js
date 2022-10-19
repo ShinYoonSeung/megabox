@@ -66,17 +66,17 @@ var methodP = null;
 $(document).ready(function(){
     init();
     popupControl(openBtn,closeBtn,popupTail,popupAllTarget);
-    mainSlider();
-    carouselSlider(carouselBO);
-    carouselSlider(carouselSS);
-    carouselSlider(carouselSP);
-    carouselSlider(carouselC);
-    carouselSlider(carouselN);
+    customSlider(".mainSlider",false,4000,".customPager",true,1,1,0,0,0,true,true);
+    customSlider(".carouselBO",true,99999,null,true,5,1,5,20,330,false,true);
+    customSlider(".carouselSS",true,99999,null,true,5,1,5,20,330,false,true);
+    customSlider(".carouselSP",true,99999,null,true,5,1,5,20,330,false,true);
+    customSlider(".carouselC",true,99999,null,true,5,1,5,20,330,false,true);
+    customSlider(".carouselN",false,99999,null,true,5,1,5,20,330,false,true);
+    customSlider(".carouselCalendar",true,99999,null,true,8,3,0,20,30,false,false);
+    carouselCalendarT();
     tabControl(mvTabBtn,mvTheater);
     tabControl(methodSelect,methodCategory);
     tabControl(methodTabBtn,methodP);
-    carouselCalendar();
-    carouselCalendarT();
     hoverControl(hoverTarget);
     hoverControl(movieHTarget);
     hoverControl(timeHTarget);
@@ -337,14 +337,6 @@ function reservationListClick(){
     });
 }
 
-function mainSlider(){
-    $(".mainSlider").bxSlider({
-        controls : false,
-        pause: 4000,
-        pagerCustom: '.customPager',
-        auto: true
-    });
-}
 
 function trailerSlider(){
     var redrawTarget = $(".trailerSlider").bxSlider({
@@ -356,26 +348,19 @@ function trailerSlider(){
         redrawTarget.redrawSlider();
     });
 }
-
-function carouselSlider(target){
+function customSlider(target,controlBool,pauseTime,customPager,autoVal,maxCount,minCount,movCount,marginVal,widthVal,pagerBool,infBool){
     $(target).bxSlider({
-        maxSlides: 5,
-        minSlides: 1,
-        moveSlides: 5,
-        slideMargin: 20,
-        slideWidth: 330,
-        pager: false
-    });
-}
-
-function carouselCalendar(){
-    $(".carouselCalendar").bxSlider({
-        maxSlides: 8,
-        minSlides: 3,
-        infiniteLoop: false,
-        slideMargin: 20,
-        pager: false,
-        slideWidth: 30
+        controls : controlBool,
+        pause: pauseTime,
+        pagerCustom: customPager,
+        auto: autoVal,
+        maxSlides: maxCount,
+        minSlides: minCount,
+        moveSlides: movCount,
+        slideMargin: marginVal,
+        slideWidth: widthVal,
+        pager: pagerBool,
+        infiniteLoop : infBool
     });
 }
 
