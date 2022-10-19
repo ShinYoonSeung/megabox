@@ -199,6 +199,7 @@ footer,
 .theaterIntro div ul li a img,
 [class$='Theater'] .theaterTab > div > div ul:first-of-type li:first-of-type,
 [class$='Theater'] .theaterTab > div > div ul:first-of-type li img,
+[class$='Theater'] .theaterTab > div > div > ul:last-of-type li div img,
 #mgDiscountCouponPopup > div > div:first-of-type > div:first-of-type div button,
 #mgDiscountCouponPopup > div > div:first-of-type > div:first-of-type div input,
 .store .storeList li a div img,
@@ -274,6 +275,7 @@ footer ul li a,
 .theaterIntro div ul li a,
 [class$='Theater'] .theaterTab > div h3,
 [class$='Theater'] .theaterTab > div > div > div,
+[class$='Theater'] .theaterTab > div > div > ul:last-of-type li,
 [class$='Theater'] .theaterTab .privateInformation > div div dl dd p,
 .reservationWrap .peopleSeat > div:nth-of-type(2) form .mbtabSeat > li,
 [class$='Theater'] .theaterTab .privateInformation > div div dl:first-of-type dd p,
@@ -1217,7 +1219,7 @@ footer > div{
        font-size: 12px; line-height: 16px;
     }
     header:not(.loginHeader) > div .sideBox{
-        padding: 12px 20px 0 0;
+        padding: 14px 20px 0 0;
     }
     header:not(.loginHeader) > div .sideBox:hover div{
        padding-bottom: 15px;

@@ -941,7 +941,7 @@
 
 
     .reservationWrap{
-       margin-top: 45px;
+       margin-top: 50px;
     }
     .reservationWrap > div .reservationMenu{
         text-align: center; display: flex; align-content: stretch;
@@ -2174,7 +2174,7 @@
         overflow-y: scroll;
     }
     #myTheaterPopup > div{
-        width: 240px; top: calc(50% - 306.5px); left: calc(50% - 120px);
+        width: calc(100% - 40px); top: calc(50% - 306.5px); left: 20px;
     }
     #myTheaterPopup > div h2{
         font-size: 18px; font-weight: 500; text-align: center; padding: 20px 0; border-bottom: #c4c4c4 1px solid;
@@ -2932,7 +2932,7 @@
 /*pc ~ tablet*/
 
 @media screen and (min-width: 768px){
-    [id$='Popup']:not(#availableTheaterPopup, #paymentTermsPopup, #myTheaterPopup, #postalCodePopup) > div{
+    [id$='Popup']:not(#movieSharePopup, #availableTheaterPopup, #paymentTermsPopup, #myTheaterPopup, #postalCodePopup) > div{
         left: calc(50% - 175px);
     }
 
@@ -3063,9 +3063,6 @@
         border-left: 1px solid white;
     }
 
-    .movieList, .storeList{
-        min-height: calc(100vh - 352.5px);
-    }
     .movieList li, .storeList > li, .storeList ul li, .interestList li{
        float: left; width: 18.98%;
     }
@@ -3917,6 +3914,9 @@
     }
     [class$='Theater'] .theaterTab > div > div ul:first-of-type li:nth-of-type(3){
         width: 36.04%; margin-top: 20px;
+    }
+    [class$='Theater'] .theaterTab > div > div > ul:last-of-type li{
+        display: flex; align-items: center;
     }
     [class$='Theater'] .theaterTab > div > div div dl dd{
         font-weight: 300; color: #d0d0d0;
@@ -5163,7 +5163,7 @@
     }
 
     .movieList{
-        margin-bottom: 35px; min-height: 832.5px;
+        margin-bottom: 35px; min-height: calc(100vh - 377.5px);
     }
     .movieList li, .interestList li{
         margin-bottom: 10px;
@@ -5177,7 +5177,7 @@
 
     
     #movieSharePopup div{
-        top: calc(50% - 52.5px);
+        top: calc(50% - 52.5px); left: calc(50% - 185.235px);
     }
     #movieSharePopup div ul{
         padding: 0 15px 20px;
@@ -5270,7 +5270,7 @@
     }
 
     .reservationWrap{
-       margin-top: 58px;
+       margin-top: 70px;
     }
     .reservationWrap > div .reservationMenu li{
        float: left; width: 25%; padding: 20px 0; box-sizing: border-box;
@@ -5419,8 +5419,35 @@
     [class$='Theater'] .theaterTab > div span{
         font-size: 14px; margin-bottom: 15px; line-height: 17px;
     }
+    [class$='Theater'] .theaterTab > div > div > ul:last-of-type{
+        margin-top: 50px;
+    }
+    [class$='Theater'] .theaterTab > div > div > ul:last-of-type::after{
+        content: ''; display: block; clear: both;
+    }
+    [class$='Theater'] .theaterTab > div > div > ul:last-of-type li{
+        float: left; width: 50%;
+    }
+    [class$='Theater'] .theaterTab > div > div > ul:last-of-type li:nth-of-type(2n+1){
+        padding-right: 30px; box-sizing: border-box;
+    }
+    [class$='Theater'] .theaterTab > div > div > ul:last-of-type li:last-of-type{
+        margin-top: 20px;
+    }
+    [class$='Theater'] .theaterTab > div > div > ul:last-of-type li div{
+        width: 80px;
+    }
+    [class$='Theater'] .theaterTab > div > div > ul:last-of-type li dl{
+        width: calc(100% - 80px); padding-left: 20px; box-sizing: border-box;
+    }
+    [class$='Theater'] .theaterTab > div > div > ul:last-of-type li dl dt{
+        font-size: 18px; font-weight: normal; margin-bottom: 10px;
+    }
+    [class$='Theater'] .theaterTab > div > div > ul:last-of-type li dl dd{
+        font-size: 12px; font-weight: 300;
+    }
     [class$='Theater'] .theaterTab > div > div > div{
-        box-sizing: border-box; color: white; margin-top: 50px;
+        box-sizing: border-box; margin-top: 50px;
     }
     [class$='Theater'] .theaterTab > div > div div dl,
     [class$='Theater'] .theaterTab > div > div div p{
@@ -5457,6 +5484,9 @@
 
 
 
+    #storeSubMenu{
+        min-height: calc(100vh - 236.5px);
+    }
     .store .storeList h3{
         font-size: 18px; font-weight: 500;
     }
@@ -5859,11 +5889,8 @@
         font-size: 18px;
     }
 
-    .movieList, .storeList{
-        min-height: calc(100vh - 352.5px);
-    }
     .movieList{
-        margin-bottom: 50px;
+        margin-bottom: 50px; min-height: calc(100vh - 455.5px);
     }
     .movieList li, .storeList li{
         margin-bottom: 20px;
@@ -5886,7 +5913,7 @@
     
 
     #movieSharePopup div{
-        border-radius: 20px; top: calc(50% - 72px);
+        border-radius: 20px; top: calc(50% - 72px); left: calc(50% - 242.36px);
     }
     #movieSharePopup div h3{
         padding: 20px 0; margin-bottom: 25px; font-size: 18px;
@@ -6230,11 +6257,28 @@
     [class$='Theater'] .theaterTab > div span{
         font-size: 18px; margin-bottom: 35px; line-height: 21px;
     }
+    [class$='Theater'] .theaterTab > div > div > div,
     [class$='Theater'] .theaterTab > div > div ul{
         float: left; width: 50%;
     }
-    [class$='Theater'] .theaterTab > div > div > div{
-        float: left; width: 50%; padding-left: 3.73%; box-sizing: border-box;
+    [class$='Theater'] .theaterTab > div > div > div,
+    [class$='Theater'] .theaterTab > div > div > ul:last-of-type{
+        padding-left: 3.73%; box-sizing: border-box;
+    }
+    [class$='Theater'] .theaterTab > div > div > ul:last-of-type li:nth-of-type(2){
+        margin: 60px 0;
+    }
+    [class$='Theater'] .theaterTab > div > div > ul:last-of-type li div{
+        width: 175px;
+    }
+    [class$='Theater'] .theaterTab > div > div > ul:last-of-type li dl{
+        width: calc(100% - 175px); padding-left: 55px; box-sizing: border-box;
+    }
+    [class$='Theater'] .theaterTab > div > div > ul:last-of-type li dl dt{
+        font-size: 24px; font-weight: normal; margin-bottom: 15px;
+    }
+    [class$='Theater'] .theaterTab > div > div > ul:last-of-type li dl dd{
+        font-size: 18px; font-weight: 300;
     }
     [class$='Theater'] .theaterTab > div > div div dl:not(:last-of-type){
         margin-bottom: 35px;
@@ -6274,7 +6318,10 @@
 
 
     .store{
-        margin-bottom: 50px; min-height: 767.5px;
+        margin-bottom: 50px;
+    }
+    #storeSubMenu{
+        min-height: calc(100vh - 272.5px);
     }
     .store .storeList h3{
         font-size: 28px; font-weight: 500; margin-bottom: 30px;

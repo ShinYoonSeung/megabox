@@ -363,7 +363,6 @@ function carouselSlider(target){
         minSlides: 1,
         moveSlides: 5,
         slideMargin: 20,
-        infiniteLoop: false,
         slideWidth: 330,
         pager: false
     });
