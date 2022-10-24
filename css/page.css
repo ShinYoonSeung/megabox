@@ -1268,7 +1268,10 @@
         margin-top: 20px; font-weight: 500;
     }
     .reservationWrap > div .payment > div:first-of-type figure figcaption h3{
-        font-size: 18px; line-height: 24px; padding-left: 30px; position: relative;
+        font-size: 18px; line-height: 24px; position: relative;
+    }
+    .reservationWrap > div:not(.stroeReservation) .payment > div:first-of-type figure figcaption h3{
+        padding-left: 30px;
     }
     .reservationWrap > div .payment > div:first-of-type figure figcaption h3 mark{
         font-size: 12px; width: 20px; height: 20px; display: inline-block; text-align: center; line-height: 23px;

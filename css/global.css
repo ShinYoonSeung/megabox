@@ -239,7 +239,7 @@ footer ul li a,
 [class$='Sign'],
 [class$='Sign'] form input[type="button"],
 .inSign form > span a,
-.carouselContainer h2,
+.carouselContainer h2 a,
 .carouselContainer ul li:hover a div span,
 .pageTitle h2,
 .pageTitle .movieMenu, .pageTitle .storeMenu, .pageTitle .bebfitMenu,
@@ -1201,7 +1201,7 @@ footer > div{
         vertical-align: middle;
     }
     header:not(.loginHeader) > div nav{
-        position: absolute; left: 0; top: 0; padding: 11px 0 0 20px; box-sizing: border-box;
+        position: absolute; left: 0; top: 0; padding: 10px 0 0 20px; box-sizing: border-box;
     }
     header:not(.loginHeader) > div nav.active{
         padding-bottom: 15px; padding-right: 20px;
@@ -1222,7 +1222,7 @@ footer > div{
        font-size: 12px; line-height: 16px;
     }
     header:not(.loginHeader) > div .sideBox{
-        padding: 12px 20px 0 0;
+        padding: 11px 20px 0 0;
     }
     header:not(.loginHeader) > div .sideBox:hover div{
        padding-bottom: 15px;
