@@ -177,7 +177,7 @@ header:not(.loginHeader) > div nav .mui,
 header:not(.loginHeader),
 header:not(.loginHeader) > div h1 a img,
 footer h2 img,
-header:not(.loginHeader) div nav ul li a:hover:after,
+header:not(.loginHeader) div nav ul li a:hover::after,
 header:not(.loginHeader) > div .sideBox > a,
 .loginHeader h1 a img,
 footer,
@@ -187,7 +187,7 @@ footer,
 .mainSlideContainer .bx-wrapper,
 .carouselContainer ul li a img,
 .carouselContainer ul li:hover a div,
-.movieList li a img, .interestList li a img,
+.movieList li a img,.interestList li a img,
 .movieList li:hover a div,
 [class$='All'] .movieTab > div .trailerInformation .customPager li a img,
 [class$='Sign'] form input[type="email"], [class$='Sign'] form input[type="password"],
@@ -286,8 +286,6 @@ header input[type="search"],
     color: white;
 }
 
-header:not(.loginHeader) > div::after,
-header:not(.loginHeader) div nav ul li a::after,
 .carouselContainer ul:after,
 .movieList::after, .storeList::after, .storeList ul::after, .interestList::after,
 .movieTab .tabMenu::after, .theaterTab .tabMenu::after,
@@ -358,7 +356,8 @@ header:not(.loginHeader) div nav ul li a::after,
 .myPageAll section:last-of-type .myInformationDetail > ul:first-of-type li:nth-of-type(4) > div::after,
 .myPageAll section:last-of-type .myInformationDetail > ul:first-of-type li:last-of-type > div::after,
 .myPageAll section:last-of-type .myInformationDetail > ul:last-of-type::after,
-.termsPrivacy > div div::after{
+.termsPrivacy > div div::after,
+.floatContainer::after{
     content: ''; display: block; clear: both;
 }
 

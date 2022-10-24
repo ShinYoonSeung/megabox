@@ -2,20 +2,12 @@ var popupAllTarget = null;
 var closeBtn = null;
 var popupTail = null;
 var openBtn = null;
-var carouselBO = null;
-var carouselSS = null;
-var carouselSP = null;
-var carouselC = null;
-var carouselN = null;
-var mvTabBtn = null;
 var mvTheater = null;
 var mvSelect = null;
 var mvCategory = null;
-var calendarDate = null;
 var hoverTarget = null;
 var movieHTarget = null;
 var timeHTarget = null;
-var dateChecking = null;
 
 var textField = null;
 var selectTarget = null;
@@ -26,38 +18,8 @@ var seniorCount = null;
 var disacledCount = null;
 var goodsCount = null;
 
-var seatCheckB = null;
-
-var termsList = null;
-
-var informationSelet = null;
-var detailInformation = null;
-
-var theaterArea = null;
-var informationTab = null;
-
-var couponSelet =  null;
-var detailCoupon = null;
-
-var reservationList = null;
-var reservationListBtn = null;
-var reservationListTitle = null;
-
-var changePin = null;
-
-var theaterTab = null;
-
-var plusCont = null;
-var plusContIcon = null;
-
-var paymentCategory = null;
-
 var methodSelect = null; 
 var methodCategory = null;
-
-var pointDate = null;
-
-var headerMenu = null;
 
 var methodTabBtn = null;
 var methodP = null;
@@ -136,12 +98,9 @@ function init(){
     mvCategory = $("[class$='Movie']");
     methodTabBtn = $("#simpleMethod .tabMenu li");
     methodP = $("[id$='Pay']");
-    calendarDate = $(".carouselCalendar li");
     hoverTarget  = $("ul[id$='Theater'] > li");
     movieHTarget = $("ul[class$='Movie'] > li");
-    timeHTarget = $(".listTime li")
-    dateChecking = $(".carouselCalendar li");
-    timeChecking = $(".movieTime > ul li");
+    timeHTarget = $(".listTime li");
     textField = $(".textField");
     selectTarget =$(".selectComponent li");
     adultContainer = $("#adultCount");
@@ -149,29 +108,13 @@ function init(){
     seniorCount = $("#seniorCount");
     disacledCount = $("#disacledCount");
     goodsCount = $("#goodsCount");
-    termsList = $(".payment >div:last-of-type > div ul li");
-    informationSelet = $(".tabMenu li");
-    detailInformation = $("[class$='Information']");
-    couponSelet = $(".couponTab li");
-    detailCoupon + $("[id$='Coupon']");
-    theaterArea = $(".theaterList > li")
-    informationTab = $("[id$='Popup'] .consentChk");
-    reservationList = $(".reservationList ul li");
-    reservationListBtn = $(".reservationList ul li > button");
-    reservationListTitle = $(".reservationList ul li > div > dl");
-    changePin = $(".changeBtn ~ div");
-    theaterTab = $("#myTheaterPopup .theaterList li ol li");
-    plusCont = $("[class$='All'] > article > div:last-of-type > a:nth-of-type(2)");
-    plusContIcon = $("[class$='All'] > article > div:last-of-type > a:nth-of-type(2) i");
     pagerSlider = $(".trailerInformation .customPager");
     methodSelect = $(".methodList li") 
     methodCategory = $("[id$='Method']");
-    pointDate = $(".pointDetail > div:nth-of-type(2) ul li");
-    headerMenu = $("header nav");
 }
 
 function changeMui(){
-    $(headerMenu).click(function(){
+    $("header nav").click(function(){
         $(this).toggleClass("active");
 
         if($(".mui").attr("value") == "close"){
@@ -183,8 +126,8 @@ function changeMui(){
 }
 
 function choiceWeek(){
-    $(pointDate).click(function(){
-        $(pointDate).removeClass("active");
+    $(".pointDetail > div:nth-of-type(2) ul li").click(function(){
+        $(".pointDetail > div:nth-of-type(2) ul li").removeClass("active");
         $(this).addClass("active");
     });
 }
@@ -211,8 +154,8 @@ function headColor(){
 }
 
 function theaterClick(){
-    $(theaterTab).click(function(){
-        $(theaterTab).removeClass("active");
+    $("#myTheaterPopup .theaterList li ol li").click(function(){
+        $("#myTheaterPopup .theaterList li ol li").removeClass("active");
         $(this).addClass("active");
     })
 }
@@ -239,8 +182,8 @@ function fieldCheck(formData,transBtn){
 
 
 function theaterListTab(){
-    $(theaterArea).click(function(){
-        $(theaterArea).removeClass('active');
+    $(".theaterList > li").click(function(){
+        $(".theaterList > li").removeClass('active');
         $(this).addClass('active');
     })
 }
@@ -284,11 +227,11 @@ function mvControl(){
 }
 
 function mvDetail(){
-    $(informationSelet).click(function(){
-        $(informationSelet).removeClass('active');
+    $(".tabMenu li").click(function(){
+        $(".tabMenu li").removeClass('active');
         $(this).addClass('active');
         var currentTab = $(this).attr('data-tabName');
-        $(detailInformation).removeClass('active');
+        $("[class$='Information']").removeClass('active');
         $('.'+currentTab).addClass('active');    
     });
 }
@@ -304,36 +247,36 @@ function checkRow(){
 }
 
 function cpDetail(){
-    $(couponSelet).click(function(){
-        $(couponSelet).removeClass('active');
+    $(".couponTab li").click(function(){
+        $(".couponTab li").removeClass('active');
         $(this).addClass('active');
         var  currentTab = $(this).attr('data-tabName');
-        $(detailCoupon).removeClass('active');
+        $("[id$='Coupon']").removeClass('active');
         $('#'+currentTab).addClass('active');
     })
 }
 
 function timeCHk(){
-    $(timeChecking).click(function(){
-        $(timeChecking).removeClass('active');
+    $(".movieTime > ul li").click(function(){
+        $(".movieTime > ul li").removeClass('active');
         $(this).addClass("active");
     });
 }
 
 function dateChk(){
-    $(dateChecking).click(function(){
+    $(".carouselCalendar li").click(function(){
         var dateBG = $(this).children('time');
-        $(dateChecking).children('time').removeClass('active');
+        $(".carouselCalendar li").children('time').removeClass('active');
         $(dateBG).addClass('active');
     });
 }
 
 function reservationListClick(){
-    $(reservationListBtn).click(function(){
-        $(reservationList).toggleClass("active");
+    $(".reservationList ul li > button").click(function(){
+        $(".reservationList ul li").toggleClass("active");
     });
-    $(reservationListTitle).click(function(){
-        $(reservationList).toggleClass("active");
+    $(".reservationList ul li > div > dl").click(function(){
+        $(".reservationList ul li").toggleClass("active");
     });
 }
 
@@ -365,9 +308,9 @@ function customSlider(target,controlBool,pauseTime,customPager,autoVal,maxCount,
 }
 
 function carouselCalendarT(){
-    $(calendarDate).click(function(){
+    $(".carouselCalendar li").click(function(){
         var timeTab = $(this).children("time");
-        $(calendarDate).children("time").removeClass('.active');
+        $(".carouselCalendar li").children("time").removeClass('.active');
         $(timeTab).addClass('.active');
     })
 }
@@ -429,19 +372,19 @@ function termsCheckAll(){
         $(".termsTatal").click(function(){
             $(this).toggleClass("active");
             if($(".termsTatal").hasClass("active") === true){
-                $(termsList).addClass("active");
+                $(".payment >div:last-of-type > div ul li").addClass("active");
             }else{
-                $(termsList).removeClass("active");
+                $(".payment >div:last-of-type > div ul li").removeClass("active");
             }
         });
     })
 }
 
 function termsCheck(){
-    $(termsList).off().on('click', function(){
-        $(termsList).click(function(){
+    $(".payment >div:last-of-type > div ul li").off().on('click', function(){
+        $(".payment >div:last-of-type > div ul li").click(function(){
             $(this).toggleClass("active");
-            if($(termsList).eq(0).hasClass("active") && $(termsList).eq(1).hasClass("active") && $(termsList).eq(2).hasClass("active") && $(termsList).eq(3).hasClass("active")){
+            if($(".payment >div:last-of-type > div ul li").eq(0).hasClass("active") && $(".payment >div:last-of-type > div ul li").eq(1).hasClass("active") && $(".payment >div:last-of-type > div ul li").eq(2).hasClass("active") && $(".payment >div:last-of-type > div ul li").eq(3).hasClass("active")){
                 $(".termsTatal").addClass("active");
             }else{
                 $(".termsTatal").removeClass("active");
@@ -474,26 +417,26 @@ function marketingCheck(){
 
 function plusBtn(){
     var count = 0;
-    $(plusCont).click(function(){
+    $("[class$='All'] > article > div:last-of-type > a:nth-of-type(2)").click(function(){
         count++;
         if(count % 2 != 0 ){
-            $(plusContIcon).text("check");
+            $("[class$='All'] > article > div:last-of-type > a:nth-of-type(2) i").text("check");
             $("#interestPopup").addClass("active");
         }else{
-            $(plusContIcon).text("add")
+            $("[class$='All'] > article > div:last-of-type > a:nth-of-type(2) i").text("add")
         }
     });
 }
 
 function informationCheck(){
-    $(informationTab).click(function(){
-        $(informationTab).toggleClass("active");
+    $("[id$='Popup'] .consentChk").click(function(){
+        $("[id$='Popup'] .consentChk").toggleClass("active");
     });
 }
 
 function changePassword(){
     $(".changeBtn").click(function(){
-        $(changePin).toggleClass("active");
+        $(".changeBtn ~ div").toggleClass("active");
 
         if($(this).html() == "Cancel"){
             $(".changeBtn").html("Change")

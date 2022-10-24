@@ -636,7 +636,7 @@
 
 
     #movieSharePopup div{
-        top: calc(50% - 62px); width: 240px;
+        top: calc(50% - 62px); width: 240px; left: calc(50% - 120px);
     }
     #movieSharePopup div ul{
         padding: 0 15px 20px;
@@ -652,7 +652,7 @@
     }
 
     #interestPopup div{
-        width: 240px; top: calc(50% - 121px);
+        width: 240px; top: calc(50% - 121px); left: calc(50% - 120px);
     }
     #interestPopup div p{
         padding: 25px 15px;
