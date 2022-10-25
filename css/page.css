@@ -76,23 +76,23 @@
         margin-top: 25px;
     }
 
-    [class$='All'] .movieTab > div .detailInformation div ul > li mark{
+    [class$='All'] .movieTab > div #detailInformation div ul > li mark{
         width: 16px; line-height: 16px; font-size: 12px; text-align: center;
     }
-    [class$='All'] .movieTab > div .trailerInformation .customPager{
+    [class$='All'] .movieTab > div #trailerInformation .customPager{
         margin-top: 25px; padding-top: 20px; width: 100%;
         white-space: nowrap; overflow-x: scroll;
     }
-    [class$='All'] .movieTab > div .trailerInformation .customPager li{
+    [class$='All'] .movieTab > div #trailerInformation .customPager li{
         width: 166px; display: inline-block;
     }
-    [class$='All'] .movieTab > div .trailerInformation .customPager li:not(:last-of-type){
+    [class$='All'] .movieTab > div #trailerInformation .customPager li:not(:last-of-type){
         margin-right: 10px;
     }
-    [class$='All'] .movieTab > div .trailerInformation .customPager li a{
+    [class$='All'] .movieTab > div #trailerInformation .customPager li a{
         white-space: normal;
     }
-    [class$='All'] .movieTab > div .trailerInformation .customPager li a span{
+    [class$='All'] .movieTab > div #trailerInformation .customPager li a span{
         font-size: 12px; line-height: 15px;
     }
 
@@ -710,56 +710,56 @@
     .movieTab .tabMenu li{
         float: left; width: 33.33%;
     }
-    [class$='Information']{
+    [id$='Information']{
         display: none;
     }
-    [class$='Information'].active{
+    [id$='Information'].active{
         display: block;
     }
-    [class$='All'] .movieTab > div .detailInformation h3{
+    [class$='All'] .movieTab > div #detailInformation h3{
         font-size: 16px; font-weight: 900; margin-bottom: 15px;
     }
-    [class$='All'] .movieTab > div .detailInformation div p{
+    [class$='All'] .movieTab > div #detailInformation div p{
         padding-bottom: 35px; font-size: 12px; font-weight: 300; line-height: 15px;
     }
-    [class$='All'] .movieTab > div .detailInformation div p strong{
+    [class$='All'] .movieTab > div #detailInformation div p strong{
         font-size: 14px; display: block; margin-bottom: 5px; line-height: 34px; font-weight: 500;
     }
-    [class$='All'] .movieTab > div .detailInformation div ul:first-of-type{
+    [class$='All'] .movieTab > div #detailInformation div ul:first-of-type{
         margin-bottom: 10px;
     }
-    [class$='All'] .movieTab > div .detailInformation div ul > li{
+    [class$='All'] .movieTab > div #detailInformation div ul > li{
         font-size: 12px;
     }
-    [class$='All'] .movieTab > div .detailInformation div ul > li:not(:last-of-type){
+    [class$='All'] .movieTab > div #detailInformation div ul > li:not(:last-of-type){
         margin-bottom: 10px;
     }
-    [class$='All'] .movieTab > div .detailInformation div ul > li span,
-    [class$='All'] .movieTab > div .detailInformation div ul > li time,
-    [class$='All'] .movieTab > div .detailInformation div ul > li ol{
+    [class$='All'] .movieTab > div #detailInformation div ul > li span,
+    [class$='All'] .movieTab > div #detailInformation div ul > li time,
+    [class$='All'] .movieTab > div #detailInformation div ul > li ol{
         font-size: 12px; font-weight: 500; opacity: 0.6; width: calc(100% - 90px); float: right;
     }
-    [class$='All'] .movieTab > div .detailInformation div ul > li mark{
+    [class$='All'] .movieTab > div #detailInformation div ul > li mark{
         border-radius: 2px; margin-left: 50px;
     }
 
-    [class$='All'] .movieTab > div .trailerInformation .bx-wrapper{
+    [class$='All'] .movieTab > div #trailerInformation .bx-wrapper{
         max-width: 1100px;
     }
-    [class$='All'] .movieTab > div .trailerInformation .bx-wrapper .trailerSlider li{
+    [class$='All'] .movieTab > div #trailerInformation .bx-wrapper .trailerSlider li{
         width: 100%;
     }
-    [class$='All'] .movieTab > div .trailerInformation .customPager{
+    [class$='All'] .movieTab > div #trailerInformation .customPager{
        border-top: 2px solid rgba(196, 196, 196, 0.3);
     }
-    [class$='All'] .movieTab > div .trailerInformation .customPager li{
+    [class$='All'] .movieTab > div #trailerInformation .customPager li{
         color: white; cursor: pointer; position: relative; background-color: black;
     }
-    [class$='All'] .movieTab > div .trailerInformation .customPager li:not(:last-of-type){
+    [class$='All'] .movieTab > div #trailerInformation .customPager li:not(:last-of-type){
         margin-right: 0.24%;
     }
-    [class$='All'] .movieTab > div .steelcutInformation ul:not(:last-of-type),
-    [class$='All'] .movieTab > div .steelcutInformation ul li:not(:last-of-type){
+    [class$='All'] .movieTab > div #steelcutInformation ul:not(:last-of-type),
+    [class$='All'] .movieTab > div #steelcutInformation ul li:not(:last-of-type){
         margin-bottom: 10px;
     }
 
@@ -1021,7 +1021,7 @@
     .reservationWrap > div .runningTime > div:nth-of-type(2) div .selectComponent li{
         padding: 10px 0; border-top: 1px solid #d0d0d0; font-weight: 300;
     }
-    .reservationWrap > div .runningTime > div:nth-of-type(2) [class$='Movie']{
+    .reservationWrap > div .runningTime > div:nth-of-type(2) [id$='Movie']{
         display: none; border-top: 1px solid white;
     }
     .reservationWrap > div .runningTime > div:nth-of-type(2) .entireMovie, .reservationWrap > div .runningTime > div:nth-of-type(2) .curationMovie{
@@ -1540,7 +1540,7 @@
         display: block; text-align: center; line-height: 15px;
     }
     .reservationWrap .paymentCompleted > div:first-of-type  .paymentDone form::after,
-    .myPageAll section:last-of-type .reservationDetail .reservationInformation div ul li > div form{
+    .myPageAll section:last-of-type .reservationDetail #reservationInformation div ul li > div form{
         content: ''; display: block; clear: both;
     }
     .reservationWrap .paymentCompleted > div:first-of-type  .paymentDone form fieldset,
@@ -2236,46 +2236,46 @@
     #postalCodePopup > div .tabMenu li.active{
         color: #8453f5; border-bottom: #8453f5 2px solid;
     }
-    #postalCodePopup > div .roadAddressInformation input[type="text"]{
+    #postalCodePopup > div #roadAddressInformation input[type="text"]{
         font-size: 16px; font-weight: 500;
     }
-    #postalCodePopup > div .roadAddressInformation input[type="text"],
-    #postalCodePopup > div .numAddressInformation input[type="text"]{
+    #postalCodePopup > div #roadAddressInformation input[type="text"],
+    #postalCodePopup > div #numAddressInformation input[type="text"]{
         border: none; background-color: #f6f6f6; padding: 10px; box-sizing: border-box;
         width: 100%; margin-bottom: 15px;
     }
-    #postalCodePopup > div .roadAddressInformation input[type="submit"],
-    #postalCodePopup > div .numAddressInformation input[type="submit"]{
+    #postalCodePopup > div #roadAddressInformation input[type="submit"],
+    #postalCodePopup > div #numAddressInformation input[type="submit"]{
         width: 100%; font-size: 18px; font-weight: 500; padding: 7px 0;
         background-color: #313131; color: white; border: none; cursor: pointer;
     }
-    #postalCodePopup > div .roadAddressInformation p,
-    #postalCodePopup > div .numAddressInformation p{
+    #postalCodePopup > div #roadAddressInformation p,
+    #postalCodePopup > div #numAddressInformation p{
         margin-top: 15px; font-size: 14px; font-weight: 500; line-height: 17px; color: #c4c4c4;
     }
-    #postalCodePopup > div .numAddressInformation div{
+    #postalCodePopup > div #numAddressInformation div{
         font-weight: 500; position: relative; margin-bottom: 15px;
     }
-    #postalCodePopup > div .numAddressInformation div .textField{
+    #postalCodePopup > div #numAddressInformation div .textField{
         display: block; padding: 10px; box-sizing: border-box; font-size: 15px; background-color: #f6f6f6; cursor: pointer;
     }
-    #postalCodePopup > div .numAddressInformation div i{
+    #postalCodePopup > div #numAddressInformation div i{
         position: absolute; right: 10px; top: 50%; transform: translateY(-50%) rotate(90deg);
     }
-    #postalCodePopup > div .numAddressInformation div:hover i{
+    #postalCodePopup > div #numAddressInformation div:hover i{
         transform: translateY(-50%) rotate(-90deg);
     }
-    #postalCodePopup > div .numAddressInformation div ul{
+    #postalCodePopup > div #numAddressInformation div ul{
         display: none; position: absolute; left: 0; top: 35px; width: 100%; background-color: #f6f6f6; padding: 0 10px 10px; box-sizing: border-box;
         max-height: 200px; overflow-y: scroll;
     }
-    #postalCodePopup > div .numAddressInformation div:hover ul{
+    #postalCodePopup > div #numAddressInformation div:hover ul{
         display: block;
     }
-    #postalCodePopup > div .numAddressInformation div ul li{
+    #postalCodePopup > div #numAddressInformation div ul li{
         padding-top: 10px; cursor: pointer;
     }
-    #postalCodePopup > div .numAddressInformation div ul li:first-of-type{
+    #postalCodePopup > div #numAddressInformation div ul li:first-of-type{
         border-top: white 1px solid; box-sizing: border-box;
     }
 
@@ -2640,7 +2640,7 @@
         border-radius: 5px; background-repeat: no-repeat;
         background-position: center top; background-size: 100%;
     }
-    .myPageAll section:last-of-type .reservationDetail .reservationInformation .reservationList ul li > div > div{
+    .myPageAll section:last-of-type .reservationDetail #reservationInformation .reservationList ul li > div > div{
         background-image: url("../images/reservation4_mobile_bg2.png"); background-size: 100% 100%;
     }
     .myPageAll section:last-of-type .reservationDetail .cancellationInformation .reservationList ul li > div > div{
@@ -2649,7 +2649,7 @@
     .myPageAll section:last-of-type .reservationDetail > div .reservationList ul li.active > div > div{
         display: block;
     }
-    .myPageAll section:last-of-type .reservationDetail .reservationInformation .reservationList ul li > div > div figure{
+    .myPageAll section:last-of-type .reservationDetail #reservationInformation .reservationList ul li > div > div figure{
         margin-bottom: 20px;
     }
     .myPageAll section:last-of-type .reservationDetail > div .reservationList ul li > div > div figure{
@@ -3106,51 +3106,51 @@
     .movieTab .tabMenu li, .theaterTab .tabMenu li{
         position: relative;
     }
-    [class$='All'] .movieTab > div .detailInformation h3{
+    [class$='All'] .movieTab > div #detailInformation h3{
         font-weight: 900; margin-bottom: 20px;
     }
-    [class$='All'] .movieTab > div .detailInformation div p{
+    [class$='All'] .movieTab > div #detailInformation div p{
         float: left; font-weight: 300;
     }
-    [class$='All'] .movieTab > div .detailInformation div p strong{
+    [class$='All'] .movieTab > div #detailInformation div p strong{
         margin-bottom: 15px; line-height: 34px; font-weight: 500;
     }
-    [class$='All'] .movieTab > div .detailInformation div ul{
+    [class$='All'] .movieTab > div #detailInformation div ul{
         float: left;
     }
-    [class$='All'] .movieTab > div .detailInformation div ul > li{
+    [class$='All'] .movieTab > div #detailInformation div ul > li{
         font-size: 16px; font-weight: 500;
     }
-    [class$='All'] .movieTab > div .detailInformation div ul > li span,
-    [class$='All'] .movieTab > div .detailInformation div ul > li time,
-    [class$='All'] .movieTab > div .detailInformation div ul > li ol{
+    [class$='All'] .movieTab > div #detailInformation div ul > li span,
+    [class$='All'] .movieTab > div #detailInformation div ul > li time,
+    [class$='All'] .movieTab > div #detailInformation div ul > li ol{
         display: block; margin-top: 10px; font-size: 16px; font-weight: 500; opacity: 0.6;
     }
-    [class$='All'] .movieTab > div .detailInformation div ul > li mark{
+    [class$='All'] .movieTab > div #detailInformation div ul > li mark{
         margin-top: 10px; font-weight: 500; border-radius: 2px; display: block; text-align: center;
     }
-    [class$='All'] .movieTab > div .trailerInformation .bx-wrapper{
+    [class$='All'] .movieTab > div #trailerInformation .bx-wrapper{
         margin: 0 auto; max-width: 1100px; width: 63.29%;
     }
-    [class$='All'] .movieTab > div .trailerInformation .bx-wrapper .trailerSlider li iframe{
+    [class$='All'] .movieTab > div #trailerInformation .bx-wrapper .trailerSlider li iframe{
         width: 100%;
     }
-    [class$='All'] .movieTab > div .trailerInformation .customPager{
+    [class$='All'] .movieTab > div #trailerInformation .customPager{
         border-top: 2px solid rgba(196, 196, 196, 0.3);
     }
-    [class$='All'] .movieTab > div .trailerInformation .customPager li{
+    [class$='All'] .movieTab > div #trailerInformation .customPager li{
         position: relative;
     }
-    [class$='All'] .movieTab > div .trailerInformation .customPager li a img{
+    [class$='All'] .movieTab > div #trailerInformation .customPager li a img{
         vertical-align: middle;
     }
-    [class$='All'] .movieTab > div .steelcutInformation ul{
+    [class$='All'] .movieTab > div #steelcutInformation ul{
         float: left; width: 18%;
     }
-    [class$='All'] .movieTab > div .steelcutInformation ul:not(:last-of-type){
+    [class$='All'] .movieTab > div #steelcutInformation ul:not(:last-of-type){
         margin-right: 2.5%;
     }
-    [class$='All'] .movieTab > div .steelcutInformation ul li:not(:last-of-type){
+    [class$='All'] .movieTab > div #steelcutInformation ul li:not(:last-of-type){
         margin-bottom: 30px;
     }
     
@@ -3367,7 +3367,7 @@
     .reservationWrap > div .runningTime > div:first-of-type [id$='Theater'] li ol li{
         font-weight: normal; font-size: 14px;
     }
-    .reservationWrap > div .runningTime > div:first-of-type [id$='Theater'] li ol li:hover{
+    .reservationWrap > div .runningTime > div:first-of-type [id$='Theater'] li ol li.active{
         color: #8453f5;
     }
     .reservationWrap > div .runningTime > div:nth-of-type(2) div{
@@ -3390,20 +3390,20 @@
     .reservationWrap > div .runningTime > div:nth-of-type(2) div .selectComponent li{
         padding: 10px 0; border-top: 1px solid #d0d0d0; font-weight: 300;
     }
-    .reservationWrap > div .runningTime > div:nth-of-type(2) [class$='Movie']{
+    .reservationWrap > div .runningTime > div:nth-of-type(2) [id$='Movie']{
         border-top: 1px solid white;
     }
-    .reservationWrap > div .runningTime > div:nth-of-type(2) [class$='Movie']{
+    .reservationWrap > div .runningTime > div:nth-of-type(2) [id$='Movie']{
         border-top: white 1px solid; overflow-y: scroll;
     }
-    .reservationWrap > div .runningTime > div:nth-of-type(2) [class$='Movie'] li{
+    .reservationWrap > div .runningTime > div:nth-of-type(2) [id$='Movie'] li{
         font-size: 14px; font-weight: 300;
     }
-    .reservationWrap > div .runningTime > div:nth-of-type(2) [class$='Movie'] li mark{
+    .reservationWrap > div .runningTime > div:nth-of-type(2) [id$='Movie'] li mark{
         font-size: 12px; font-weight: 300; width: 20px; height: 20px; display: inline-block;
         text-align: center; margin-right: 10px; line-height: 20px;
     }
-    .reservationWrap > div .runningTime > div:nth-of-type(2) [class$='Movie'] li.active{
+    .reservationWrap > div .runningTime > div:nth-of-type(2) [id$='Movie'] li.active{
         font-weight: 500;
     }
     .reservationWrap > div .runningTime > div:last-of-type .carouselContainer{
@@ -3816,7 +3816,7 @@
         padding: 20px 0 15px; border-top: #c4c4c4 1px solid;
     }
     .reservationWrap .paymentCompleted > div:first-of-type .paymentDone figure figcaption dl:not(:first-of-type, :last-of-type),
-    .myPageAll section:last-of-type .reservationDetail .reservationInformation div ul li > div figure figcaption dl:not(:first-of-type, :last-of-type){
+    .myPageAll section:last-of-type .reservationDetail #reservationInformation div ul li > div figure figcaption dl:not(:first-of-type, :last-of-type){
         padding-bottom: 15px;
     }
     .reservationWrap .paymentCompleted > div:first-of-type .paymentDone figure figcaption dl:last-of-type,
@@ -4331,7 +4331,7 @@
 
     header input[type="search"]{
         position: absolute; width: 100%; padding: 20px 4.73%; border: none;
-        background-color: #313131; font-weight: 500; z-index: -1;
+        background-color: #313131; font-weight: 500; z-index: -1; left: 0;
     }
     
     /*
@@ -4406,47 +4406,47 @@
     #postalCodePopup > div .tabMenu li.active{
         color: #8453f5; border-bottom: #8453f5 2px solid;
     }
-    #postalCodePopup > div .roadAddressInformation input[type="text"]{
+    #postalCodePopup > div #roadAddressInformation input[type="text"]{
         width: calc(100% - 126.47px); font-size: 16px; font-weight: 500;
     }
-    #postalCodePopup > div .roadAddressInformation input[type="text"],
-    #postalCodePopup > div .numAddressInformation input[type="text"]{
+    #postalCodePopup > div #roadAddressInformation input[type="text"],
+    #postalCodePopup > div #numAddressInformation input[type="text"]{
         border: none; background-color: #f6f6f6; padding: 10px; box-sizing: border-box;
     }
-    #postalCodePopup > div .roadAddressInformation input[type="submit"],
-    #postalCodePopup > div .numAddressInformation input[type="submit"]{
+    #postalCodePopup > div #roadAddressInformation input[type="submit"],
+    #postalCodePopup > div #numAddressInformation input[type="submit"]{
         font-size: 18px; font-weight: 500; padding: 7px 25px; background-color: #313131; margin-left: 15px; color: white; border: none;
     }
-    #postalCodePopup > div .roadAddressInformation p,
-    #postalCodePopup > div .numAddressInformation p{
+    #postalCodePopup > div #roadAddressInformation p,
+    #postalCodePopup > div #numAddressInformation p{
         margin-top: 15px; font-size: 14px; font-weight: 500; line-height: 17px; color: #c4c4c4;
     }
-    #postalCodePopup > div .numAddressInformation div{
+    #postalCodePopup > div #numAddressInformation div{
         font-weight: 500; position: relative; display: inline-block;
     }
-    #postalCodePopup > div .numAddressInformation div .textField{
+    #postalCodePopup > div #numAddressInformation div .textField{
         width: 200px; display: inline-block; padding: 10px; box-sizing: border-box; font-size: 15px; background-color: #f6f6f6;
     }
-    #postalCodePopup > div .numAddressInformation div i{
+    #postalCodePopup > div #numAddressInformation div i{
         position: absolute; right: 10px; top: 50%; transform: translateY(-50%) rotate(90deg);
     }
-    #postalCodePopup > div .numAddressInformation div:hover i{
+    #postalCodePopup > div #numAddressInformation div:hover i{
         transform: translateY(-50%) rotate(-90deg);
     }
-    #postalCodePopup > div .numAddressInformation div ul{
+    #postalCodePopup > div #numAddressInformation div ul{
         display: none; position: absolute; left: 0; top: 35px; width: 100%; background-color: #f6f6f6; padding: 0 10px 10px; box-sizing: border-box;
         max-height: 200px; overflow-y: scroll;
     }
-    #postalCodePopup > div .numAddressInformation div:hover ul{
+    #postalCodePopup > div #numAddressInformation div:hover ul{
         display: block;
     }
-    #postalCodePopup > div .numAddressInformation div ul li{
+    #postalCodePopup > div #numAddressInformation div ul li{
         padding-top: 10px; cursor: pointer;
     }
-    #postalCodePopup > div .numAddressInformation div ul li:first-of-type{
+    #postalCodePopup > div #numAddressInformation div ul li:first-of-type{
         border-top: 1px solid white; box-sizing: border-box;
     }
-    #postalCodePopup > div .numAddressInformation input[type="text"]{
+    #postalCodePopup > div #numAddressInformation input[type="text"]{
         width: calc(100% - 346px); margin-left: 15px;
     }
 
@@ -4688,7 +4688,7 @@
     .myPageAll section:last-of-type .couponDetail > div > div > ul:first-of-type li{
         font-weight: 500;
     }
-    .myPageAll section:last-of-type .couponDetail > div > div > ul:last-of-type li{
+    .myPageAll section:last-of-type .couponDetail > div > div > ul:nth-of-type(2) li{
         font-weight: 300; display: flex; align-items: center; justify-content: center;
     }
     .myPageAll section:last-of-type .couponDetail > div > div > ul li:not(:nth-of-type(2), :nth-of-type(3)){
@@ -4769,7 +4769,7 @@
     .myPageAll section:last-of-type .reservationDetail > div .reservationList ul li.active > div > div{
         display: block;
     }
-    .myPageAll section:last-of-type .reservationDetail .reservationInformation .reservationList ul li > div > div figure{
+    .myPageAll section:last-of-type .reservationDetail #reservationInformation .reservationList ul li > div > div figure{
         margin-bottom: 20px;  box-sizing: border-box; background-color: white; border-radius: 5px;
     }
     .myPageAll section:last-of-type .reservationDetail > div .reservationList ul li > div > div figure > div{
@@ -5232,23 +5232,23 @@
     .movieTab .tabMenu li.active::after, .theaterTab .tabMenu li.active::after{
         content: ''; width: 100%; height: 2px; background-color: #fff; position: absolute; bottom: 0; left: 0;
     }
-    [class$='All'] .movieTab > div .detailInformation h3{
+    [class$='All'] .movieTab > div #detailInformation h3{
         font-size: 20px;
     }
-    [class$='All'] .movieTab > div .detailInformation div p{
+    [class$='All'] .movieTab > div #detailInformation div p{
         width: 100%; padding-bottom: 50px; font-size: 14px; line-height: 17px;
     }
-    [class$='All'] .movieTab > div .detailInformation div p strong{
+    [class$='All'] .movieTab > div #detailInformation div p strong{
         font-size: 16px;
     }
-    [class$='All'] .movieTab > div .detailInformation div ul{
+    [class$='All'] .movieTab > div #detailInformation div ul{
         width: 30%;
     }
-    [class$='All'] .movieTab > div .detailInformation div ul > li:not(:last-of-type){
+    [class$='All'] .movieTab > div #detailInformation div ul > li:not(:last-of-type){
         margin-bottom: 20px;
     }
 
-    [class$='All'] .movieTab > div .trailerInformation .customPager{
+    [class$='All'] .movieTab > div #trailerInformation .customPager{
         margin-top: 25px; padding-top: 20px; width: 100%;
         white-space: nowrap; overflow-x: scroll;
     }
@@ -5657,7 +5657,7 @@
 
 
     #postalCodePopup > div{
-        width: calc(100% - 40px); left: calc(50% - 364px);
+        width: calc(100% - 40px); left: 20px;
     }
     #postalCodePopup > div h3{
         font-size: 30px; font-weight: 900; padding: 70px 0;
@@ -5765,7 +5765,7 @@
     .myPageAll section:last-of-type .reservationDetail > div .reservationList ul li > div > div > span{
         margin: 0 15px;
     }
-    .myPageAll section:last-of-type .reservationDetail .cancellationInformation .reservationList ul li > div > div form{
+    .myPageAll section:last-of-type .reservationDetail > div .reservationList ul li > div > div form{
         padding: 0 15px 20px;
     }
 
@@ -5993,35 +5993,35 @@
     [class$='All'] .movieTab > div{
         margin-top: 30px;
     }
-    [class$='All'] .movieTab > div .detailInformation h3{
+    [class$='All'] .movieTab > div #detailInformation h3{
         font-size: 28px;
     }
-    [class$='All'] .movieTab > div .detailInformation div p{
+    [class$='All'] .movieTab > div #detailInformation div p{
         width: 50%; margin-right: 5%; font-size: 18px; line-height: 22px;
     }
-    [class$='All'] .movieTab > div .detailInformation div p strong{
+    [class$='All'] .movieTab > div #detailInformation div p strong{
         font-size: 24px;
     }
-    [class$='All'] .movieTab > div .detailInformation div ul{
+    [class$='All'] .movieTab > div #detailInformation div ul{
         width: 22.5%;
     }
-    [class$='All'] .movieTab > div .detailInformation div ul > li:not(:last-of-type){
+    [class$='All'] .movieTab > div #detailInformation div ul > li:not(:last-of-type){
         margin-bottom: 30px;
     }
-    [class$='All'] .movieTab > div .detailInformation div ul > li mark{
+    [class$='All'] .movieTab > div #detailInformation div ul > li mark{
         width: 20px; margin-top: 10px; font-size: 16px;
     }
 
-    [class$='All'] .movieTab > div .trailerInformation .customPager{
+    [class$='All'] .movieTab > div #trailerInformation .customPager{
         margin-top: 50px; padding-top: 50px;
     }
-    [class$='All'] .movieTab > div .trailerInformation .customPager li{
+    [class$='All'] .movieTab > div #trailerInformation .customPager li{
         float: left; width: 12.29%;
     }
-    [class$='All'] .movieTab > div .trailerInformation .customPager li:not(:last-of-type){
+    [class$='All'] .movieTab > div #trailerInformation .customPager li:not(:last-of-type){
         margin-right: 0.24%;
     }
-    [class$='All'] .movieTab > div .trailerInformation .customPager li a span{
+    [class$='All'] .movieTab > div #trailerInformation .customPager li a span{
         font-size: 18px; line-height: 21px;
     }
 
@@ -6087,10 +6087,10 @@
     .reservationWrap > div .runningTime > div:first-of-type [id$='Theater'] li ol li{
         padding: 15px 15px 15px 20px;
     }
-    .reservationWrap > div .runningTime > div:nth-of-type(2) [class$='Movie']{
+    .reservationWrap > div .runningTime > div:nth-of-type(2) [id$='Movie']{
         height: 793px;
     }
-    .reservationWrap > div .runningTime > div:nth-of-type(2) [class$='Movie'] li{
+    .reservationWrap > div .runningTime > div:nth-of-type(2) [id$='Movie'] li{
         padding: 15px 0 15px 20px;
     }
     .reservationWrap > div .runningTime > div:last-of-type .movieTime > ul{

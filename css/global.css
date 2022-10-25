@@ -42,7 +42,7 @@ a{
 .reservationWrap > div .runningTime > div:first-of-type [id$='Theater'] li.active ol,
 .reservationWrap > div .runningTime > div:nth-of-type(2) div span,
 .reservationWrap > div .runningTime > div:nth-of-type(2) div .selectComponent,
-.reservationWrap > div .runningTime > div:nth-of-type(2) [class$='Movie'] li.active,
+.reservationWrap > div .runningTime > div:nth-of-type(2) [id$='Movie'] li.active,
 .reservationWrap .peopleSeat > div:first-of-type ul li .bxNum .btnMins,
 .reservationWrap .peopleSeat > div ul li .bxNum .btnPlus,
 .store .storeList li,
@@ -105,7 +105,7 @@ header:not(.loginHeader) > div nav.active,
 header:not(.loginHeader) > div .sideBox:hover,
 footer,
 [class$='All'] > article > div:last-of-type > a:not(:first-of-type),
-[class$='All'] .movieTab > div .trailerInformation .customPager li,
+[class$='All'] .movieTab > div #trailerInformation .customPager li,
 .reservationWrap > div .runningTime div h2,
 .reservationWrap > div .payment div h2,
 .reservationWrap > div .runningTime > div:last-of-type .movieTime > ul li.active::after,
@@ -128,10 +128,10 @@ header:not(.loginHeader) > div nav .mui,
 .productDetails div:first-of-type div:first-of-type .bxNum .btnMins,
 .productDetails div:first-of-type div:first-of-type .bxNum .btnPlus
 .movieTab .tabMenu li, .theaterTab .tabMenu li,
-[class$='All'] .movieTab > div .trailerInformation .customPager li,
-#postalCodePopup > div .numAddressInformation div .textField,
-#postalCodePopup > div .roadAddressInformation input[type="submit"],
-#postalCodePopup > div .numAddressInformation input[type="submit"],
+[class$='All'] .movieTab > div #trailerInformation .customPager li,
+#postalCodePopup > div #numAddressInformation div .textField,
+#postalCodePopup > div #roadAddressInformation input[type="submit"],
+#postalCodePopup > div #numAddressInformation input[type="submit"],
 .myPageAll section:last-of-type .tabMenu li,
 .myPageAll section:last-of-type .couponDetail > div fieldset .couponMenu ul li,
 .myPageAll section:last-of-type .couponDetail > div fieldset > ul li button{
@@ -145,7 +145,7 @@ header:not(.loginHeader) > div nav .mui,
     cursor: default;
 }
 
-[class$='Age']:not([class$='All'] > article > div:first-of-type > span:first-of-type [class$='Age'], [class$='All'] .movieTab > div .detailInformation div ul > li:last-of-type [class$='Age']){
+[class$='Age']:not([class$='All'] > article > div:first-of-type > span:first-of-type [class$='Age'], [class$='All'] .movieTab > div #detailInformation div ul > li:last-of-type [class$='Age']){
     border-radius: 100%;
 }
 [class$='Age']{
@@ -189,11 +189,11 @@ footer,
 .carouselContainer ul li:hover a div,
 .movieList li a img,.interestList li a img,
 .movieList li:hover a div,
-[class$='All'] .movieTab > div .trailerInformation .customPager li a img,
+[class$='All'] .movieTab > div #trailerInformation .customPager li a img,
 [class$='Sign'] form input[type="email"], [class$='Sign'] form input[type="password"],
 [class$='Sign'] form input[type="text"], .lostSign form input#onlyNum,
 [class$='Sign'] form input[type="button"],
-[class$='All'] .movieTab > div .steelcutInformation ul li a img,
+[class$='All'] .movieTab > div #steelcutInformation ul li a img,
 .reservationWrap > div .payment > div:first-of-type figure div img,
 .reservationWrap .peopleSeat > div:nth-of-type(2) > div img,
 .theaterIntro div ul li a img,
@@ -251,8 +251,8 @@ footer ul li a,
 [class$='All'] > article > div:last-of-type > a:nth-of-type(2),
 [class$='All'] > article > div:last-of-type > a:last-of-type,
 .movieTab .tabMenu li, .theaterTab .tabMenu li,
-[class$='All'] .movieTab > div .detailInformation,
-[class$='All'] .movieTab > div .trailerInformation .customPager li,
+[class$='All'] .movieTab > div #detailInformation,
+[class$='All'] .movieTab > div #trailerInformation .customPager li,
 .loginHeader > a,
 [class$='Sign'] form input[type="email"], [class$='Sign'] form input[type="password"],
 [class$='Sign'] form input[type="text"], .lostSign form input#onlyNum,
@@ -289,11 +289,11 @@ header input[type="search"],
 .carouselContainer ul:after,
 .movieList::after, .storeList::after, .storeList ul::after, .interestList::after,
 .movieTab .tabMenu::after, .theaterTab .tabMenu::after,
-[class$='All'] .movieTab > div .detailInformation div::after,
-[class$='All'] .movieTab > div .detailInformation div ul > li::after,
-[class$='All'] .movieTab > div .trailerInformation .bx-wrapper::after,
-[class$='All'] .movieTab > div .trailerInformation .customPager::after,
-[class$='All'] .movieTab > div .steelcutInformation::after,
+[class$='All'] .movieTab > div #detailInformation div::after,
+[class$='All'] .movieTab > div #detailInformation div ul > li::after,
+[class$='All'] .movieTab > div #trailerInformation .bx-wrapper::after,
+[class$='All'] .movieTab > div #trailerInformation .customPager::after,
+[class$='All'] .movieTab > div #steelcutInformation::after,
 #mgDiscountCouponPopup > div > div:first-of-type ul::after,
 #mgVipCouponPopup > div div ul::after,
 #mgDiscountCouponPopup > div > div:first-of-type > div:last-of-type div ul::after,
@@ -396,10 +396,10 @@ header:not(.loginHeader) > div .sideBox:hover ul,
 .pageTitle [class$='Menu']:not(.tabMenu):hover ul,
 [class$='All'] > article h2 small,
 [class$='All'] > article > div:first-of-type > span:last-of-type,
-[class$='Information'].active,
-[class$='All'] .movieTab > div .detailInformation div p strong,
-[class$='All'] .movieTab > div .trailerInformation .customPager li a,
-[class$='All'] .movieTab > div .steelcutInformation ul li a,
+[id$='Information'].active,
+[class$='All'] .movieTab > div #detailInformation div p strong,
+[class$='All'] .movieTab > div #trailerInformation .customPager li a,
+[class$='All'] .movieTab > div #steelcutInformation ul li a,
 #mgDiscountCouponPopup > div p strong,
 #giveGiftPopup > div div:last-of-type p strong,
 #mobileTicketPopup > div div:nth-of-type(2) p strong,
@@ -409,7 +409,7 @@ header:not(.loginHeader) > div .sideBox:hover ul,
 .reservationWrap > div .reservationMenu li a,
 .reservationWrap > div .runningTime > div:nth-of-type(2) div span,
 .reservationWrap [id$='Theater'].active,
-.reservationWrap > div .runningTime > div:nth-of-type(2) [class$='Movie'].active,
+.reservationWrap > div .runningTime > div:nth-of-type(2) [id$='Movie'].active,
 .reservationWrap > div .runningTime > div:first-of-type [id$='Theater'] li.active ol,
 .reservationWrap > div .runningTime > div:nth-of-type(2) div:hover .selectComponent,
 .reservationWrap .peopleSeat > div:nth-of-type(2) small,
@@ -482,11 +482,11 @@ header:not(.loginHeader) > div .sideBox ul,
 .carouselContainer ul li a div,
 .pageTitle [class$='Menu']:not(.tabMenu) ul,
 .movieList li a div,
-[class$='Information'],
+[id$='Information'],
 #giveGiftPopup > div div:last-of-type input,
 #mobileTicketPopup > div div:nth-of-type(2) input,
 .reservationWrap [id$='Theater'],
-.reservationWrap > div .runningTime > div:nth-of-type(2) [class$='Movie'],
+.reservationWrap > div .runningTime > div:nth-of-type(2) [id$='Movie'],
 .myPageAll section:last-of-type h2{
     display: none;
 }
@@ -993,14 +993,14 @@ footer > div{
 .movieTab .tabMenu, div:not(.boutiqueTheater) .theaterTab .tabMenu{
     position: relative;
 }
-[class$='All'] .movieTab > div .detailInformation div ul > li ol li:not(:last-of-type){
+[class$='All'] .movieTab > div #detailInformation div ul > li ol li:not(:last-of-type){
     margin-bottom: 5px;
 }
-[class$='All'] .movieTab > div .trailerInformation .customPager li:hover a span,
-[class$='All'] .movieTab > div .trailerInformation .customPager li a.active span{
+[class$='All'] .movieTab > div #trailerInformation .customPager li:hover a span,
+[class$='All'] .movieTab > div #trailerInformation .customPager li a.active span{
     opacity: 0;
 }
-[class$='All'] .movieTab > div .trailerInformation .customPager li a span{
+[class$='All'] .movieTab > div #trailerInformation .customPager li a span{
     position: absolute; left: 0; top: 0; width: 100%; height: 100%; display: flex;
     justify-content: center; align-items: center; text-align: center; padding: 0 10px;
     box-sizing: border-box; background-color: rgba(0, 0, 0, 0.7); font-weight: 500;
@@ -1113,7 +1113,10 @@ footer > div{
 }
 #paymentTermsPopup > div div p{
     padding: 20px; box-sizing: border-box; max-height: 310px; overflow-y: scroll;
-    font-size: 12px; font-weight: 300; text-align: left;
+    font-size: 12px; font-weight: 300; text-align: left; display: none;
+}
+#paymentTermsPopup > div div p.active{
+    display: block;
 }
 #paymentTermsPopup > div div p strong{
     font-size: 16px; font-weight: 500;

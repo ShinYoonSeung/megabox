@@ -1,33 +1,6 @@
-var popupAllTarget = null;
-var closeBtn = null;
-var popupTail = null;
-var openBtn = null;
-var mvTheater = null;
-var mvSelect = null;
-var mvCategory = null;
-var hoverTarget = null;
-var movieHTarget = null;
-var timeHTarget = null;
-
-var textField = null;
-var selectTarget = null;
-
-var adultContainer = null;
-var tennaagerCount = null;
-var seniorCount = null;
-var disacledCount = null;
-var goodsCount = null;
-
-var methodSelect = null; 
-var methodCategory = null;
-
-var methodTabBtn = null;
-var methodP = null;
-
 
 $(document).ready(function(){
-    init();
-    popupControl(openBtn,closeBtn,popupTail,popupAllTarget);
+    popupControl(".btnOpen",".btnClose","Popup","[id $= Popup]");
     customSlider(".mainSlider",false,4000,".customPager",true,1,1,0,0,0,true,true);
     customSlider(".carouselBO",true,99999,null,true,5,1,5,20,330,false,true);
     customSlider(".carouselSS",true,99999,null,true,5,1,5,20,330,false,true);
@@ -36,14 +9,15 @@ $(document).ready(function(){
     customSlider(".carouselN",false,99999,null,true,5,1,5,20,330,false,true);
     customSlider(".carouselCalendar",true,99999,null,true,8,3,0,20,30,false,false);
     carouselCalendarT();
-    tabControl(mvTabBtn,mvTheater);
-    tabControl(methodSelect,methodCategory);
-    tabControl(methodTabBtn,methodP);
-    hoverControl(hoverTarget);
-    hoverControl(movieHTarget);
-    hoverControl(timeHTarget);
-    mvControl(mvSelect,mvCategory);
-    testSwap(textField,selectTarget);
+    tabControl(".rpert li","[id$='Theater']");
+    tabControl(".methodList li","[id$='Method']");
+    tabControl("#simpleMethod .tabMenu li","[id$='Pay']");
+    hoverControl("ul[id$='Theater'] > li");
+    hoverControl("ul[id$='Theater'] > li ol li");
+    hoverControl("ul[id$='Movie'] > li");
+    hoverControl(".listTime li");
+    mvControl(".selectComponent li","[id$='Movie']");
+    testSwap(".textField",".selectComponent li");
     testSwap(".phoneAgency",".phoneAgencySelect li");
     testSwap(".firstNum",".firstNumSelect li");
     testSwap(".secondPhone",".secondPhoneSelect li");
@@ -51,11 +25,11 @@ $(document).ready(function(){
     testSwap(".columnTextField","[class$='Column'] li");
     dateChk();
     timeCHk();
-    peopleCount(adultContainer);
-    peopleCount(tennaagerCount);
-    peopleCount(seniorCount);
-    peopleCount(disacledCount);
-    storeCount(goodsCount);
+    peopleCount("#adultCount");
+    peopleCount("#tennaagerCount");
+    peopleCount("#seniorCount");
+    peopleCount("#disacledCount");
+    storeCount("#goodsCount");
     termsCheckAll();
     termsCheck();
     mvDetail();
@@ -81,37 +55,6 @@ $(document).ready(function(){
     choiceWeek();
     changeMui();
 });
-
-function init(){
-    popupAllTarget = $("[id $= Popup]");
-    closeBtn = $(".btnClose"); 
-    popupTail = "Popup";
-    openBtn = $(".btnOpen");  
-    carouselBO = $(".carouselBO");
-    carouselSS = $(".carouselSS");
-    carouselSP = $(".carouselSP");
-    carouselC = $(".carouselC");
-    carouselN = $(".carouselN");
-    mvTabBtn = $(".rpert li");
-    mvTheater = $("[id$='Theater']");
-    mvSelect = $(".selectComponent li") 
-    mvCategory = $("[class$='Movie']");
-    methodTabBtn = $("#simpleMethod .tabMenu li");
-    methodP = $("[id$='Pay']");
-    hoverTarget  = $("ul[id$='Theater'] > li");
-    movieHTarget = $("ul[class$='Movie'] > li");
-    timeHTarget = $(".listTime li");
-    textField = $(".textField");
-    selectTarget =$(".selectComponent li");
-    adultContainer = $("#adultCount");
-    tennaagerCount = $("#tennaagerCount");
-    seniorCount = $("#seniorCount");
-    disacledCount = $("#disacledCount");
-    goodsCount = $("#goodsCount");
-    pagerSlider = $(".trailerInformation .customPager");
-    methodSelect = $(".methodList li") 
-    methodCategory = $("[id$='Method']");
-}
 
 function changeMui(){
     $("header nav").click(function(){
@@ -171,15 +114,6 @@ function fieldCheck(formData,transBtn){
         }
     });
 }
-/* 
-    formData = form 부모 클래스
-    transBtn = 링크 아이디값
-
-    field.val() != ""
-    빈 문자열이 아닐 시 해당 링크로 이동(!는 부정을 뜻함)
-    빈 문자열 일 경우 경고창
- */
-
 
 function theaterListTab(){
     $(".theaterList > li").click(function(){
@@ -211,18 +145,18 @@ function tabControl(tabBtn,tabPanel){
 
 function hoverControl(target){
     $(target).hover(function(){
-        target.removeClass('active');
+        $(target).removeClass('active');
         $(this).addClass('active');
     });
 }
 
 function mvControl(){
-    $(mvSelect).click(function(){
-        $(mvSelect).removeClass('active');
+    $(".selectComponent li").click(function(){
+        $(".selectComponent li").removeClass('active');
         $(this).addClass('active');
         var currentTab = $(this).attr('data-tabName');
-        $(mvCategory).removeClass('active');
-        $('.'+currentTab).addClass('active');    
+        $("[id$='Movie']").removeClass('active');
+        $('#'+currentTab).addClass('active');    
     });
 }
 
@@ -231,8 +165,8 @@ function mvDetail(){
         $(".tabMenu li").removeClass('active');
         $(this).addClass('active');
         var currentTab = $(this).attr('data-tabName');
-        $("[class$='Information']").removeClass('active');
-        $('.'+currentTab).addClass('active');    
+        $("[id$='Information']").removeClass('active');
+        $('#'+currentTab).addClass('active');    
     });
 }
 
@@ -324,9 +258,9 @@ function testSwap(field,dataLabel){
 }
 
 function peopleCount(container){
-    var plus = container.children(".btnPlus");
-    var minus = container.children(".btnMins");
-    var field = container.children(".txtNum");
+    var plus = $(container).children(".btnPlus");
+    var minus = $(container).children(".btnMins");
+    var field = $(container).children(".txtNum");
     var currentCount = field.val();
 
     plus.click(function(){
@@ -346,9 +280,9 @@ function peopleCount(container){
 }
 
 function storeCount(container){
-    var plus = container.children(".btnPlus");
-    var minus = container.children(".btnMins");
-    var field = container.children(".txtNum");
+    var plus = $(container).children(".btnPlus");
+    var minus = $(container).children(".btnMins");
+    var field = $(container).children(".txtNum");
     var currentCount = field.val();
 
     plus.click(function(){
