@@ -1068,9 +1068,6 @@ footer > div{
 #mgDiscountCouponPopup > div > div:first-of-type > div:first-of-type ul li.active{
     background-image: url('../images/radio_button_checked_FILL0_wght400_GRAD0_opsz48.svg');
 }
-#mgDiscountCouponPopup > div > div:first-of-type > div:first-of-type ul li:first-of-type{
-    margin-bottom: 20px;
-}
 #mgDiscountCouponPopup > div > div:first-of-type > div:first-of-type div input{
     border: none; padding: 10px; box-sizing: border-box;
 }

@@ -809,6 +809,9 @@
     #mgDiscountCouponPopup > div > div:first-of-type > div:first-of-type ul{
         padding-bottom: 20px;
     }
+    #mgDiscountCouponPopup > div > div:first-of-type > div:first-of-type ul li:first-of-type{
+        margin-bottom: 20px;
+    }
     #mgDiscountCouponPopup > div > div:first-of-type > div:nth-of-type(2) div ul:first-of-type li,
     #mgVipCouponPopup > div > div:first-of-type div ul:first-of-type li{
         float: left; text-align: center; padding: 10px 5px; box-sizing: border-box;
@@ -2612,12 +2615,11 @@
     .myPageAll section:last-of-type .reservationDetail > div .reservationList ul li > time{
         font-size: 12px; font-weight: 500; width: 120px; padding: 0 15px 15px; display: block;
     }
-    .myPageAll section:last-of-type .reservationDetail > div .reservationList ul li > button{
-        text-indent: -9999px; width: 20px; height: 20px; border-radius: 100%; border: 1px solid #c4c4c4;
-        box-sizing: border-box; cursor: pointer; position: absolute; left: 15px; top: 55px;
+    .myPageAll section:last-of-type .reservationDetail > div .reservationList ul li > i{
+        font-size: 20px; color: #c4c4c4; cursor: pointer; position: absolute; left: 15px; top: 55px;
     }
-    .myPageAll section:last-of-type .reservationDetail > div .reservationList ul li.active > button{
-        border: #8453f5 3px solid; box-sizing: border-box;
+    .myPageAll section:last-of-type .reservationDetail > div .reservationList ul li.active > i{
+        color: #8453f5;
     }
     .myPageAll section:last-of-type .reservationDetail > div .reservationList ul li > div > dl{
         margin-bottom: 15px; cursor: pointer; padding-left: 55px;
@@ -4170,7 +4172,7 @@
         box-sizing: border-box; margin: 0 auto; display: flex; align-items: center; justify-content: center;
     }
     .benefitAll .benefitVip > div figure div{
-        padding-right: 22%;
+        padding-right: 15%;
     }
     .benefitAll .benefitVip > div figure div span{
         display: block; text-align: center;
@@ -4728,14 +4730,13 @@
     .myPageAll section:last-of-type .reservationDetail > div .reservationList ul li > time{
         float: left; font-size: 14px; font-weight: 500;
     }
-    .myPageAll section:last-of-type .reservationDetail > div .reservationList ul li > button{
-        text-indent: -9999px; width: 20px; height: 20px; border-radius: 100%; border: 1px solid #c4c4c4;
-        box-sizing: border-box; margin-right: 15px; float: left; cursor: pointer; position: relative;
+    .myPageAll section:last-of-type .reservationDetail > div .reservationList ul li > i{
+        margin-right: 15px; float: left; cursor: pointer; position: relative; font-size: 20px; color: #c4c4c4;
     }
-    .myPageAll section:last-of-type .reservationDetail > div .reservationList ul li.active > button{
-        border: #8453f5 3px solid; box-sizing: border-box;
+    .myPageAll section:last-of-type .reservationDetail > div .reservationList ul li.active > i{
+        color: #8453f5;
     }
-    .myPageAll section:last-of-type .reservationDetail > div .reservationList ul li > button::after{
+    .myPageAll section:last-of-type .reservationDetail > div .reservationList ul li > i::after{
         content: ''; width: 1px;
         background-color: #f6f6f6; border-left: 1px dotted #c4c4c4;
         position: absolute; top: 20px; left: 50%; transform: translate(-50%);
@@ -4744,7 +4745,7 @@
         float: left; position: relative;
     }
     .myPageAll section:last-of-type .reservationDetail > div .reservationList ul li > div > dl{
-        margin-bottom: 20px; vertical-align: middle; cursor: pointer;
+        margin-bottom: 20px; cursor: pointer; display: flex; align-items: center;
     }
     .myPageAll section:last-of-type .reservationDetail > div .reservationList ul li > div > dl dt,
     .myPageAll section:last-of-type .reservationDetail > div .reservationList ul li > div > dl dd{
@@ -5732,7 +5733,7 @@
     .myPageAll section:last-of-type .reservationDetail > div .reservationList ul li > time{
         width: 120px; padding-top: 3px;
     }
-    .myPageAll section:last-of-type .reservationDetail > div .reservationList ul li > button::after{
+    .myPageAll section:last-of-type .reservationDetail > div .reservationList ul li > i::after{
         min-height: 655px;
     }
     .myPageAll section:last-of-type .reservationDetail > div .reservationList ul li > div{
@@ -6696,7 +6697,7 @@
     .myPageAll section:last-of-type .reservationDetail > div .reservationList ul li > time{
         margin-right: 65px;
     }
-    .myPageAll section:last-of-type .reservationDetail > div .reservationList ul li > button::after{
+    .myPageAll section:last-of-type .reservationDetail > div .reservationList ul li > i::after{
         min-height: 590px;
     }
     .myPageAll section:last-of-type .reservationDetail > div .reservationList ul li > div{
@@ -6724,7 +6725,7 @@
         font-size: 14px;
     }
     .myPageAll section:last-of-type .reservationDetail > div .reservationList ul li > div > i{
-        position: absolute; right: 0; top: -6px; transform: rotate(90deg); cursor: pointer;
+        position: absolute; right: 0; top: -3px; transform: rotate(90deg); cursor: pointer;
     }
     .myPageAll section:last-of-type .reservationDetail > div .reservationList ul li.active > div > i{
         transform: rotate(-90deg);
