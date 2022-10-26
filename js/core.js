@@ -2,12 +2,12 @@
 $(document).ready(function(){
     popupControl(".btnOpen",".btnClose","Popup","[id $= Popup]");
     customSlider(".mainSlider",false,4000,".customPager",true,1,1,0,0,0,true,true);
-    customSlider(".carouselBO",true,99999,null,true,5,1,5,20,330,false,true);
-    customSlider(".carouselSS",true,99999,null,true,5,1,5,20,330,false,true);
-    customSlider(".carouselSP",true,99999,null,true,5,1,5,20,330,false,true);
-    customSlider(".carouselC",true,99999,null,true,5,1,5,20,330,false,true);
-    customSlider(".carouselN",false,99999,null,true,5,1,5,20,330,false,true);
-    customSlider(".carouselCalendar",true,99999,null,true,8,3,0,20,30,false,false);
+    customSlider(".carouselBO",true,4000,null,false,5,1,5,20,330,false,true);
+    customSlider(".carouselSS",true,4000,null,false,5,1,5,20,330,false,true);
+    customSlider(".carouselSP",true,4000,null,false,5,1,5,20,330,false,true);
+    customSlider(".carouselC",true,4000,null,false,5,1,5,20,330,false,true);
+    customSlider(".carouselN",false,4000,null,false,5,1,5,20,330,false,true);
+    customSlider(".carouselCalendar",true,4000,null,false,8,3,0,20,30,false,false);
     carouselCalendarT();
     tabControl(".rpert li","[id$='Theater']");
     tabControl(".methodList li","[id$='Method']");

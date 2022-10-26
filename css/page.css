@@ -214,11 +214,8 @@
     .boutiqueTheater .theaterTab .tabMenu{
         overflow-x: scroll; white-space: nowrap;
     }
-    .boutiqueTheater .theaterTab .tabMenu li{
-        border-width: 0 0 2px; border-style: solid; border-color: rgba(255,255,255,0.3);
-    }
     .boutiqueTheater .theaterTab .tabMenu li.active{
-        border-color: white;
+       border-bottom: 2px solid white;
     }
     [class$='Theater'] .theaterTab > div{
         margin-top: 25px;
@@ -3916,14 +3913,12 @@
     [class$='Theater'] .theaterTab > div > div ul:first-of-type li:nth-of-type(3){
         width: 36.04%; margin-top: 20px;
     }
-    [class$='Theater'] .theaterTab > div > div > ul:last-of-type li{
+    [class$='Theater'] .theaterTab > div > div > ul:nth-of-type(2) li{
         display: flex; align-items: center;
     }
-    [class$='Theater'] .theaterTab > div > div div dl dd{
+    [class$='Theater'] .theaterTab > div > div div dl dd,
+    [class$='Theater'] .theaterTab > div > div div .theaterEspecially dd p{
         font-weight: 300; color: #d0d0d0;
-    }
-    [class$='Theater'] .theaterTab > div > div div p{
-        font-size: 14px; font-weight: 300; line-height: 17px; 
     }
     
     /*
@@ -5219,19 +5214,19 @@
     div[class$='Tab']:not(.storeDetailTab){
         padding-bottom: 45px; min-height: calc(100vh - 522.5px);
     }
-    .movieTab .tabMenu::after, div:not(.boutiqueTheater) .theaterTab .tabMenu::after{
+    .movieTab .tabMenu::after, .theaterTab .tabMenu::after{
         position: absolute; width: 100%; height: 2px; background-color: rgba(255,255,255,0.3);
-        bottom: 0; left: 0; content: ''; display: block;
+        bottom: 0; left: 0; content: ''; display: block; clear: both;
     }
     .movieTab .tabMenu li, .theaterTab .tabMenu li{
         padding: 0 20px 10px 20px; display: inline-block;
         font-size: 18px; font-weight: 500;
     }
     .movieTab .tabMenu .tabMenu li.active, .theaterTab .tabMenu li.active{
-        border-bottom: 1px solid white;
+        border-bottom: 2px solid white;
     }
-    .movieTab .tabMenu li.active::after, .theaterTab .tabMenu li.active::after{
-        content: ''; width: 100%; height: 2px; background-color: #fff; position: absolute; bottom: 0; left: 0;
+    .boutiqueTheater .theaterTab .tabMenu{
+        position: relative;
     }
     [class$='All'] .movieTab > div #detailInformation h3{
         font-size: 20px;
@@ -5419,50 +5414,53 @@
     [class$='Theater'] .theaterTab > div span{
         font-size: 14px; margin-bottom: 15px; line-height: 17px;
     }
-    [class$='Theater'] .theaterTab > div > div > ul:last-of-type{
+    [class$='Theater'] .theaterTab > div > div > ul:nth-of-type(2){
         margin-top: 50px;
     }
-    [class$='Theater'] .theaterTab > div > div > ul:last-of-type::after{
+    [class$='Theater'] .theaterTab > div > div > ul:nth-of-type(2)::after{
         content: ''; display: block; clear: both;
     }
-    [class$='Theater'] .theaterTab > div > div > ul:last-of-type li{
+    [class$='Theater'] .theaterTab > div > div > ul:nth-of-type(2) li{
         float: left; width: 50%;
     }
-    [class$='Theater'] .theaterTab > div > div > ul:last-of-type li:nth-of-type(2n+1){
+    [class$='Theater'] .theaterTab > div > div > ul:nth-of-type(2) li:nth-of-type(2n+1){
         padding-right: 30px; box-sizing: border-box;
     }
-    [class$='Theater'] .theaterTab > div > div > ul:last-of-type li:last-of-type{
+    [class$='Theater'] .theaterTab > div > div > ul:nth-of-type(2) li:last-of-type{
         margin-top: 20px;
     }
-    [class$='Theater'] .theaterTab > div > div > ul:last-of-type li div{
+    [class$='Theater'] .theaterTab > div > div > ul:nth-of-type(2) li div{
         width: 80px;
     }
-    [class$='Theater'] .theaterTab > div > div > ul:last-of-type li dl{
+    [class$='Theater'] .theaterTab > div > div > ul:nth-of-type(2) li dl{
         width: calc(100% - 80px); padding-left: 20px; box-sizing: border-box;
     }
-    [class$='Theater'] .theaterTab > div > div > ul:last-of-type li dl dt{
+    [class$='Theater'] .theaterTab > div > div > ul:nth-of-type(2) li dl dt{
         font-size: 18px; font-weight: normal; margin-bottom: 10px;
     }
-    [class$='Theater'] .theaterTab > div > div > ul:last-of-type li dl dd{
+    [class$='Theater'] .theaterTab > div > div > ul:nth-of-type(2) li dl dd{
         font-size: 12px; font-weight: 300;
     }
     [class$='Theater'] .theaterTab > div > div > div{
         box-sizing: border-box; margin-top: 50px;
     }
-    [class$='Theater'] .theaterTab > div > div div dl,
-    [class$='Theater'] .theaterTab > div > div div p{
+    /* [class$='Theater'] .theaterTab > div > div div dl,
+    [class$='Theater'] .theaterTab > div > div div > p{
         width: 50%; float: left;
-    }
+    } */
     [class$='Theater'] .theaterTab > div:not(.privateInformation) > div div dl,
-    [class$='Theater'] .theaterTab > div:not(.privateInformation) > div div p{
+    [class$='Theater'] .theaterTab > div:not(.privateInformation) > div div > p{
         width: 50%; float: left; height: 135px;
     }
     [class$='Theater'] .theaterTab > div > div div dl dt{
         font-size: 18px;
     }
     [class$='Theater'] .theaterTab > div > div div dl:nth-of-type(2n),
-    [class$='Theater'] .theaterTab > div > div div p{
+    [class$='Theater'] .theaterTab > div > div div > p{
         padding-left: 15px; box-sizing: border-box;
+    }
+    [class$='Theater'] .theaterTab > div > div div > p{
+        font-size: 12px; font-weight: 300; line-height: 15px; 
     }
     [class$='Theater'] .theaterTab > div:not(.privateInformation) > div div dl dd:not(:last-of-type),
     [class$='Theater'] .theaterTab .privateInformation > div div dl:not(:first-of-type) dd:not(:last-of-type){
@@ -5476,6 +5474,18 @@
     }
     [class$='Theater'] .theaterTab .privateInformation > div div dl dd p{
         display: flex; align-items: center;
+    }
+    [class$='Theater'] .theaterTab > div > div div .theaterEspecially dd{
+        display: flex; align-items: center;
+    }
+    [class$='Theater'] .theaterTab > div > div div .theaterEspecially dd:nth-of-type(2){
+        margin: 25px 0;
+    }
+    [class$='Theater'] .theaterTab > div > div div .theaterEspecially dd strong{
+        font-size: 20px; font-weight: 900; color: #8453f5; margin-right: 10px;
+    }
+    [class$='Theater'] .theaterTab > div > div div .theaterEspecially dd p{
+        font-size: 12px; font-weight: 300;
     }
 
     /*
@@ -6263,9 +6273,12 @@
     }
     [class$='Theater'] .theaterTab > div > div > div,
     [class$='Theater'] .theaterTab > div > div > ul:last-of-type{
-        padding-left: 3.73%; box-sizing: border-box;
+        box-sizing: border-box;
     }
-    [class$='Theater'] .theaterTab > div > div > ul:last-of-type li:nth-of-type(2){
+    [class$='Theater'] .theaterTab > div > div > div{
+        padding-left: 3.73%;
+    }
+    [class$='Theater'] .theaterTab > div > div > ul:nth-of-type(2) li:nth-of-type(2){
         margin: 60px 0;
     }
     [class$='Theater'] .theaterTab > div > div > ul:last-of-type li div{
@@ -6287,10 +6300,23 @@
         margin-bottom: 10px;
     }
     [class$='Theater'] .theaterTab > div> div div dl dt{
-        font-size: 24px; margin-bottom: 15px;
+        font-size: 24px; font-weight: normal; margin-bottom: 15px;
     }
-    [class$='Theater'] .theaterTab > div > div div dl dd{
+    [class$='Theater'] .theaterTab > div > div div dl:not(.theaterEspecially) dd,
+    [class$='Theater'] .theaterTab > div > div div .theaterEspecially dd p{
         font-size: 18px; line-height: 21px;
+    }
+    [class$='Theater'] .theaterTab > div > div div .theaterEspecially dd{
+        display: flex; align-items: center;
+    }
+    [class$='Theater'] .theaterTab > div > div div .theaterEspecially dd:nth-of-type(2){
+        margin: 25px 0;
+    }
+    [class$='Theater'] .theaterTab > div > div div .theaterEspecially dd strong{
+        font-size: 30px; font-weight: 900; color: #8453f5; margin-right: 20px;
+    }
+    [class$='Theater'] .theaterTab > div > div div > p{
+        font-size: 14px; font-weight: 300; line-height: 17px; 
     }
     [class$='Theater'] .theaterTab > div:not(.privateInformation) > div div dl dd:not(:last-of-type),
     [class$='Theater'] .theaterTab .privateInformation > div div dl:not(:first-of-type) dd:not(:last-of-type){
